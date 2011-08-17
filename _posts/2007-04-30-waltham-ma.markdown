@@ -10,7 +10,7 @@ trail for no purpose other than to house
 the passing settlers by and the occasional agent computing conference? Apparently I-95 is the new Rt. 66 and Waltham, MA
 is such a town. 
 
-***2:00 PM***: I call the Westin from the bus to ask which stop to get off at. "Oh, we're not the Westin
+2:00 PM. I call the Westin from the bus to ask which stop to get off at. "Oh, we're not the Westin
 downtown. You'll have to hail a cab," they inform me. Whoops -- but not a problem. 
 
 I hop off the bus at the next stop
@@ -18,14 +18,14 @@ and nearly straight into the cab behind it. It turns out to be maybe the best dr
 had, complete with a description of MIT so concise it deserves to be in their admissions brochure: [in my attempt at
 transcribing the Boston accent] 
 
-"Tat ovah thear is MIT, wheah all te crazy smart f*cks invent f*cked up sh*t. Usually I get frequent fliah businessmen
+"Tat ovah thear is MIT, wheah all te crazy smart fucks invent fucked up shit. Usually I get frequent fliah businessmen
 who wanna go theah. Sit in the back ahn theah Blackberrys. Those guys, wahkaholics. They sit at Cape Cod in the summah 
-wit te' f*ckin Blackberrys sendin sh*t
-on f*ckin email don't know how to f*ckin relax. Ya kid's in the watah! Quit ya workin!" 
+wit te' fuckin Blackberrys sendin shit
+on fukin email don't know how to fuckin relax. Ya kid's in the watah! Quit ya workin!" 
 
 40 Minutes and $65 later. We
 pull off the outer beltway of Boston into Waltham. "Waltham is one 'a tose business oasis
-pahhks where all the companies go from MIT to build shi*t like patriot missiles, but tey're real quiet about it
+pahhks where all the companies go from MIT to build shit like patriot missiles, but tey're real quiet about it
 cause ta people'd get upset. So what you gahtta do is darive 10 minutes down tis highway, see, cause tat's wheah tah
 Wellesley girls ah. Radcliffe girls hate Wellesley girls."
 
