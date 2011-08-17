@@ -253,6 +253,10 @@ PAPERS
 #papers h2 a{
   color: #fff;
 }
+
+#papers ul {
+}
+
 .paper .details{
   font-family: Helvetica, sans-serif;
   font-size: 13px;
@@ -265,7 +269,7 @@ PAPERS
 .paper .details p{
   margin: 17px 0 10px 0;
 }
-.paper .byline{
+.paper .conference{
   font-weight: bold;
   color: #777;
 }
