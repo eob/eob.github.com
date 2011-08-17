@@ -6,10 +6,15 @@ title: "Publications"
 <div class="content">
   <div id="talks">
     <h1>Books</h1>
-  </div>
+
+
+</div>
    
   <div id=="papers">
     <h1>Papers</h1>
+     {% for paper in site.papers %}
+     <li>{{ paper.title }}</li>
+     {% endfor %}
 
     <ul class="publications">
         <li class="paper">
