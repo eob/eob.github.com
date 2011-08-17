@@ -98,16 +98,16 @@ h3{
   text-transform: uppercase;
   margin: 10px 0 20px 0;
 }
-#header #zach{
+#header #ted{
   padding-left: 1px;
   font-size: 23px;
   letter-spacing: 5px;
   color: #666;
 }
-#header #zach:hover {
+#header #ted:hover {
   color: #000;
 }
-#header #holman{
+#header #benson{
   font-size: 17px;
   font-weight: bold;
   letter-spacing: 1px;
