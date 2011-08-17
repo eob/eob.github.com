@@ -252,7 +252,6 @@ PAPERS
 }
 
 #papers li {
- list-style: none;
 }
 
 #papers a{
@@ -261,10 +260,13 @@ PAPERS
 }
 
 #papers h3 {
+  color: #333;
+  font-size: 0.9em;
   border-bottom: none;
 }
 
 #papers ul {
+ list-style-type: none;
 }
 
 #papers .authors {
