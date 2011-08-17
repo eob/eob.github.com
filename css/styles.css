@@ -250,11 +250,17 @@ PAPERS
   display: inline;
   background-color: #000;
 }
-#papers h2 a{
-  color: #fff;
+
+#papers a{
+  color: #333;
+  text-decoration: none;
 }
 
 #papers ul {
+}
+
+#papers .authors {
+  font-size: 0.9em;
 }
 
 .paper .details{
