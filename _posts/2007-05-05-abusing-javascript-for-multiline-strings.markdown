@@ -23,43 +23,43 @@ JavaScript to adopt it, not to mention the common need to assemble long chunks o
 still ain't so. E4X provides a sneaky way to accomplish it, however, by embedding the string within HTML tags. E4X is
 essentially a way to use DOM fragments as native JavaScript objects, so you can have a variable defined like this:
    
-   var address = "" + (<r><![CDATA[
-   127 Prime Ln.
-   55005
-   ]]></r>);
+    var address = "" + (<r><![CDATA[
+    127 Prime Ln.
+    55005
+    ]]></r>);
 
 The developer gets all sorts of nifty ways to interact with this data, but the toString function is the sneak-route for
 abuse. Let's say we want to construct a multi-line string for some poetry:
 
-   var htmlFragment = "" + (<r><![CDATA[
-   l(a
-
-   le
-   af
-   fa
-
-   ll
-
-   s)
-   one
-   l
-
-   iness
-
-   - e.e. cummings
-   ;
-   ]]></r>);
+    var htmlFragment = "" + (<r><![CDATA[
+    l(a
+    
+    le
+    af
+    fa
+    
+    ll
+    
+    s)
+    one
+    l
+    
+    iness
+    
+    - e.e. cummings
+    ;
+    ]]></r>);
 
 Or perhaps we want to construct a fragment of HTML from with JavaScript but don't want to use a builder:
 
-   var htmlFragment = "" + (<r><![CDATA[
-   <div id="somethingorother">
-     <ol>
-       <li>Item 1</li>
-       <li>Item 2</li>
-     </ol>
-   </div>
-   ]]></r>);
+    var htmlFragment = "" + (<r><![CDATA[
+    <div id="somethingorother">
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ol>
+    </div>
+    ]]></r>);
 
 Why in the world would you put your HTML inside a CDATA block, you say? For a top secret
 project, I tell you! The variable htmlFragment now contains this multiline string, since
