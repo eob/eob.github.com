@@ -10,9 +10,9 @@ duet of Under the Sea, and I'm also playing the Fantasie Impromptu by Frederic C
 
 Here are the details: 
 
-***"Melodic Impact" A Spring Concert for Kids with Cancer***
-Saturday, April 28th, 6:00-8:00 pm (reception follows)
-Mt. Olivet U.M. Church - 1500 N. Glebe Rd, Arlington, VA
+> ***"Melodic Impact" A Spring Concert for Kids with Cancer***
+> Saturday, April 28th, 6:00-8:00 pm (reception follows)
+> Mt. Olivet U.M. Church - 1500 N. Glebe Rd, Arlington, VA
 
 After a 5 year stretch in which my piano gathered dust in the corner of my living
 room, it has been wonderful practicing for the concert and knowing what it feels like to be immersed in music again,
