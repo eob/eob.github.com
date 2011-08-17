@@ -67,6 +67,6 @@ the the ""+ at the beginning caused the subsequent E4X DOM fragment to be cast a
 for concatenation. Test it out for yourself by setting the innerHTML of your page body to
 the variable above.
 
-   $('the_body').innerHTML = htmlFragment;
+    $('the_body').innerHTML = htmlFragment;
 
 Pretty clever...
