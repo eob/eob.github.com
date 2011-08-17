@@ -1,3 +1,8 @@
+---
+layout: post
+title: Abusing Javascript for Multiline Strings 
+permalink: /2007/05/abusing-javascript-for-multiline-strings/
+---
 
 You realize how funny the technology world is when you come upon a technology from 2005 and are immediately distrusting
 and suspicious that it has already been replaced with something new. "Two years ago!? How antiquated! I'm sure by now
