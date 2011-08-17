@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Solving Problems versus Selling Products
-permalink: /2001/08/solving-problems-versus-selling-products/
+permalink: /2010/08/solving-problems-versus-selling-products/
 ---
 
 Does your company solve a problem or sell a product? When times are good, the two missions may appear the same, but when
