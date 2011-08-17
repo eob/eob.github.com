@@ -273,13 +273,13 @@ PAPERS
   font-weight: bold;
   color: #777;
 }
-.paper .byline a{
+.paper .conference a{
   text-decoration: none;
 }
-.paper .byline a:hover{
+.paper .conference a:hover{
   color: #11BAF7;
 }
-.paper .byline strong{
+.paper .conference strong{
   color: #000;
 }
 .paper span{
