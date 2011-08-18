@@ -259,10 +259,14 @@ PAPERS
   text-decoration: none;
 }
 
+ul.publications {
+    list-style: none;
+}
+
 ul.publications h3 {
   color: #333;
   border-bottom: none;
-  list-style: none;
+  margin-bottom: 3px;
 }
 
 #papers .authors {
