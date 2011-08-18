@@ -261,9 +261,8 @@ PAPERS
 
 ul.publications h3 {
   color: #333;
-  font-size: 0.8em;
   border-bottom: none;
-  list-style-type: none;
+  list-style: none;
 }
 
 #papers .authors {
