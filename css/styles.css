@@ -254,12 +254,13 @@ PAPERS
 #papers li {
 }
 
-#papers a{
+ul.publications a{
   color: #333;
   text-decoration: none;
 }
 
 ul.publications {
+    color: #333;
     list-style: none;
 }
 
