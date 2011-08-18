@@ -263,6 +263,10 @@ ul.publications {
     list-style: none;
 }
 
+ul.publications div {
+    color: #333;
+}
+
 ul.publications h3 {
   color: #333;
   font-size: 1.5em;
