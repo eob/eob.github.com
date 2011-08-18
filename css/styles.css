@@ -265,8 +265,9 @@ ul.publications {
 
 ul.publications h3 {
   color: #333;
+  font-size: 1.2em;
   border-bottom: none;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 #papers .authors {
