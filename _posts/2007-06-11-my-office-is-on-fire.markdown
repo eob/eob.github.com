@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 8am Meetings and the Perversion of Expectations
-permalink: /2007/06/8am-meetings-and-the-perversion-of-expectations/
+title: My Office is on Fire
+permalink: /2007/06/my-office-is-on-fire/
 ---
 
 "SNARGL-ZZZZZT-WOLA-fragl-wozz-UP-YARISPLASH"-[ smack! ] 
