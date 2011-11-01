@@ -252,6 +252,8 @@ PAPERS
 }
 
 #papers li {
+
+  border-bottom: 1px solid #eee;
 }
 
 ul.publications a{
@@ -260,7 +262,6 @@ ul.publications a{
 
 ul.publications {
     color: #333;
-    list-style: none;
 }
 
 ul.publications div {
@@ -452,3 +453,43 @@ ul.publications h3 {
   font-size: 13px;
   font-weight: bold;
 }
+
+ul.thinglist li img {
+  float: left;
+  margin-right: 20px;
+}
+
+ul.thinglist h3 {
+  color: #333;
+  font-size: 1.5em;
+  border-bottom: none;
+  margin-bottom: 2px;
+}
+
+ul.thinglist li{
+  clear: both;
+  font-size: 14px;
+  list-style: none;
+  padding: 5px 0px;
+  margin: 0;
+  color: #333;
+}
+
+ul.classes li {
+  margin-top: 30px;
+}
+
+ul.projects li h3 a {
+  margin-bottom: 4px;
+  color: #0066ff;
+}
+
+a {
+  color: #0066ff;
+}
+
+ul.projects li p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+

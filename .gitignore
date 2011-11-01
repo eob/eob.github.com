@@ -1,2 +1,5 @@
 _site
 drafts
+*.swp
+.DS_Store
+server
