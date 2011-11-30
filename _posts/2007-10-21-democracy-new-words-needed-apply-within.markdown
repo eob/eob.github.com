@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Democracy: New words needed. Apply within
+title: "Democracy: New words needed; Apply within"
 permalink: /2007/10/democracy-new-words-needed-apply-within/
 ---
 
