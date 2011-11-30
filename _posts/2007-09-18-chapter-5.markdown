@@ -1,0 +1,81 @@
+---
+layout: post
+title: Chapter 5
+permalink: /2007/09/chapter-5/
+---
+
+W. Web finally makes it to the Big City on his first mission from the compound.
+In other news, I'm beat. 
+
+W. Web stepped off the bus and forced a nervous swallow as he entered the crowd
+of noise and signs. He had arrived as close to the heart of Application Square
+as the bus could get, which was about two blocks away. As far as he could see,
+up to the big plaza in the distance, were URIs and other regulars of their
+crowd, holding signs and milling about. It was not unlike a football game, Web
+thought, remembering videos of tailgating parties that had been uploaded to him
+before. 
+
+He waded through the URIs trying to get closer to the square. The URIs were
+tall, French Fry-like creatures with short, stubby legs and tyrannosaurus-like
+arms. For some reason, they all talked like they were from the Bronx, even the
+Unicode ones. As groups of them chanted their slogans, their nasal voices
+occasionally cracked at the exciting parts.  
+
+No wonder these guys get pushed around, Web thought.
+
+The real geeks were the ones that hadn't even bothered to register domain names
+for themselves. IP addresses blazoned up their chests, they were a bit pastier
+  than the others and were wearing thick glasses. 
+
+"Hey, watch it! Geez, buddy, can't we even get some respect at our own
+protest?"
+
+Web had been searching for the stage so hard that he had inadvertently walked
+straight into one of them.
+
+"Oh! I'm sorry...uh, 208.97.177.118," Web said, tilting his head sideways to
+read the IP address written up its chest, "I was just looking for the main
+stage. Do know if there is one?"
+
+"What am I, DNS?  That resource is 301 Moved Permanently! Aheiahahiaha!" the
+URI snorted in reply.
+
+Web stood there unsure of what to say.
+
+"Hey, loosen up, buddy," the URI punched him in the shoulder, "it's a beautiful
+day. The stage is over that way," he gestured with his fry-like head.
+
+"Thanks, I appreciate it. Say, what exactly are you protesting?"
+
+"You mean nobody gave you a pamphlet?," the creature exclaimed, "those dynamic
+URIs, you can never count on them to be there when you need 'em. We're
+protesting the 'stablishment, buddy boy, cause we get no respect and its time
+we deserve some."
+
+"What do you mean," Web said, "everyone uses you guys. You're great -- you
+should see how large my browser's bookmark folder is!  In fact just the other
+day I saw one of you on a billboa--"
+
+"Use us and throw away, use us and throw away. That's the way it always
+happens. Throw-away labels, that's what we are. Nobody stops to think that
+we've got depth to us.  Do you think we like being three-hundred characters
+long? 'Oh, doesn't matter,' you say 'nobody ever stopped to appreciate the
+beauty of just a mere URI!' Just a mere URI?!"
+
+It didn't give Web a chance to respond. 
+
+"And social services - we deserve them too. Do you know how much funding unit
+tests got last year?  Over 1.2 billion.  Billion!  Ya know how much we got?
+Didn't think so -- well I'll tell ya - a big zero.  Zilch. Nothin.  How's it
+come about that we're the face of the internet and nobody's ever stopped to
+think that we need attention too?"
+
+Web could see that this was the beginning of a long rant this URI had given
+many times before and knew he had to get to the stage before things wound down.
+
+"I couldn't agree more. We need more funding devoted to URIs," he said
+hurriedly, "Look, I'm sorry to run, but I've really got to get to that stage.
+Thanks for your help!"
+
+And before the URI could say anything more Web had pushed back into the crowd,
+weaving his way forward toward the edge of the square.
