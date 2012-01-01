@@ -4,11 +4,11 @@ title: Declaring Something Doesn't Make it True
 permalink: /2008/02/declaring-something-doesnt-make-it-true
 ---
 
-    Although New York Sen. Hillary Clinton won the largest states...her
-    presidential campaign spent the rest of the week repositioning her as a kind of
-    underdog…This week, Clinton and her advisers declared that Obama is the
-    “establishment” candidate…It’s hard to exaggerate the distance between
-    Clinton’s previous image and her new underdog image.
+> Although New York Sen. Hillary Clinton won the largest states...her
+> presidential campaign spent the rest of the week repositioning her as a kind of
+> underdog…This week, Clinton and her advisers declared that Obama is the
+> “establishment” candidate…It’s hard to exaggerate the distance between
+> Clinton’s previous image and her new underdog image.
 
 Peter Overby, NPR News, 8 Feb 2008
 
