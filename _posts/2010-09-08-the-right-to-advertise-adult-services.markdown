@@ -18,17 +18,17 @@ Foundation, in case you don't read geek news:
 
 At first glance, it seems like this might be pretty cut and dry:
 
-    * X is illegal
-    * Y has an advertising section for X
-    * Y is therefore an accomplice to acts of X
-    * So Y should be punished
+   * X is illegal
+   * Y has an advertising section for X
+   * Y is therefore an accomplice to acts of X
+   * So Y should be punished
 
 But Craigslist isn't advertising sex -- its users are -- and this turns out to
 be an important difference. Important because this situation represents a sort
 of edge-case between two separate goals we have as a society:
 
-    * We want to make it illegal to do, or be an accomplice to, certain acts  
-    * We also want to protect telecom carriers from being liable for the messages they carry  
+   * We want to make it illegal to do, or be an accomplice to, certain acts  
+   * We also want to protect telecom carriers from being liable for the messages they carry  
 
 The 1996 Communications Decency Act puts this second goal into law. It protects
 people who serve as a carrier of information from having liability for the
