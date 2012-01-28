@@ -17,15 +17,15 @@ Linguistic Security (TBWLS)", will have to suffice :).
 Here's the program. Each item is taken from the [real
 program](http://www.lsi.upc.edu/events/emnlp2010/program.html):
 
-*   Keynote: Why do we call it decoding?
+*   Keynote: Why do we call it decoding?<br />
     Kevin Knight
-*   Improving Gender Classification of Blog Authors
+*   Improving Gender Classification of Blog Authors<br />
     Arjun Mukherjee and Bing Liu
-*   Modeling Perspective using Adaptor Grammars
+*   Modeling Perspective using Adaptor Grammars<br />
     Eric Hardisty, Jordan Boyd-Graber and Philip Resnik
-*   Practical Linguistic Steganography using Contextual Synonym Substitution and Vertex Colour Coding
+*   Practical Linguistic Steganography using Contextual Synonym Substitution and Vertex Colour Coding<br />
     Ching-Yun Chang and Stephen Clark
-*   A Latent Variable Model for Geographic Lexical Variation
+*   A Latent Variable Model for Geographic Lexical Variation<br />
     Jacob Eisenstein, Brendan O'Connor, Noah A. Smith and Eric P. Xing
 
 
