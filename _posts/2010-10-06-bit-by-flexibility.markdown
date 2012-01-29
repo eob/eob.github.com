@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bit by Flexibility -- Implicit Conversions to Java with Scala 2.8
+title: Bit by Flexibility&#58; Implicit Conversions to Java with Scala 2.8
 permalink: /2010/10/bit-by-flexibility/
 ---
 
