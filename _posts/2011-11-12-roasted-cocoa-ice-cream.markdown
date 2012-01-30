@@ -5,7 +5,7 @@ permalink: /2011/11/roasted-cocoa-ice-cream
 category: Ice Cream 
 ---
 
-### 3. Roast the Cocoa
+### 1. Roast the Cocoa
 
 *   Roast `60g of cocoa nibs` @ 350 for 5 minutes
 
