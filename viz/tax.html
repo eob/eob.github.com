@@ -115,6 +115,15 @@
          <div class="span4">
            <b>Search:</b>
            <div ex:role="facet" ex:facetClass="TextSearch"></div>
+           <div ex:role="facet" 
+                ex:width="250px"
+                ex:facetLabel="Total Project Cost"
+                ex:expression=".TotalProjectCost"
+                ex:facetClass="Slider" 
+                ex:horizontal="true"
+                ex:precision="10000"
+                ex:histogram="true">
+           </div>
            <div ex:role="facet" ex:expression=".TransactionType" ex:facetLabel="Transaction Type" ex:height="9em"></div>
            <div class="row">
              <div class="span2">
