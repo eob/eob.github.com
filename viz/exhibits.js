@@ -64,7 +64,7 @@
   "siteType":["Organization"]
 },
 {
-  "label":"City Classes",
+  "label":"City Law School Classes",
   "url":"http://www.staff.city.ac.uk/~sbbf539/bptcft/",
   "tld":"uk",
   "category":["Education"],
@@ -134,7 +134,7 @@
   "label":"Composers",
   "url":"http://www.musicedmagic.com/Exhibit/composers.html",
   "tld":"com",
-  "category":["Music"],
+  "category":["Music", "Arts"],
   "purpose":["Curation"],
   "itemType":["People", "Composers"],
   "siteType":["Personal"]
@@ -185,7 +185,7 @@
   "siteType":["School"]
 },
 {
-  "label":"City School Classes",
+  "label":"City Law School Classes",
   "url":"http://semantic.city.ac.uk/pob/bptcft/",
   "tld":"uk",
   "category":["Education"],
@@ -260,7 +260,7 @@
   "label":"Beethoven Timeline",
   "url":"http://www.musicedmagic.com/Exhibit/beethoventimeline.html",
   "tld":"com",
-  "category":["Music"],
+  "category":["Music", "Arts"],
   "purposes":["Curation"],
   "itemType":["Events"],
   "siteType":["Personal"]
@@ -273,6 +273,194 @@
   "purpose":["Enumeration"],
   "itemType":["Projects"],
   "siteType":["School"]
-}
-
+},
+{
+  "label":"Bay Area Foreclosures - 2009 Q2",
+  "url":"http://www.sfgate.com/maps/foreclosures/2009q2/",
+  "tld":"com",
+  "category":["Real Estate", "Finance"],
+  "purpose":["Enumeration"],
+  "itemType":["Foreclosures"],
+  "siteType":["News"]
+},
+{
+  "label":"Veggie Guide to Glasgow",
+  "url":"http://gvn.rhizomatics.org.uk/glasgowguide.html",
+  "tld":"uk",
+  "category":["Food"],
+  "purpose":["Curation"],
+  "itemType":["Restaurants"],
+  "siteType":["Personal"]
+},
+{
+  "label":"Dance Classes",
+  "url":"http://dancedigital.org.uk/classes/find-a-course/",
+  "tld":"uk",
+  "category":["Arts", "Dance"],
+  "purpose":["Enumeration"],
+  "itemType":["Classes"],
+  "siteType":["Organization"]
+},
+{
+  "label":"Factory Portland - Musicians",
+  "url":"http://www.factoryportland.com/musicsearch/musicians/",
+  "tld":"com",
+  "category":["Arts", "Music"],
+  "purpose":["Curation"],
+  "itemType":["People"],
+  "siteType":["Commercial"]
+},
+{
+  "label":"Factory Portland - Businesses",
+  "url":"http://www.factoryportland.com/musicsearch/businesses/",
+  "tld":"com",
+  "category":["Arts", "Music"],
+  "purpose":["Curation"],
+  "itemType":["Companies"],
+  "siteType":["Commercial"]
+},
+{
+  "label":"Beacon Theater Performances",
+  "url":"http://www.stlbeacon.org/images/stories/diversions/theater/20110117theater.html",
+  "tld":"org",
+  "category":["Arts", "Theater"],
+  "purpose":["Enumeration"],
+  "itemType":["Performances"],
+  "siteType":["Organization", "Commercial"]
+},
+{
+  "label":"Rating Minnesota's Bridges",
+  "url":"http://ww2.startribune.com/projects/maps/bridges/bridges.html",
+  "tld":"com",
+  "category":["Government"],
+  "purpose":["Enumeration"],
+  "itemType":["Bridges"],
+  "siteType":["News"]
+},
+{
+  "label":"Medieval and Early Modern Manuscripts",
+  "url":"http://scriptorium.english.cam.ac.uk/manuscripts/",
+  "tld":"uk",
+  "category":["Education", "History"],
+  "purpose":["Curation"],
+  "itemType":["Publications", "Manuscripts"],
+  "siteType":["School"]
+},
+{
+  "label":"Fellows at Cornell",
+  "url":"http://www.sustainablefuture.cornell.edu/people/fellows/fellows-browse.php",
+  "tld":"edu",
+  "category":["Education"],
+  "purpose":["Enumeration"],
+  "itemType":["People"],
+  "siteType":["School"]
+},
+{
+  "label":"Choice and Medication Health Clinics",
+  "url":"http://choiceandmedication.org/cms/subscribers/",
+  "tld":"org",
+  "category":["Medical"],
+  "purpose":["Curation"],
+  "itemType":["Clinics", "Places"],
+  "siteType":["Organization"]
+},
+{
+  "label":"Pennsylvania School District Map",
+  "url":"http://www.swingingsammy.com/schools/20082009_MV-PI_AR.html",
+  "tld":"com",
+  "category":["Government", "Education"],
+  "purpose":["Exposition"],
+  "itemType":["Districts"],
+  "siteType":["Personal"]
+},
+{
+  "label":"Jewish Study Resources on the Web",
+  "url":"http://fc.gannacademy.org/gannopedia/ganntools/index.html",
+  "tld":"org",
+  "category":["Education","Religion"],
+  "purpose":["Curation"],
+  "itemType":["Resources"],
+  "siteType":["Organization"]
+},
+{
+  "label":"Artists of History",
+  "url":"http://swiki.hfbk-hamburg.de:8888/seminare/uploads/156/ZeitstrahlEpochen_Test.html",
+  "tld":"de",
+  "category":["Arts", "Art"],
+  "purpose":["Enumeration"],
+  "itemType":["People"],
+  "siteType":["Organization"]
+},
+{
+  "label":"Balcombe's Publications",
+  "url":"http://www.plantsci.cam.ac.uk/research/baulcombe/publications.html",
+  "tld":"uk",
+  "category":["Education"],
+  "purpose":["Enumeration"],
+  "itemType":["Publications", "Papers"],
+  "siteType":["Personal"]
+},
+{
+  "label":"Gretton's Publications",
+  "url":"http://www.gatsby.ucl.ac.uk/~gretton/pubs.html",
+  "tld":"uk",
+  "category":["Education"],
+  "purpose":["Enumeration"],
+  "itemType":["Publications", "Papers"],
+  "siteType":["Personal"]
+},
+{
+  "label":"Thesis Project Deliverables",
+  "url":"http://theses.mit.edu/FACADE/CALTRANS/exhibit/cut7/",
+  "tld":"edu",
+  "category":["Education"],
+  "purpose":["Exposition", "Project Management"],
+  "itemType":["Deliverables"],
+  "siteType":["Personal"]
+},
+{
+  "label":"Open Data Directory - Datasets",
+  "url":"http://open.mflask.com/datasets",
+  "tld":"com",
+  "category":["Open Data"],
+  "purpose":["Curation"],
+  "itemType":["Data Sets"],
+  "siteType":["Organization"]
+},
+{
+  "label":"More Artists of History",
+  "url":"http://swiki.hfbk-hamburg.de:8888/seminare/uploads/156/KunstEpochen.html",
+  "tld":"de",
+  "category":["Arts", "Art"],
+  "purpose":["Enumeration"],
+  "itemType":["People"],
+  "siteType":["Organization"]
+},
+{
+  "label":"Haystack Group Members",
+  "url":"http://groups.csail.mit.edu/haystack/people.html",
+  "tld":"edu",
+  "category":["Education"],
+  "purpose":["Enumeration"],
+  "itemType":["People"],
+  "siteType":["School"]
+},
+{
+  "label":"MIT Experimental Nuclear and Particle Physics Faculty",
+  "url":"http://web.mit.edu/physics/research/npx/faculty.html",
+  "tld":"edu",
+  "purpose":["Enumeration"],
+  "category":["Education"],
+  "itemType":["People"],
+  "siteType":["School"]
+},
+{
+  "label":"Seattle Central Faculty",
+  "id":"http://seattlecentral.edu/faculty/jcrump/timeline.html",
+  "tld":"edu",
+  "purpose":["Enumeration"],
+  "category":["Education"],
+  "itemType":["People"],
+  "siteType":["School"]
+}  
 ]}
