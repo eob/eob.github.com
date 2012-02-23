@@ -13,11 +13,12 @@
     <script src="http://trunk.simile-widgets.org/exhibit/api/extensions/map/map-extension.js"></script>
    <link rel="exhibit/data" 
        type="application/jsonp"
-       href="http://spreadsheets.google.com/feeds/list/0Arj8lnBW4_tZdEZodEhqNkNkNDFYNnpkV2RTWUhDOHc/od6/public/basic?alt=json-in-script"
+       href="http://spreadsheets.google.com/feeds/list/0Arj8lnBW4_tZdHFhNEJPcTQ3YW5zRzZtQzZaUjFXbmc/od6/public/basic?alt=json-in-script"
        ex:converter="googleSpreadsheets" /> 
 
     <!-- Le styles -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -100,7 +101,8 @@
 		  ex:showAll="false"
 		  ex:abbreviatedCount="20"
                ></div>
-             <div ex:role="view"
+             <div id="mapView"
+                  ex:role="view"
                   ex:viewClass="Map"
                   ex:label="Map of Projects"
                   ex:latlng=".LatLng"
