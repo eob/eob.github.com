@@ -42,7 +42,7 @@
   "itemType":["Classes"],
   "siteType":["School"],
   "thumb":"004.png",
-  "views":["Table"],
+  "views":["Table"]
 },
 {
   "label":"MIT Physics Classses - First Year",
@@ -359,7 +359,7 @@
   "category":["Arts", "Music"],
   "purpose":["Curation"],
   "itemType":["People"],
-  "siteType":["Commercial",
+  "siteType":["Commercial"],
   "thumb":"033.png",
   "views":["Table"]
 },
@@ -538,5 +538,5 @@
   "siteType":["School"],
   "thumb":"049.png",
   "views":["Timeline", "Map"]
-}  
+}
 ]}
