@@ -53,12 +53,12 @@
             <h3 ex:content=".label"></h3>
             <div class="row">
               <div class="span2">
-                <b>Item Type:</b> <span ex:content=".itemType"></span><br />
-                <b>Site Type:</b> <span ex:content=".siteType"></span>
+                <img ex:src-subcontent="thumb/{{.thumb}}" />
               </div>
-              <div class="span4">
-                <b>TLD:</b> <span ex:content=".tld"></span><br />
-                <b>Link:</b> <a ex:href-subcontent="{{.url}}">View Site</a> 
+              <div class="span6">
+                <b>Item Type:</b> <span ex:content=".itemType"></span><br />
+                <b>Site Type:</b> <span ex:content=".siteType"></span><br />
+                <a ex:content=".url" ex:href-subcontent="{{.url}}">View Site</a> 
               </div>
            </div>
           </div> 
