@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Tax Credits</title>
+    <title>Who Occupies?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -15,6 +15,7 @@
         }
         .exhibit-collectionSummaryWidget-results {
           margin-right: auto;
+          display: block;
           font-size: 3em;
           background-color: #F8F8FF;
         }
@@ -22,6 +23,7 @@
           font-size: 3em;
         }
         .exhibit-collectionView-body {
+          display: block;
           display:none;
         }
         .exhibit-collectionView-header-sortControls {
@@ -50,29 +52,41 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-619489-3']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
   </head>
 
   <body>
     <div class="container">
       <div class="row">
-        <div class="span6" style="text-align:center; margin-bottom: 15px;">
+        <div class="span12" style="text-align:center; margin-bottom: 15px;">
           <h1>Who Occupies?</h1>
         </div>
-        <div class="span6">
-          <p>Expand the survey questions you are interested in below.<br /> Click on a value to pin it and view the counts.</p>
-        </div>
-      </div>
-      <div class="row" style="display:none;">
-        <span class="span4">
-          <h3 class="pull-right">Add Facet:</h3>
-        </span>
-        <span class="span8">
-          <div class="controls" style="float:left; margin-right: 20px;"><select id="questionBox"><option></option></select></div>
-          <button class="btn btn-primary">Add</button>
-        </span>
       </div>
       <div class="row">
-        <div class="span12" ex:role="view"></div>
+        <div class="span6">
+          <p><b>About</b><br />This is a faceted browser for the results of the <a href="http://occupyresearch.wikispaces.com/file/view/OccupyResearch+Survey+Guide+and+Instrument.pdf">Occupy Research General Demographics and Participation Survey</a> done at the Cambridge location of the Occupy Data 2 Hackathon. Thanks to <a href="http://tirl.org/">Charlie DeTar</a> for cleaning up the dataset. It uses the <a href="http://www.simile-widgets.org/exhibit/">Exhibit</a> framework as a facet engine, and you can find the code on <a href=https://github.com/eob/orgs-facet">GitHub</a>.</p>
+        </div>
+        <div class="span6">
+          <p><b>How to use</b><br />Expand the survey questions you are interested in and click the checkboxes to filter the data. For example, to see the reasons for participation for females, expand the <i>Gender</i> and <i>Why do you participate?</i> boxes, and then click the checkbox for <i>Female</i>. Then observe the updated counts in the <i>Why do you participate?</i> box.</p>
+        </div>
+      </div>
+      <div id="totalCount" class="row" style="margin-top: 5px; margin-bottom: 5px; border-top: 2px solid #ccc; border-bottom: 2px solid #ccc;">
+        <div class="span4" style="font-size: 2em; vertical-align:center;">
+          <p class="pull-right">Matches after filtering:</p>
+        </div>
+        <div class="span4" height: 40px;>&nbsp;
+          <div ex:role="lens"></div>
+          <div class="span12" ex:role="view"></div>
+        </div>
       </div>
       <div class="row">
         <div id="facets1" class="span3">
