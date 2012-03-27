@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Democracy has a Built-in Pressure Release Valve
+title: Democracy has a Built in Pressure Release Valve
 permalink: /2012/03/democracy-pressure-release/
 ---
 
