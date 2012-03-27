@@ -15,7 +15,7 @@ digital controller, as we might build today, this old design is
 self-regulating.
 
 It seems to me that democracy has this self-regulating property. At any given
-point in a nations, there plenty of people angry at the government. It builds
+point in a nation, there plenty of people angry at the government. It builds
 up pressure, sows discord in the nation. A monarch or dictator would fear this
 pressure. But in a democracy this pressure is relieved by the act of voting,
 and all the political rituals (debates, etc) that go along with it.
