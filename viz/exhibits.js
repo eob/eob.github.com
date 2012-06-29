@@ -1,6 +1,18 @@
 {"items":[
 
 {
+  "label":"Online Urdu Dictionary",
+  "url":"http://www.employees.org/~daftary/urdu.html",
+  "tld":"org",
+  "category":["Education"],
+  "purpose":["Reference"],
+  "itemType":["Words"],
+  "siteType":["Personal"],
+  "thumb":"000.png",
+  "views":["Tile"],
+  "hits":137336
+},
+{
   "label":"MIT Physics Faculty",
   "url":"http://web.mit.edu/physics/people/faculty/index.html",
   "tld":"edu",
