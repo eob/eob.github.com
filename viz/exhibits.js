@@ -530,7 +530,7 @@
 },
 {
   "label":"Seattle Central Faculty",
-  "id":"http://seattlecentral.edu/faculty/jcrump/timeline.html",
+  "url":"http://seattlecentral.edu/faculty/jcrump/timeline.html",
   "tld":"edu",
   "purpose":["Enumeration"],
   "category":["Education"],
