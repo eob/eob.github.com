@@ -21,7 +21,8 @@
   "itemType":["People"],
   "siteType":["School"],
   "thumb":"001.png",
-  "views":["Tile"]
+  "views":["Tile"],
+  "hits":27855
 },
 {
   "label":"Science Maps",
@@ -32,7 +33,8 @@
   "itemType":["Maps"],
   "siteType":["Organization"],
   "thumb":"002.png",
-  "views":["Thumbnail"]
+  "views":["Thumbnail"],
+  "hits":12467,
 },
 {
   "label":"MIT Physics Classes - All",
@@ -43,7 +45,8 @@
   "itemType":["Classes"],
   "siteType":["School"],
   "thumb":"003.png",
-  "views":["Table"]
+  "views":["Table"],
+  "hits":10749
 },
 {
   "label":"MIT Physics Classes - Current",
@@ -54,7 +57,8 @@
   "itemType":["Classes"],
   "siteType":["School"],
   "thumb":"004.png",
-  "views":["Table"]
+  "views":["Table"],
+  "hits":7875
 },
 {
   "label":"MIT Physics Classses - First Year",
@@ -65,7 +69,8 @@
   "itemType":["Classes"],
   "siteType":["School"],
   "thumb":"005.png",
-  "views":["Table"]
+  "views":["Table"],
+  "hits":6967
 },
 {
   "label":"Conflicts",
@@ -76,7 +81,8 @@
   "itemType":["Events", "Conflicts"],
   "siteType":["Organization"],
   "thumb":"006.png",
-  "views":["Map", "Timeline", "List"]
+  "views":["Map", "Timeline", "List"],
+  "hits":4895
 },
 {
   "label":"City Law School Classes",
@@ -87,7 +93,8 @@
   "itemType":["Classes"],
   "siteType":["School"],
   "thumb":"007.png",
-  "views":["Timeline", "List"]
+  "views":["Timeline", "List"],
+  "hits":4637
 },
 {
   "label":"Farmers Markets",
@@ -98,7 +105,8 @@
   "itemType":["Events", "Commercial Locations", "Markets"],
   "siteType":["News"],
   "thumb":"008.png",
-  "views":["Map"]
+  "views":["Map"],
+  "hits":4072
 },
 {
   "label":"Kent Law Library Resources",
@@ -109,7 +117,8 @@
   "itemType":["Publication Sources", "Resources"],
   "siteType":["School", "Library"],
   "thumb":"009.png",
-  "views":["List"]
+  "views":["List"],
+  "hits":3901
 },
 {
   "label":"MIT Chemistry Faculty",
@@ -120,7 +129,8 @@
   "itemType":["People"],
   "siteType":["School"],
   "thumb":"010.png",
-  "views":["Table"]
+  "views":["Table"],
+  "hits":3703
 },
 {
   "label":"Publication List",
@@ -131,7 +141,8 @@
   "itemType":["Papers", "Publications"],
   "siteType":["Personal"],
   "thumb":"011.png",
-  "views":["List"]
+  "views":["List"],
+  "hits":3600
 },
 {
   "label":"Columbia Law Library Resources",
@@ -142,7 +153,8 @@
   "itemType":["Publication Sources", "Resources"],
   "siteType":["School", "Library"],
   "thumb":"012.png",
-  "views":["List"]
+  "views":["List"],
+  "hits":3359
 },
 {
   "label":"Contaminated Municipalities",
@@ -153,7 +165,8 @@
   "itemType":["Environmental"],
   "siteType":["Personal"],
   "thumb":"013.png",
-  "views":["Map"]
+  "views":["Map"],
+  "hits":3203
 },
 {
   "label":"Composers",
@@ -164,7 +177,8 @@
   "itemType":["People", "Composers"],
   "siteType":["Personal"],
   "thumb":"014.png",
-  "views":["Timeline", "Map", "List"]
+  "views":["Timeline", "Map", "List"],
+  "hits":2969
 },
 {
   "label":"Stanford Business School Alumni Groups",
@@ -175,7 +189,8 @@
   "itemType":["Groups"],
   "siteType":["School"],
   "thumb":"015.png",
-  "views":["Map"]
+  "views":["Map"],
+  "hits":2796
 },
 {
   "label":"Floorball Matches",
@@ -186,7 +201,8 @@
   "itemType":["Games", "Events"],
   "siteType":["Personal"],
   "thumb":"016.png",
-  "views":["Timeline", "Map"]
+  "views":["Timeline", "Map"],
+  "hits":2758
 },
 {
   "label":"Personality Disorder Groups",
@@ -197,7 +213,8 @@
   "itemType":["Resources","Groups","Places"],
   "siteType":["Organization"],
   "thumb":"017.png",
-  "views":["Map", "List"]
+  "views":["Map", "List"],
+  "hits":2699
 },
 {
   "label":"MIT Nobel Prize Winners",
@@ -208,7 +225,8 @@
   "itemTpe":["People"],
   "siteType":["School"],
   "thumb":"018.png",
-  "views":["Tile","List","Timeline"]
+  "views":["Tile","List","Timeline"],
+  "hits":2680
 },
 {
   "label":"MIT Physics Faculty",
@@ -219,7 +237,8 @@
   "itemType":["People"],
   "siteType":["School"],
   "thumb":"019.png",
-  "views":["Tile"]
+  "views":["Tile"],
+  "hits":2665
 },
 {
   "label":"City Law School Classes",
@@ -230,7 +249,8 @@
   "itemType":["Classes"],
   "siteType":["School"],
   "thumb":"020.png",
-  "views":[]
+  "views":[],
+  "hits":2441
 },
 {
   "label":"Accepted CVPR 2010 Conference Papers",
@@ -241,7 +261,8 @@
   "itemType":["Papers","Publications"],
   "siteType":["School","Conference"],
   "thumb":"021.png",
-  "views":["List"]
+  "views":["List"],
+  "hits":2390
 },
 {
   "label":"Education Policy and Data Center Resources",
@@ -252,7 +273,8 @@
   "itemType":["Publications","Resources"],
   "siteType":["Organization"],
   "thumb":"022.png",
-  "views":["List", "Table"]
+  "views":["List", "Table"],
+  "hits":2191
 },
 {
   "label":"Peyre Publications",
@@ -263,7 +285,8 @@
   "itemType":["Papers","Publications"],
   "siteType":["Personal"],
   "thumb":"023.png",
-  "views":["List"]
+  "views":["List"],
+  "hits":2113
 },
 {
   "label":"Pappalardo Fellows Directory",
@@ -274,7 +297,8 @@
   "itemType":["People"],
   "siteType":["School"],
   "thumb":"024.png",
-  "views":["Table"]
+  "views":["Table"],
+  "hits":2052
 },
 {
   "label":"Bay Area Foreclosures",
@@ -285,7 +309,8 @@
   "itemType":["Foreclosures"],
   "siteType":["News"],
   "thumb":"025.png",
-  "views":["Map"]
+  "views":["Map"],
+  "hits":1932
 },
 {
   "label":"MIT Physics Administrators",
@@ -296,7 +321,8 @@
   "itemType":["People"],
   "siteType":["School"],
   "thumb":"026.png",
-  "views":["Table"]
+  "views":["Table"],
+  "hits":1918
 },
 {
   "label":"City Populations in Spain",
@@ -307,7 +333,8 @@
   "itemType":["Cities"],
   "siteType":["Personal"],
   "thumb":"027.png",
-  "views":["Map", "Table"]
+  "views":["Map", "Table"],
+  "hits":1854
 },
 {
   "label":"Beethoven Timeline",
@@ -318,7 +345,8 @@
   "itemType":["Events"],
   "siteType":["Personal"],
   "thumb":"028.png",
-  "views":["List", "Timeline"]
+  "views":["List", "Timeline"],
+  "hits":1823
 },
 {
   "label":"Projects",
@@ -329,7 +357,8 @@
   "itemType":["Projects"],
   "siteType":["School"],
   "thumb":"029.png",
-  "views":["List"]
+  "views":["List"],
+  "hits":1810
 },
 {
   "label":"Bay Area Foreclosures - 2009 Q2",
@@ -340,7 +369,8 @@
   "itemType":["Foreclosures"],
   "siteType":["News"],
   "thumb":"030.png",
-  "views":["Map"]
+  "views":["Map"],
+  "hits":1739
 },
 {
   "label":"Veggie Guide to Glasgow",
@@ -351,7 +381,8 @@
   "itemType":["Restaurants"],
   "siteType":["Personal"],
   "thumb":"031.png",
-  "views":["Map"]
+  "views":["Map"],
+  "hits":1666
 },
 {
   "label":"Dance Classes",
@@ -362,7 +393,8 @@
   "itemType":["Classes"],
   "siteType":["Organization"],
   "thumb":"032.png",
-  "views":["Tile", "Map"]
+  "views":["Tile", "Map"],
+  "hits":1664
 },
 {
   "label":"Factory Portland - Musicians",
@@ -395,7 +427,8 @@
   "itemType":["Bridges"],
   "siteType":["News"],
   "thumb":"035.png",
-  "views":["Map"]
+  "views":["Map"],
+  "hits":1554
 },
 {
   "label":"Medieval and Early Modern Manuscripts",
@@ -406,7 +439,8 @@
   "itemType":["Publications", "Manuscripts"],
   "siteType":["School"],
   "thumb":"036.png",
-  "views":["List"]
+  "views":["List"],
+  "hits":1517
 },
 {
   "label":"Fellows at Cornell",
@@ -417,7 +451,8 @@
   "itemType":["People"],
   "siteType":["School"],
   "thumb":"037.png",
-  "views":["Tile"]
+  "views":["Tile"],
+  "hits":1509
 },
 {
   "label":"Choice and Medication Health Clinics",
@@ -428,7 +463,8 @@
   "itemType":["Clinics", "Places"],
   "siteType":["Organization"],
   "thumb":"038.png",
-  "views":["List", "Map"]
+  "views":["List", "Map"],
+  "hits":1443
 },
 {
   "label":"Pennsylvania School District Map",
@@ -439,7 +475,8 @@
   "itemType":["Districts"],
   "siteType":["Personal"],
   "thumb":"039.png",
-  "views":["Table", "Map"]
+  "views":["Table", "Map"],
+  "hits":1422
 },
 {
   "label":"Jewish Study Resources on the Web",
@@ -450,7 +487,8 @@
   "itemType":["Resources"],
   "siteType":["Organization"],
   "thumb":"040.png",
-  "views":["Table"]
+  "views":["Table"],
+  "hits":1411
 },
 {
   "label":"Artists of History",
@@ -461,7 +499,8 @@
   "itemType":["People"],
   "siteType":["Organization"],
   "thumb":"041.png",
-  "views":["Timeline", "List"]
+  "views":["Timeline", "List"],
+  "hits":1355
 },
 {
   "label":"Balcombe's Publications",
@@ -472,7 +511,8 @@
   "itemType":["Publications", "Papers"],
   "siteType":["Personal"],
   "thumb":"042.png",
-  "views":["List"]
+  "views":["List"],
+  "hits":1354
 },
 {
   "label":"Gretton's Publications",
@@ -483,7 +523,8 @@
   "itemType":["Publications", "Papers"],
   "siteType":["Personal"],
   "thumb":"043.png",
-  "views":["List"]
+  "views":["List"],
+  "hits":1336
 },
 {
   "label":"Thesis Project Deliverables",
@@ -494,7 +535,8 @@
   "itemType":["Deliverables"],
   "siteType":["Personal"],
   "thumb":"044.png",
-  "views":["Tile", "Table", "Timeline"]
+  "views":["Tile", "Table", "Timeline"],
+  "hits":1298
 },
 {
   "label":"Open Data Directory - Datasets",
@@ -505,7 +547,8 @@
   "itemType":["Data Sets"],
   "siteType":["Organization"],
   "thumb":"045.png",
-  "views":["List"]
+  "views":["List"],
+  "hits":1179
 },
 {
   "label":"More Artists of History",
@@ -516,7 +559,8 @@
   "itemType":["People"],
   "siteType":["Organization"],
   "thumb":"046.png",
-  "views":["Timeline", "List"]
+  "views":["Timeline", "List"],
+  "hits":1156
 },
 {
   "label":"Haystack Group Members",
@@ -527,7 +571,8 @@
   "itemType":["People"],
   "siteType":["School"],
   "thumb":"047.png",
-  "views":["Tile", "Timeline"]
+  "views":["Tile", "Timeline"],
+  "hits":1120
 },
 {
   "label":"MIT Experimental Nuclear and Particle Physics Faculty",
@@ -538,7 +583,8 @@
   "itemType":["People"],
   "siteType":["School"],
   "thumb":"048.png",
-  "views":["Table"]
+  "views":["Table"],
+  "hits":1031
 },
 {
   "label":"Seattle Central Faculty",
@@ -549,6 +595,7 @@
   "itemType":["People"],
   "siteType":["School"],
   "thumb":"049.png",
-  "views":["Timeline", "Map"]
+  "views":["Timeline", "Map"],
+  "hits":1007
 }
 ]}
