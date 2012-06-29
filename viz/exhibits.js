@@ -229,7 +229,7 @@
   "hits":2680
 },
 {
-  "label":"MIT Physics Faculty (2)",
+  "label":"MIT Physics Faculty 2",
   "url":"http://web.mit.edu/physics/research/abcp/faculty.html",
   "tld":"edu",
   "category":["Education"],
