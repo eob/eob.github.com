@@ -241,7 +241,7 @@
   "hits":2665
 },
 {
-  "label":"City Law School Classes",
+  "label":"City Law School Classes 2",
   "url":"http://semantic.city.ac.uk/pob/bptcft/",
   "tld":"uk",
   "category":["Education"],
