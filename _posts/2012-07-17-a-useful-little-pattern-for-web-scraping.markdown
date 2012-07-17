@@ -28,9 +28,9 @@ missing key-value pairs that you would have liked to have seen.
 type Fixer[A,B] = (Map[A,B]) => Map[A,B]
 {% endhighlight %}
 
-And then we define a function `fix` which simply applies a fixer to the result,
-and then folds those key-value pairs back into the original map (possibly
-overwriting some).
+And then we define a function `fix` which simply applies a fixer to the result
+and folds its output back into the original map (possibly overwriting some
+keys).
 
 {% highlight scala %}
 def fix[A,B](m : Map[A,B], f : Fixer[A,B]) : Map[A,B] = m ++ f(m)
