@@ -36,8 +36,10 @@ keys).
 def fix[A,B](m : Map[A,B], f : Fixer[A,B]) : Map[A,B] = m ++ f(m)
 {% endhighlight %}
 
-Now we've got an incredibly useful little function that we can use to tidy up
-any schema-misaligned data that we're pulling in. To split the full name into first and last components, we might do the following (pardon the lack of error checking):
+Now we've got an incredibly useful little function that can help us tidy up any
+schema-misaligned data that we're pulling in. To split the full name into first
+and last components, we might do the following (pardon the lack of error
+checking):
 
 {% highlight scala %}
 val FixName = (m : Map[String,String]) => {
