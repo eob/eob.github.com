@@ -11,9 +11,8 @@ might expose someone's full name, for instance, whereas I want to store the
 first and last name separately. I've developed a useful little coding pattern
 to help with that situation that I thought I'd share here.
 
-Let's say that that the scrape of any data source produces a some result
-`result : Map[A,B]`, where A and B are almost always strings in real life. For
-example:
+Let's say that the scrape of any data source produces a result `result :
+Map[A,B]`, where A and B are almost always strings in real life. For example:
 
 {% highlight scala %}
 val result = Map(
