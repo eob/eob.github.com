@@ -12,7 +12,8 @@ first and last name separately. I've developed a useful little coding pattern
 to help with that situation that I thought I'd share here.
 
 Let's say that the scrape of any data source produces a result `result :
-Map[A,B]`, where A and B are almost always strings in real life. For example:
+Map[A,B]`, where `A` and `B` are almost always strings in real life. For
+example:
 
 {% highlight scala %}
 val result = Map(
@@ -51,7 +52,7 @@ and then, given our `result` object from above, we can fix it by simply saying
 val fixed = fix(result, FixName)
 {% endhighlight %}
 
-which will result in the array
+which will result in the map
 
 {% highlight scala %}
 val fixed = Map(
