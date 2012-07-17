@@ -5,13 +5,11 @@ permalink: /2012/07/a-useful-little-pattern-for-web-scraping
 ---
 
 I've been doing a lot of web and Google Spreadsheet scraping recently, and one
-situation I've run into quite a lot is that the schema of the data source
-doesn't *quite* fit into the schema I'm trying to dump the data into. The data
-source might expose someone's full name, for intance, whereas I want to store
-the first and last name separately.
-
-I've developed a useful little pattern for organizing my scraping code that I
-like quite a bit, so I thought I'd share it here.
+situation I've run into a lot is that the schema of the data source doesn't
+*quite* fit into the schema I'm trying to dump the data into. The data source
+might expose someone's full name, for instance, whereas I want to store the
+first and last name separately. I've developed a useful little coding pattern
+to help with that situation that I thought I'd share here.
 
 Let's say that any data source scraped results in some `result : Map[A,B]`,
 where A and B are almost always strings in real life. For example:
