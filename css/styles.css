@@ -484,7 +484,8 @@ ul.projects li h3 a {
 }
 
 a {
-  color: #0066ff;
+  
+  color: #00A1CB; /* #0066ff; */
 }
 
 ul.projects li p {
@@ -493,5 +494,5 @@ ul.projects li p {
 }
 
 #header #sections a.selected-nav {
-  color: #F18D05;
+  background-color: #113F8C;
 }
