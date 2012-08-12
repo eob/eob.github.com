@@ -101,7 +101,6 @@ h3{
 #header #ted{
   padding-left: 1px;
   font-size: 23px;
-  letter-spacing: 5px;
   color: #666;
 }
 #header #ted:hover {
@@ -493,3 +492,6 @@ ul.projects li p {
   margin-bottom: 0;
 }
 
+.selected-nav {
+  color: #E54028;
+}
