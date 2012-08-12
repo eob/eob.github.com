@@ -125,7 +125,7 @@ h3{
   letter-spacing: 1px;
 }
 #header #sections{
-  margin: 25px 0 0 -15px;
+  margin:25px 0 0 -15px;
 }
 #header #sections div{
   margin-bottom: 7px;
@@ -492,6 +492,6 @@ ul.projects li p {
   margin-bottom: 0;
 }
 
-.selected-nav {
-  color: #E54028;
+#header #sections a.selected-nav {
+  color: #F18D05;
 }
