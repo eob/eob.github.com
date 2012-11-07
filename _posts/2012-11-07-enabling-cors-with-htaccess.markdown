@@ -8,7 +8,7 @@ Anyone in the business of hacking the web past its original boundaries knows
 the importance of the browser's cross-origin security model. But you also know
 how often we try to sneak around it.
 
-For many purposes JSONP -- the typical sneak route -- seems a bit hacky.
+For static content, JSONP -- the typical sneak route -- seems a bit hacky.
 Dynamic JSONP callback names require me to serve up static resources with a
 dynamic wrapper. And static callback names just don't seem very principled:
 what if I have multiple requests in the pipeline? Yuck.
