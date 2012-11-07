@@ -33,15 +33,19 @@ around the web seem to focus on the `Allow-Origin` header, which is the meat
 and potatoes of the whole thing. But it is important that you add the
 `Allow-Methods` one, too, because some browsers will do what is called a
 *preflight* request, which is an `HTTP OPTIONS` call to the endpoint to see,
-essentially, what's cooking on the other end of the line.
+essentially, what's cooking on the other end of the line. 
 
-If you don't explicitly signal that CORS is also OK for `OPTIONS` requests
-using the `Allow-Methods` header, the browser might mistakenly think that CORS
-is not enabled. It will then conclude that any subsequent `GET` request will
-fail, and it will never perform the content you were intending.  **But -- and
-here's the rub -- your browser console will report this failure to you as a
-failure of the `GET` request**, throwing you off the scent of the real bug (a
-failed `OPTIONS` request).
+The preflight is the browser's first impression before it goes and fetches the
+real thing you want.
+
+If you don't explicitly signal that CORS is also OK for these `OPTIONS`
+requests, the server might make a bad first impression. It will mistakenly
+think that CORS is not enabled, and then infer (incorrectly) that any
+subsequent  `GET` request will fail. Wanting not to waste your time and
+bandwidth, the browser will then never even attempt the `GET` fetch you were
+intending. **But -- and here's the rub -- your browser console will report this
+failure to you as a failure of the `GET` request**, throwing you off the scent
+of the real bug (a failed `OPTIONS` request).
 
 So that's it. CORS is your friend. And make sure not to forget about the
 `OPTIONS` preflight.
