@@ -39,13 +39,13 @@ The preflight is the browser's first impression before it goes and fetches the
 real thing you want.
 
 If you don't explicitly signal that CORS is also OK for these `OPTIONS`
-requests, the server might make a bad first impression. It will mistakenly
-think that CORS is not enabled, and then infer (incorrectly) that any
-subsequent  `GET` request will fail. Wanting not to waste your time and
-bandwidth, the browser will then never even attempt the `GET` fetch you were
-intending. **But -- and here's the rub -- your browser console will report this
-failure to you as a failure of the `GET` request**, throwing you off the scent
-of the real bug (a failed `OPTIONS` request).
+requests, the server might make a bad first impression. The browser will think
+that CORS is not enabled, and then infer (incorrectly) that any subsequent
+`GET` request will fail. Wanting not to waste your time and bandwidth, the
+browser will then never even attempt the `GET` fetch you were intending. **But
+-- and here's the rub -- your browser console will report this failure to you
+as a failure of the `GET` request**, throwing you off the scent of the real bug
+(a failed `OPTIONS` request).
 
 So that's it. CORS is your friend. And make sure not to forget about the
 `OPTIONS` preflight.
