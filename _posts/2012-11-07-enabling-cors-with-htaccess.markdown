@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cross Origin Resource Sharing Gotcha&#58; Don't forget about OPTION requests
+title: Cross Origin Resource Sharing Gotcha&#58; Don't forget about OPTIONS requests
 permalink: /2012/07/cross-origin-resource-sharing-gotcha
 ---
 
