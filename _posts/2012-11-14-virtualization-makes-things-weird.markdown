@@ -31,9 +31,9 @@ summer. Pachinko involves shooting BB-gun sized metal balls into a [Galton
 Box](http://en.wikipedia.org/wiki/Bean_machine) of sorts, in which you receive
 points for certain landing positions.  As best as I can tell, the configuration
 of the game create a calculable expected return for every possible angle from
-which you shoot these balls. This means the game boils down to guessing what
-these expected payouts are and holding your wrist at precisely the angle that
-that achieves them.
+which you shoot these balls. This means the game boils down to (A) guessing
+what these expected payouts are and (B) holding your wrist at precisely the
+angle that that achieves them.
 
 Anyway, the point about Pachinko is, it's gambling. It's a [billion dollar
 business](http://spectrum.ieee.org/tech-talk/consumer-electronics/gaming/the-secret-life-of-pachinko).
