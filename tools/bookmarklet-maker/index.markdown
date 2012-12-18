@@ -3,6 +3,8 @@ layout: layout
 title: "Bookmarklet Maker"
 ---
 
+<div class="content">
+
 This little utility helps you make a bookmarklet.
 
 <table>
@@ -17,6 +19,8 @@ This little utility helps you make a bookmarklet.
 
 <div id="output-container" style="display:none;">
   Drag this button to your toolbar: <span id="output" class="border: 1px solid #333; background-color: #ccc; padding: 5px; font-size: 1.3em;"></span>
+</div>
+
 </div>
 
 <script>
