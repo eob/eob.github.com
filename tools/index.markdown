@@ -4,8 +4,7 @@ title: "Code"
 ---
 
 <div class="content">
-  
-  <div id=="papers">
+  <div id="papers">
     <h1>Tools</h1>
     
     <ul class="projects thinglist">
