@@ -19,11 +19,12 @@ way down. Just because you're similarly shaped doesn't mean you'll end up with
 the same outcome.
 
 I'm not claiming that there is nothing special about Steve Jobs or Bill Gates,
-just that these men are not *singularly* gifted. And if we're to believe
+just that these men are not *singularly* gifted. Each of our lives unfolds as
+collaboration between ourselves and those around us.  If we're to believe
 [Gladwell's message in
 Outlers](http://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/0316017930?ie=UTF8&tag=httpwwwedward-20),
-the mountain has as much, if not more, impact on the trajectory as the shape of
-the rock.
+the mountain has as much, if not more, impact on trajectory as the shape of the
+rock.
 
 When celebrating the Houstons and Zuckerbergs of the world, we should
 congratulate the achievements of the person, yes. But for *our own* purposes of
