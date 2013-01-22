@@ -55,7 +55,7 @@ email me) if I'm mischaracterizing:
    old man who once lived lived near a place called Xiongnu. When things happened to him--good or bad--he demonstrated wisdom by refraining from snap judgement, knowing that things that appear good or bad in the short term can often turn out to be the opposite in the long term. (Side note: what a great parable to include in a CS class on [Greedy Algorithms](http://en.wikipedia.org/wiki/Greedy_algorithm)!)
 
 *  [Dongshi Imitated a Frown (东施效颦)](http://www.chinese-chengyu.com/dongshixiaopin-blindly-imitating.html)
-   is like saying "[cargo cult](http://en.wikipedia.org/wiki/Cargo_cult)", except with the additional meaning that the cargo cult imitation creates a bad (instead of merely neutral) outcome. Dong Shi was a woman who feigned chest pains, jealous of her beautiful friend who got more attention when she was sick. But instead of getting more attention, her imitation was odd, and scared people away.
+   is like saying "[cargo cult](http://en.wikipedia.org/wiki/Cargo_cult)", except with the additional meaning that the cargo cult imitation creates a bad (instead of merely neutral) outcome. Dong Shi was a woman who feigned chest pains, jealous of her beautiful friend who got lots of attention when she fell sick. But instead of getting more attention, Dongshi's feigned illness scared people away.
 
 Anyway, the point is, don't fixate on celebrity. Everyone has the capacity to
 touch lives and do great work, and some people end up getting famous.  By all
