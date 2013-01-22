@@ -19,7 +19,7 @@ way down. Just because you're similarly shaped doesn't mean you'll end up with
 the same outcome.
 
 I'm not claiming that there is nothing special about Steve Jobs or Bill Gates,
-just that these men are not *singularly* gifted. And if we're to believe the
+just that these men are not *singularly* gifted. And if we're to believe
 [Gladwell's message in
 Outlers](http://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/0316017930?ie=UTF8&tag=httpwwwedward-20),
 the mountain has as much, if not more, impact on the trajectory as the shape of
