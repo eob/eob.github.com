@@ -4,10 +4,9 @@ title: Celebrity as Parable
 permalink: /2013/22/celebrity-as-parable
 ---
 
-<p style="font-size: 0.8em"><i>
-(reaction to [this blog
-post](http://www.entresting.com/blog/2012/11/13/im-31-entrepreneur-where-is-my-senior-home/),
-which got some time on HN a while back.)</i></p>
+<p style="font-size: 0.8em"><i> (Reaction to <a
+href="http://www.entresting.com/blog/2012/11/13/im-31-entrepreneur-where-is-my-senior-home/">this
+blog post</a>, which got some time on Hacker News a while back.)</i></p>
 
 Occasionally, our habit of fixating on celebrity leaves tech hopefuls [feeling
 lost](http://www.entresting.com/blog/2012/11/13/im-31-entrepreneur-where-is-my-senior-home/).
