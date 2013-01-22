@@ -22,7 +22,7 @@ I'm not claiming that there is nothing special about Steve Jobs or Bill Gates,
 just that these men are not *singularly* gifted. Each of our lives unfolds as
 collaboration between ourselves and those around us.  If we're to believe
 [Gladwell's message in
-Outlers](http://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/0316017930?ie=UTF8&tag=httpwwwedward-20),
+Outliers](http://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/0316017930?ie=UTF8&tag=httpwwwedward-20),
 the mountain has as much, if not more, impact on trajectory as the shape of the
 rock.
 
