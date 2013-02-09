@@ -2,6 +2,7 @@
 layout: post
 title: Eval in Template Languages
 permalink: /2013/02/eval-in-template-languages
+published: false
 ---
 
 I'm of the opinion that supporting the `eval` statement in template languages
