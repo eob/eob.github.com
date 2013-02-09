@@ -1,0 +1,40 @@
+---
+layout: layout
+---
+
+<div class="content">
+  <div id="post">
+    {% include post_header.html %}
+    {{ content }}
+  </div>
+
+  <div class="whoring">
+    <h3>Discussion, links, and tweets</h3>
+    <div class="copy">
+      <a href="https://twitter.com/edwardbenson"><img src="http://gravatar.com/avatar/e6ec6e853bf22a2f3ad69ca56564b093?s=142" height="50" width="50" /></a>
+
+      <p>
+        I only tweet when it snows. <a href="https://twitter.com/edwardbenson">Follow me on Twitter</a>.
+      </p>
+
+      {% if page.hn %}
+      <p>
+        You can discuss, upvote, downvote, and poke fun of this post over at <a href="{{ page.hn }}">Hacker News</a>.
+      </p>
+      {% endif %}
+
+      <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="edwardbenson">Tweet</a>
+      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+      <a href="http://twitter.com/edwardbenson" class="twitter-follow-button" data-show-count="false">Follow
+          @edwardbenson</a>
+      <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+    </div>
+  </div>
+</div>
+<script>
+$(function() {
+  $("#blog-link").addClass("selected-nav");
+});
+</script>
+
