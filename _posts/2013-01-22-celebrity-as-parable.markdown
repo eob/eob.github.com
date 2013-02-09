@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Celebrity as Parable
-permalink: /2013/22/celebrity-as-parable
+permalink: /2013/12/celebrity-as-parable
 ---
 
 <p style="font-size: 0.8em"><i> (Reaction to <a
