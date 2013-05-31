@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Eval in Template Languages
+title: Eval in Template Languages Considered Harmful
 permalink: /2013/02/eval-in-template-languages
-published: false
+published: true
 ---
 
 I'm of the opinion that supporting the `eval` statement in template languages
@@ -20,7 +20,20 @@ Angular's templates:
 > keep this logic to a minimum. Because this is your view and presentation. But
 > there's really quite a lot of things you can do in there.
 
-Careful planning of architectural constraints is a bit like UI design. Like
-UIs, the development frameworks offer affordances (the commands they support),
-require learning (tiptoeing around the framework's particular constraints), and 
+Careful planning of architectural constraints is a bit like user interface
+design. Like user interfaces, development frameworks offer affordances (the
+commands they support), require learning (tiptoeing around the framework's
+particular constraints), and benefit from homogenization.
 
+But when you provide support for `eval`, it creates an easy escape hatch that
+prevents homogenization. If something doesn't fit into your framework well,
+rather than fix the problem (or decide it isn't important), one can just jump
+through the `eval` escape hatch, skirting the framework's architectural choices
+and inlining arbitrary Javascript code.  
+
+This opinion might sound extreme, but I think it is called for when you
+consider that good framework designers strive to provide *guarantees* about the
+behavior and performance of code using their framework. This requires reasoning
+about code, and reasoning about code requires a declarative view of computation
+which `eval` destroys. It's the difference between a toolbelt, like
+`backbone.js` and what you might call a Proper Architecture, like `MapReduce`.
