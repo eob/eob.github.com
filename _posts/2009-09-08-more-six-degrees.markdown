@@ -1,6 +1,6 @@
 ---
 layout: post
-title: More Six Degrees: An Experimental Study of Search in Global Social Networks
+title: "More Six Degrees: An Experimental Study of Search in Global Social Networks"
 permalink: /2009/09/more-six-degrees
 ---
 
