@@ -597,5 +597,125 @@
   "thumb":"049.png",
   "views":["Timeline", "Map"],
   "hits":1007
+},
+{
+  "label":"Russian Justice Initiative - Human Rights Cases",
+  "url":"http://www.srji.org/legal/cases",
+  "tld":"org",
+  "purpose":["Curation"],
+  "category":["Legal"],
+  "itemType":["Cases"],
+  "siteType":["Organization"],
+  "thumb":"050.png",
+  "views":["Timeline", "Tile"],
+  "hits":970
+},
+{
+  "label":"UNT Media Library Film Recommendations",
+  "url":"http://www.library.unt.edu/media/recommendations/index.html",
+  "tld":"edu",
+  "purpose":["Curation"],
+  "category":["Education"],
+  "itemType":["Films"],
+  "siteType":["Institution"],
+  "thumb":"051.png",
+  "views":["Tile"],
+  "hits":953
+},
+{
+  "label":"MIT Theoretical Nuclear and Particle Physics Faculty",
+  "url":"http://web.mit.edu/physics/research/npt/faculty.html",
+  "tld":"edu",
+  "purpose":["Enumeration"],
+  "category":["Education"],
+  "itemType":["People"],
+  "siteType":["Institution"],
+  "thumb":"052.png",
+  "views":["Table"],
+  "hits":942
+},
+{
+  "label":"Proteolysis Substrate DB",
+  "url":"http://substrate.burnham.org/search",
+  "tld":"org",
+  "purpose":["Enumeration"],
+  "category":["Science"],
+  "itemType":["Proteins"],
+  "siteType":["Institution"],
+  "thumb":"053.png",
+  "views":["List"],
+  "hits":941
+},
+{
+  "label":"British Literature Timeline: Old English through Early Modern Periods (abt. 1800)",
+  "url":"http://srufaculty.sru.edu/derrick.pitard/BritLit1_Timeline.htm",
+  "tld":"edu",
+  "purpose":["Curation"],
+  "category":["Education"],
+  "itemType":["Books"],
+  "siteType":["Institution"],
+  "thumb":"054.png",
+  "views":["Timeline"],
+  "hits":941
+},
+{
+  "label":"SciMaps Maps",
+  "url":"http://www.scimaps.org/maps/browse/",
+  "tld":"org",
+  "purpose":["Curation"],
+  "category":["Education"],
+  "itemType":["Maps"],
+  "siteType":["Organization"],
+  "thumb":"055.png",
+  "views":["Tile"],
+  "hits":934
+},
+{
+  "label":"Sam Madden's Publications"
+  "url":"http://db.csail.mit.edu/madden/pubs.php",
+  "tld":"edu",
+  "purpose":["Enumeration"],
+  "category":["Education"],
+  "itemType":["Publications"],
+  "siteType":["Institution"],
+  "thumb":"056.png",
+  "views":["List"],
+  "hits":921
+},
+{
+  "label":"Handwriting Course"
+  "url":"http://scriptorium.english.cam.ac.uk/handwriting/course/",
+  "tld":"uk",
+  "purpose":["Enumeration"],
+  "category":["Education"],
+  "itemType":["Lessons"],
+  "siteType":["Institution"],
+  "thumb":"057.png",
+  "views":["List"],
+  "hits":920
+},
+{
+  "label":"Computer Vision Job Openings",
+  "url":"http://cvl.umiacs.umd.edu/conferences/cvpr2010/jobs/",
+  "tld":"edu",
+  "purpose":["Curation"],
+  "category":["Industry"],
+  "itemType":["Jobs"],
+  "siteType":["Conference"],
+  "thumb":"058.png",
+  "views":["Tile"],
+  "hits":889
+},
+{
+  "label":"MediaMax Programming Schedule",
+  "url":"http://www.mediamax.com.pk/prg_schedule.php",
+  "tld":"pk",
+  "purpose":["Enumeration"],
+  "category":["Media"],
+  "itemType":["Shows"],
+  "siteType":["Commercial"],
+  "thumb":"059.png",
+  "views":["Tile"],
+  "hits":867
 }
 ]}
