@@ -34,7 +34,7 @@
   "siteType":["Organization"],
   "thumb":"002.png",
   "views":["Thumbnail"],
-  "hits":12467,
+  "hits":12467
 },
 {
   "label":"MIT Physics Classes - All",
@@ -671,7 +671,7 @@
   "hits":934
 },
 {
-  "label":"Sam Madden's Publications"
+  "label":"Sam Madden's Publications",
   "url":"http://db.csail.mit.edu/madden/pubs.php",
   "tld":"edu",
   "purpose":["Enumeration"],
@@ -683,7 +683,7 @@
   "hits":921
 },
 {
-  "label":"Handwriting Course"
+  "label":"Handwriting Course",
   "url":"http://scriptorium.english.cam.ac.uk/handwriting/course/",
   "tld":"uk",
   "purpose":["Enumeration"],
