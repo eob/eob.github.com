@@ -1,0 +1,24 @@
+---
+layout: project
+collection: opensource
+title: "fetch-url"
+github: "https://github.com/cts/fetch-url"
+language: NodeJS
+type: Library
+desc: |
+  A NodeJS library that provides a unified interface to fetching local and remote content.
+---
+
+**fetch-url** is a node.js utility that helps you fetch resources on disk or
+over the web using a variety of specification styles. I wrote it because I
+found myself using various different libraries depending on where a particular
+"remote" resource was located, and also because I wanted a way to create my own
+custom URL schemes as a shorthand for diffrent download types.
+
+This library supports the following ways of specifying what to be fetched:
+
+* **File paths** on disk
+* **URLs** over the web
+* **Github URLS** in the form of `github://user/repo/path/to/file`. It will download the current HEAD version.
+* **JSON blobs** that can specify a number of options, including mode (binary, utf8) and URL context (to resolve relative URLs).
+
