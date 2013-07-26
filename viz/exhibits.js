@@ -837,6 +837,126 @@
   "thumb":"069.png",
   "views":["List"],
   "hits":721
+},
+{
+  "label":"Price and Wage Levels in 70 Cities Worldwide",
+  "url":"http://www.microformats.dk/simile/leveomkostninger/byleveomkostninger.html",
+  "tld":"dk",
+  "purpose":["Curation"],
+  "category":["Economic"],
+  "itemType":["Statistics"],
+  "siteType":["Organization"],
+  "thumb":"070.png",
+  "views":["Map", "Table"],
+  "hits":676
+},
+{
+  "label":"CNMTL Columbia Project Portfolio",
+  "url":"http://ccnmtl.columbia.edu/portfolio/exhibit_view.html",
+  "tld":"edu",
+  "purpose":["Enumeration"],
+  "category":["Commercial", "Design"],
+  "itemType":["Projects"],
+  "siteType":["Organization"],
+  "thumb":"071.png",
+  "views":["Tile"],
+  "hits":676
+},
+{
+  "label":"Ben Adida's Publications",
+  "url":"http://ben.adida.net/research/",
+  "tld":"net",
+  "purpose":["Enumeration"],
+  "category":["Academic", "Research"],
+  "itemType":["Publications"],
+  "siteType":["Personal"],
+  "thumb":"072.png",
+  "views":["Tile"],
+  "hits":664
+},
+{
+  "label":"Farm Photo",
+  "url":"http://www.farmphoto.com/timelineRecentThreads.aspx",
+  "tld":"com",
+  "purpose":["Enumeration"],
+  "category":["Discussion", "Farming", "Agricultural", "Photo"],
+  "itemType":["Discussions", "Posts"],
+  "siteType":["Commercial"],
+  "thumb":"073.png",
+  "views":["Timeline", "Tile"],
+  "hits":659
+},
+{
+  "label":"Daniel Abadi's Publications",
+  "url":"http://cs-www.cs.yale.edu/homes/dna/displaypubs.html",
+  "tld":"edu",
+  "purpose":["Enumeration"],
+  "category":["Academic", "Research"],
+  "itemType":["Publications"],
+  "siteType":["Personal"],
+  "thumb":"074.png",
+  "views":["List"],
+  "hits":651
+},
+{
+  "label":"San Francisco Bay Area Special Events",
+  "url":"http://www.goldengatehelicopters.com/special-events.html",
+  "tld":"com",
+  "purpose":["Curation"],
+  "category":["Events", "Social", "Community", "Activities"],
+  "itemType":["Events"],
+  "siteType":["Commercial"],
+  "thumb":"075.png",
+  "views":["Table"],
+  "hits":635
+},
+{
+  "label":"The Buffalo Group of Alcoholics Anonymous",
+  "url":"http://buffaloaa.info/Meeting.html",
+  "tld":"info",
+  "purpose":["Enumeration"],
+  "category":["Events", "Meetings", "Community"],
+  "itemType":["Events", "Meetings"],
+  "siteType":["Community", "Organization"],
+  "thumb":"076.png",
+  "views":["Tile"],
+  "hits":634
+},
+{
+  "label":"MIT Department of Physics: Astrophysics Faculty",
+  "url":"http://web.mit.edu/physics/research/astrophysics/faculty.html",
+  "tld":"edu",
+  "purpose":["Enumeration"],
+  "category":["Education", "Directory"],
+  "itemType":["People"],
+  "siteType":["School"],
+  "thumb":"077.png",
+  "views":["Table"],
+  "hits":627
+},
+{
+  "label":"University of Brighton: Student Experience Timeline",
+  "url":"http://staffcentral.brighton.ac.uk/studentservices/timeline.html",
+  "tld":"uk",
+  "purpose":["Enumeration"],
+  "category":["Blog"],
+  "itemType":["Posts"],
+  "siteType":["School"],
+  "thumb":"078.png",
+  "views":["Map"],
+  "hits":622
+},
+{
+  "label":"Art History",
+  "url":"http://swiki.hfbk-hamburg.de:8888/seminare/uploads/156/KunstEpochenT.html",
+  "tld":"de",
+  "purpose":["Curation"],
+  "category":["Education", "Art", "History"],
+  "itemType":["Events"],
+  "siteType":["Organization"],
+  "thumb":"079.png",
+  "views":["Timeline", "Map", "Table"],
+  "hits":611
 }
 
 ]}
