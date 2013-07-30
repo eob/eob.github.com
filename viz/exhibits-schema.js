@@ -12,10 +12,10 @@
             "valueType": "url"
         },
         "hits": {
-            "valueType":              "number",
+            "valueType":              "number"
         },
         "siteType": {
-            "label":              "Site Type",
+            "label":              "Site Type"
         }
     }
 }
