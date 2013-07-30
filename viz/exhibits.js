@@ -957,6 +957,125 @@
   "thumb":"079.png",
   "views":["Timeline", "Map", "Table"],
   "hits":611
+},
+{
+  "label":"HCPS Staff Development Institute 2010-2011",
+  "url":"http://staffdev.henrico.k12.va.us/si/",
+  "tld":"us",
+  "purpose":["Enumeration"],
+  "category":["Education", "Catalog", "Institute"],
+  "itemType":["Classes"],
+  "siteType":["School"],
+  "thumb":"080.png",
+  "views":["Tiles"],
+  "hits":603
+},
+{
+  "label":"International Students at Brandeis University",
+  "url":"http://www.brandeis.edu/acserv/isso/stats/index.html",
+  "tld":"edu",
+  "purpose":["Enumeration"],
+  "category":["People", "Directory", "Travel"],
+  "itemType":["Countries"],
+  "siteType":["School"],
+  "thumb":"081.png",
+  "views":["Map"],
+  "hits":600
+},
+{
+  "label":"Russian Justice Initiative - ECHR Cases from the North Caucasus",
+  "url":"http://www.srji.org/en/legal/cases",
+  "tld":"org",
+  "purpose":["Enumeration"],
+  "category":["Cases", "Legal", "Government"],
+  "itemType":["Cases"],
+  "siteType":["Organization"],
+  "thumb":"082.png",
+  "views":["Tiles", "Timeline"],
+  "hits":586
+}, 
+{
+  "label":"Timeline of the History of English",
+  "url":"http://srufaculty.sru.edu/derrick.pitard/HEL_Timeline.htm",
+  "tld":"edu",
+  "purpose":["Curation"],
+  "category":["Events", "Dates", "History"],
+  "itemType":["Events"],
+  "siteType":["School"],
+  "thumb":"083.png",
+  "views":["Timeline", "Timeline"],
+  "hits":584
+}, 
+{
+  "label":"A Prarie Home Companion - Scheduled Appearances and Ticket Info",
+  "url":"http://prairiehome.publicradio.org/schedule/",
+  "tld":"org",
+  "purpose":["Enumeration"],
+  "category":["Entertainment", "Performance", "Events", "Radio"],
+  "itemType":["Events"],
+  "siteType":["Organization"],
+  "thumb":"084.png",
+  "views":["Tiles", "Map"],
+  "hits":575
+}, 
+{
+  "label":"Semantic Systems Chemical Biology - Datasets",
+  "url":"http://cheminfov.informatics.indiana.edu:8080/datasets.html",
+  "tld":"edu",
+  "purpose":["Enumeration"],
+  "category":["Data", "Chemistry", "Biology", "Science"],
+  "itemType":["Datasets"],
+  "siteType":["School"],
+  "thumb":"085.png",
+  "views":["List"],
+  "hits":574
+}, 
+{
+  "label":"Tom Yeh's Homepage",
+  "url":"http://www.umiacs.umd.edu/~tomyeh/homepage/publications/publications.html",
+  "tld":"edu",
+  "purpose":["Enumeration"],
+  "category":["Academic", "Publications"],
+  "itemType":["Publications"],
+  "siteType":["School"],
+  "thumb":"086.png",
+  "views":["List"],
+  "hits":573
+}, 
+{
+  "label":"MIT Foreign Languages and Literatures Resources Center",
+  "url":"http://fll.mit.edu/materials/catalogue/Spanish/index.shtml",
+  "tld":"edu",
+  "purpose":["Curation"],
+  "category":["Academic", "Resources", "Learning Materials"],
+  "itemType":["Literature", "Books"],
+  "siteType":["School"],
+  "thumb":"087.png",
+  "views":["Table", "Tiles"],
+  "hits":566
+}, 
+{
+  "label":"Dr. Axel-C. Ngonga Ngomo's Homepage",
+  "url":"http://bis.uni-leipzig.de/AxelNgonga",
+  "tld":"de",
+  "purpose":["Enumeration"],
+  "category":["Academic", "Publications"],
+  "itemType":["Publications"],
+  "siteType":["School"],
+  "thumb":"088.png",
+  "views":["List"],
+  "hits":546
+}, 
+{
+  "label":"Topher's Breakfast Cereal Character Guide",
+  "url":"http://simile.mit.edu/exhibit/examples/cereals/cereal-characters.html",
+  "tld":"edu",
+  "purpose":["Curation"],
+  "category":["Cartoons", "Demo", "Food"],
+  "itemType":["Mascots"],
+  "siteType":["School"],
+  "thumb":"089.png",
+  "views":["Tiles", "Timeline"],
+  "hits":545
 }
-
 ]}
