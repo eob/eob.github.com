@@ -1,21 +1,21 @@
 {
-    'items': {
-        'Exhibit': {
-            'pluralLabel': 'Exhibits'
+    "items": {
+        "Exhibit": {
+            "pluralLabel": "Exhibits"
         }
     },
-    'properties': {
-        'itemType': {
-          'label': "Item Type"
+    "properties": {
+        "itemType": {
+          "label": "Item Type"
         },
-        'url': {
-            'valueType': "url"
+        "url": {
+            "valueType": "url"
         },
-        'hits': {
-            'valueType':              "number",
+        "hits": {
+            "valueType":              "number"
         },
-        'siteType': {
-            'label':              "Site Type",
-        },
+        "siteType": {
+            "label":              "Site Type"
+        }
     }
 }
