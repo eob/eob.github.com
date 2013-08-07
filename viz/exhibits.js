@@ -1,5 +1,4 @@
-{"items":[
-
+{"items":[ 
 {
   "label":"Online Urdu Dictionary",
   "url":"http://www.employees.org/~daftary/urdu.html",
@@ -1077,5 +1076,137 @@
   "thumb":"089.png",
   "views":["Tiles", "Timeline"],
   "hits":545
+},
+{
+  "label":"Polish Elections since 1945",
+  "url":"http://www.microformats.dk/simile/valgdato/valgdatoer.html",
+  "tld":"dk",
+  "purpose":["Curation"],
+  "category":["Legal", "Political", "Government"],
+  "itemType":["Elections", "Referendums"],
+  "siteType":["Personal"],
+  "thumb":"090.png",
+  "views":["Table", "Timeline"],
+  "hits":544
+},
+{
+  "label":"Polish Elections since 1945",
+  "url":"http://www.microformats.dk/simile/valgdato/valgdatoer.html",
+  "tld":"dk",
+  "purpose":["Curation"],
+  "category":["Legal", "Political", "Government"],
+  "itemType":["Elections", "Referendums"],
+  "siteType":["Personal"],
+  "thumb":"090.png",
+  "views":["Table", "Timeline"],
+  "hits":544
+},
+{
+  "label":"AKSW Publications",
+  "url":"http://aksw.org/Publications.html",
+  "tld":"org",
+  "purpose":["Enumeration"],
+  "category":["Academic", "Research", "Publications"],
+  "itemType":["Publications"],
+  "siteType":["Organization"],
+  "thumb":"091.png",
+  "views":["Tiles"],
+  "hits":522
+},
+{
+  "label":"MenUA: A Design Space of Menu Techniques",
+  "url":"http://www.gillesbailly.fr/menua/",
+  "tld":"fr",
+  "purpose":["Curation"],
+  "category":["Academic", "Research", "Techniques", "Publications"],
+  "itemType":["Publications"],
+  "siteType":["Personal"],
+  "thumb":"092.png",
+  "views":["Tiles", "Thumbnails", "Timeline"],
+  "hits":511
+},
+{
+  "label":"Florida's Double Dippers",
+  "url":"http://www.tampabay.com/specials/2008/interactives/retirement-loophole/",
+  "tld":"com",
+  "purpose":["Curation"],
+  "category":["Politics", "Government"],
+  "itemType":["People"],
+  "siteType":["News"],
+  "thumb":"093.png",
+  "views":["Tiles"],
+  "hits":494
+},
+{
+  "label":"Organic Cotton Baby Clothes",
+  "url":"http://www.pikkupuu.com/luomupuuvilla/tuotteet.html",
+  "tld":"com",
+  "purpose":["Enumeration"],
+  "category":["Clothing", "Retail", "Commercial"],
+  "itemType":["Clothing"],
+  "siteType":["Retail", "Commercial"],
+  "thumb":"094.png",
+  "views":["Tiles"],
+  "hits":483
+},
+{
+  "label":"Thorsten Berger",
+  "url":"http://bis.uni-leipzig.de/ThorstenBerger",
+  "tld":"de",
+  "purpose":["Enumeration"],
+  "category":["Research"],
+  "itemType":["Publications"],
+  "siteType":["Personal"],
+  "thumb":"095.png",
+  "views":["List"],
+  "hits":467
+},
+{
+  "label":"David François Huynh",
+  "url":"http://davidhuynh.net/publications.php",
+  "tld":"net",
+  "purpose":["Enumeration"],
+  "category":["Research"],
+  "itemType":["Publications"],
+  "siteType":["Personal"],
+  "thumb":"096.png",
+  "views":["List"],
+  "hits":461
+},
+{
+  "label":"Facette Delicious Browser",
+  "url":"http://facette.csail.mit.edu/user/ubib.fr",
+  "tld":"edu",
+  "purpose":["Curation"],
+  "category":["Entertainment", "News"],
+  "itemType":["Sites"],
+  "siteType":["Community"],
+  "thumb":"097.png",
+  "views":["List"],
+  "hits":453
+},
+{
+  "label":"Pennsylvania School District Map: 2005 - 2006 Size of School District By Students",
+  "url":"http://www.swingingsammy.com/schools/20052006ADM.html",
+  "tld":"com",
+  "purpose":["Enumeration"],
+  "category":["Government", "Municiple"],
+  "itemType":["Districts"],
+  "siteType":["Personal"],
+  "thumb":"098.png",
+  "views":["Map", "Table"],
+  "hits":452
+},
+{
+  "label":"JAMES FARMER TIMELINE",
+  "url":"http://projects.umwhistory.org/farmer/tlfarmer.html",
+  "tld":"org",
+  "purpose":["Curation"],
+  "category":["History", "Biography"],
+  "itemType":["Events"],
+  "siteType":["Organization"],
+  "thumb":"099.png",
+  "views":["Timeline"],
+  "hits":449
 }
 ]}
