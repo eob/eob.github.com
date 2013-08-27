@@ -9,6 +9,11 @@ title: "Code"
     
     <ul class="projects thinglist">
       <li>
+        <h3><a href="http://convertutil.com" class="project">Chinese eBook Converter</a></h3>
+        <p>I wrote this because I wanted to convert Jurassic Park from Simplified to Traditional Chinese and the only website that would perform such a service didn't seem to work.</p>
+        <p>Right now it only accepts EPUB format.</p>
+      </li>
+      <li>
         <h3><a href="http://edwardbenson.com/tools/bookmarklet-maker/" class="project">Bookmarklet Maker</a></h3>
         <p>Bookmarklet Maker is a simple tool to help you make Bookmarklets that bootstrap themselves via external Javascript and CSS, enabling you to provide users an easy way to attach externally hosted (and updated) capability to any web site.</p>
       </li>
