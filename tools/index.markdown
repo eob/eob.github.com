@@ -10,8 +10,8 @@ title: "Code"
     <ul class="projects thinglist">
       <li>
         <h3><a href="http://convertutil.com" class="project">Chinese eBook Converter</a></h3>
-        <p>I wrote this because I wanted to convert Jurassic Park from Simplified to Traditional Chinese and the only website that would perform such a service didn't seem to work.</p>
-        <p>Right now it only accepts EPUB format.</p>
+        <p>This web app will <a href="http://convertutil.com">convert EPUB books from Simplified to Traditional Chinese</a>. I wrote it
+         because I wanted to convert Jurassic Park from simplified to traditional and the only website that would perform such a service didn't seem to work.</p>
       </li>
       <li>
         <h3><a href="http://edwardbenson.com/tools/bookmarklet-maker/" class="project">Bookmarklet Maker</a></h3>
