@@ -24,6 +24,10 @@
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {% endif %}
 
+{% if page.js %}
+<script type="text/javascript" src="/javascript/{{page.js}}"></script>
+{% endif %}
+
 {% if page.jqui %}
   <script type="text/javascript" src="/javascript/jquery-ui-1.10.3.custom.min.js"></script>
   <link rel="stylesheet" href="/css/ui-lightness/jquery-ui-1.10.3.custom.min.css" type="text/css" />
