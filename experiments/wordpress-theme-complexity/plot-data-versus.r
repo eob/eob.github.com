@@ -23,6 +23,8 @@ makeChart <- function(input.file, value.column, output.file) {
   #summ <- summ[!abs(scale(summ$value)) > 2,]
   
   # Generate labels for the x axis so we don't get crowding
+  # WARNING: I'm lazy and generated the start and end date by peeking at the
+  # data file. If the data changes these need to change as well.
   x_breaks <- seq(as.Date("2008/7/1"), as.Date("2013/7/1"), by="6 months")
   x_labels <- as.character(x_breaks, format="%h-%y")
 
