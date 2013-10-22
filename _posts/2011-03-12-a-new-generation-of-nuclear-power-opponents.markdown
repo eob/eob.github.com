@@ -2,6 +2,9 @@
 layout: post
 title: A new generation of nuclear power opponents?
 permalink: /2011/3/a-new-generation-of-nuclear-power-opponents/
+tags:
+- "commentary"
+
 ---
 
 Nuclear power is as close to magic as we've come when it comes to economically viable energy production, but it's also controversial. A lot of the opposition is from the older generation who remember back to events like Chernobyl and Three Mile Island.

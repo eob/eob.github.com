@@ -3,6 +3,9 @@ layout: post
 title: Roasted Cocoa Ice Cream
 permalink: /2011/11/roasted-cocoa-ice-cream
 category: Ice Cream 
+tags:
+- "random"
+
 ---
 
 ### 1. Roast the Cocoa

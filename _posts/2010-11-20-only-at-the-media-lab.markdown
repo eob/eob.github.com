@@ -2,6 +2,9 @@
 layout: post
 title: Only at the Media Lab
 permalink: /2010/11/only-at-the-media-lab/
+tags:
+- "random"
+
 ---
 
 I was doing work on the 5th floor of the Media Lab the other day and pop music
