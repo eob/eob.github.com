@@ -539,8 +539,8 @@ a {
 span.tag {
   margin-right: 10px;
   padding: 4px 6px 6px 4px;
-  background-color: #CCF;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
+  background-color: #DEDEFF;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
 }
