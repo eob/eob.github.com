@@ -525,6 +525,12 @@ a {
   text-decoration: none;
 }
 
+.related table tr td.thumbcell {
+  text-align: center;
+}
+
+
+
 .related table tr td a:hover{
   text-decoration: underline;
 }
