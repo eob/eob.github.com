@@ -30,10 +30,10 @@ quality (and thus file size) of images to increase over time.
 
 ## Conclusion
 
-Writing a theme is getting harder over time, and I suspect that this could be
-said of web sites in general. We need to work to make sure the tools to manage
-this complexity are improving at the same rate of the level of sophistication
-expected by web authors and surfers.
+Writing a theme is getting harder over time, and I suspect that this
+could be said of web sites in general. We need to work to make sure the
+tools to manage this complexity are improving at the same rate as the
+level of sophistication expected by web authors and surfers.
 
 Here are the data files:
 [YearVersusNumberFiles.csv](/experiments/wordpress-theme-complexity/YearVersusNumFiles.csv)
