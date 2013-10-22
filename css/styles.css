@@ -536,3 +536,11 @@ a {
   text-decoration: underline;
 }
 
+span.tag {
+  margin-right: 10px;
+  padding: 4px 6px 6px 4px;
+  background-color: #CCF;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}

@@ -2,6 +2,10 @@
 layout: post
 title: The Toothpaste Problem and Choosing the Right Data to Publish
 permalink: /2010/11/choosing-the-right-data-to-publish/
+tags:
+- "conference notes"
+- "data visualization"
+
 ---
 
 People who visit a toothpaste isle with only 4 products walk away much happier

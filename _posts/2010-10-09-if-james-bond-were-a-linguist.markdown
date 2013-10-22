@@ -2,6 +2,10 @@
 layout: post
 title: If James Bond were a Linguist
 permalink: /2010/10/if-james-bond-were-a-linguist/
+tags:
+- "conference notes"
+- "natural language processing"
+
 ---
 
 MIT is hosting the [2010 Empirical Methods in Natural Langauge Processing

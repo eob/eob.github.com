@@ -4,6 +4,10 @@ title: Flexible data formats are used more flexibly
 permalink: /2013/07/flexible-data-formats-are-used-more-flexibly
 published: true
 thumbnail: property-coverage-100.png
+tags:
+- "data analysis"
+- "data visualization"
+
 ---
 
 <!---

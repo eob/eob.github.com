@@ -4,6 +4,9 @@ title: "Data quickie: Wordpress themes are getting more complicated over time"
 permalink: /2013/10/wordpress-themes-are-getting-more-complicated-over-time
 published: true
 thumbnail: theme-complexity-100.png
+tags:
+- "data analysis"
+- "the web"
 ---
 
 Here's a quickie for you. The other day I scraped all the themes from

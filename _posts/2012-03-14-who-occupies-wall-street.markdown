@@ -3,6 +3,10 @@ layout: post
 title: Who Occupies Wall Street?
 permalink: /2012/03/who-occipies/
 thumbnail: occupy.png
+tags:
+- "data analysis"
+- "data visualization"
+
 ---
 
 I participated in the Cambridge get-together of the nationwide [Occupy Data

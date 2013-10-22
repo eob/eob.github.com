@@ -2,6 +2,9 @@
 layout: post
 title: The Semantic Web needs a MySQL
 permalink: /2010/11/the-semantic-web-needs-a-mysql/
+tags:
+- "the web"
+
 ---
 
 One thing was clear in the comments of many industry-facing participants of

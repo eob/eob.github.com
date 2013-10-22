@@ -2,6 +2,9 @@
 layout: post
 title: Islamophobia
 permalink: /2010/09/islamophobia/
+tags:
+- commentary
+
 ---
 
 ![Is America Islamophobic? Obama is a Muslim!](http://www.edwardbenson.com/images/posts/islamophobia.jpg)

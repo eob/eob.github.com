@@ -3,6 +3,9 @@ layout: post
 title: Celebrity as Parable
 permalink: /2013/12/celebrity-as-parable
 thumbnail: sanguo-100.png
+tags:
+- "commentary"
+
 ---
 
 <p style="font-size: 0.8em"><i> (Reaction to <a

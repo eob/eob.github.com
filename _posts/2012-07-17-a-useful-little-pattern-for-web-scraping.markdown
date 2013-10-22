@@ -3,6 +3,10 @@ layout: post
 title: A Useful Little Pattern for Web Scraping
 permalink: /2012/07/a-useful-little-pattern-for-web-scraping
 thumbnail: fixer.png
+tags:
+- "data analysis"
+- "scala"
+
 ---
 
 I've been doing a lot of web and Google Spreadsheet scraping recently, and one

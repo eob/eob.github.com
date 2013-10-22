@@ -2,6 +2,8 @@
 layout: post
 title: It Takes 6 Clicks to Protect your Geo-privacy on Facebook
 permalink: /2010/08/it-takes-six-clicks/
+tags:
+- "the web"
 ---
 
 The battle of the geo-APIs has begun! Loopt and Foursquare out to the early

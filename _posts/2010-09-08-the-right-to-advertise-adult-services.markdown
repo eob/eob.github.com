@@ -2,6 +2,8 @@
 layout: post
 title: The Right to Advertise Adult Services
 permalink: /2010/09/the-right-to-advertise-adult-services
+tags:
+- commentary
 ---
 
 I don't have a deep understanding of the law, but I think the recent closing of

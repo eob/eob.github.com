@@ -2,6 +2,10 @@
 layout: post
 title: Scala can be Scary
 permalink: /2010/12/scala-can-be-scary/
+tags:
+- "programming"
+- "scala"
+
 ---
 
 With syntax like this, who needs enemies?

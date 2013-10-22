@@ -2,6 +2,9 @@
 layout: post
 title: Join us for a Crowdsourcing Community Service Hackathon this weekend
 permalink: /2011/1/crowdsourcing-community-hackathon/
+tags:
+- "conference notes"
+
 ---
 
 Calling all hackers, designers, and journalists in Boston!

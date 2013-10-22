@@ -2,6 +2,12 @@
 layout: post
 title: NICAR, from a Programmer's Eyes
 permalink: /2012/03/thoughts-on-nicar/
+tags:
+- "the web"
+- "data visualization"
+- "data analysis"
+- "conference notes"
+
 ---
 
 Last week I attended NICAR 2012, a conference for computer assisted
