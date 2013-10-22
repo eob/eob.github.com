@@ -537,10 +537,10 @@ a {
 }
 
 span.tag {
-  color: #333;
+  color: #555;
   margin-right: 10px;
   padding: 4px 6px 6px 4px;
-  background-color: #DEDEFF;
+  background-color: #EEEFFF;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
