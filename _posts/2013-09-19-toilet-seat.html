@@ -6,6 +6,7 @@ published: false
 jqui: true
 latex: true
 d3: true
+js: toilet.js
 ---
 
 <h2>Variables</h2>
@@ -116,88 +117,6 @@ Policy 1-Prime:
   </td>
  </tr></table>
 
-<script>
-var MAN = 0;
-var WOMAN = 1;
-var PEE = 0;
-var POOP = 1;
-
-var cw1 = function() {
-  return 0;
-};
-
-var cm1 = function(whoGoes, action, penalty) {
-  return action[MAN][PEE] * penalty;
-};
-
-var cm1p = function(whoGoes, action, penalty) {
-  return 2 * action[MAN][PEE] * penalty;
-};
-
-var cw2 = function(whoGoes, action, penalty) {
-  return whoGoes[MAN] * action[MAN][PEE] * penalty;
-};
-
-var cm2 = function(whoGoes, action, penalty) {
-  return (
-    (penalty * action[MAN][POOP] * (whoGoes[MAN] * action[MAN][PEE])) +
-    (penalty * action[MAN][PEE] * (whoGoes[MAN] * action[MAN][POOP] + whoGoes[WOMAN]))
-  );
-};
-
-var getData = function() {
-  var phim = parseFloat($("#whoGoesMore").slider("value"));
-  var whoGoes = [phim, 1-phim];
-  var phimpee = parseFloat($("#whatHeDoes").slider("value"));
-  var action = [
-    [1-phimpee, phimpee]
-  ];
-  var penalty = 1;
-  var CM1 = cm1(whoGoes, action, penalty);
-  var CM1P = cm1p(whoGoes, action, penalty);
-  var CM2 = cm2(whoGoes, action, penalty);
-  var CW1 = cw1(whoGoes, action, penalty);
-  var CW2 = cw2(whoGoes, action, penalty);
-  return [
-    {"Policy": "Policy 1",
-     "Man": CM1,
-     "Woman": CW1},
-    {"Policy": "Policy 1-Prime",
-     "Man": CM1P,
-     "Woman": CW1},
-    {"Policy": "Policy 2",
-     "Man": CM2,
-     "Woman": CW2}
-  ];
-};
-
-var calculate = function() {
-  var phim = parseFloat($("#whoGoesMore").slider("value"));
-  var whoGoes = [phim, 1-phim];
-  var phimpee = parseFloat($("#whatHeDoes").slider("value"));
-  var action = [
-    [1-phimpee, phimpee]
-  ];
-  var penalty = 1;
-  var CM1 = cm1(whoGoes, action, penalty);
-  var CM1P = cm1p(whoGoes, action, penalty);
-  var CM2 = cm2(whoGoes, action, penalty);
-  var CW1 = cw1(whoGoes, action, penalty);
-  var CW2 = cw2(whoGoes, action, penalty);
-
-  $("#cm1").html(CM1.toFixed(2));
-  $("#cw1").html(CW1.toFixed(2));
-  $("#cm1p").html(CM1P.toFixed(2));
-  $("#cw1p").html(CW1.toFixed(2));
-  $("#cm2").html(CM2.toFixed(2));
-  $("#cw2").html(CW2.toFixed(2));
-  $("#cj1").html((CM1 + CW1).toFixed(2));
-  $("#cj1p").html((CM1P + CW1).toFixed(2));
-  $("#cj2").html((CM2 + CW2).toFixed(2));
-}
-
-</script>
-
 <h2>Simulation</h2>
 
 <p>I've left the solution so generalized because I can't presume how much you
@@ -233,107 +152,12 @@ $(function() {
     value: 0.75
     });
 
-  var viz = drawChart();
+  window.viz = drawChart();
+  $( "#whoGoesMore" ).on("slidechange", onDataUpdated);
+  $( "#whatHeDoes" ).on("slidechange", onDataUpdated);
+  onDataUpdated();
 
-  var updated = function() {
-    var d = getData();
-
-    var genders = d3.layout.stack()(["Man", "Woman"].map(function(gender) {
-      return d.map(function(d) {
-        return {x: d.Policy, y: d[gender]};
-      });
-    }));
-
-    var gender = viz.selectAll("g.cause").data(genders);
-
-    var rect = gender.selectAll("rect")
-      .transition()
-      .duration(500)
-      .attr("height", function(d) { alert(y(d.y)); return y(d.y); })
-
-    calculate();
-  };
-  $( "#whoGoesMore" ).on("slidechange", updated);
-  $( "#whatHeDoes" ).on("slidechange", updated);
-  calculate();
 });
-</script>
-
-
-<script type="text/javascript">
-var drawChart = function() {
-  var w = 300,
-      h = 300,
-      p = [20, 50, 30, 20],
-      x = d3.scale.ordinal().rangeRoundBands([0, w - p[1] - p[3]]),
-      y = d3.scale.linear().range([0, h - p[0] - p[2]]),
-      z = d3.scale.ordinal().range(["lightblue", "lightpink"]);
-  
-  var svg = d3.select("#chart").append("svg:svg")
-      .attr("width", w)
-      .attr("height", h)
-      .append("svg:g")
-      .attr("transform", "translate(" + p[3] + "," + (h - p[2]) + ")");
-  
-  var data = getData();
-  
-  // Transpose the data into layers by person.
-  var genders = d3.layout.stack()(["Man", "Woman"].map(function(gender) {
-    return data.map(function(d) {
-      return {x: d.Policy, y: d[gender]};
-    });
-  }));
-
-    // Compute the x-domain (by date) and y-domain (by top).
-  x.domain(genders[0].map(function(d) { return d.x; }));
-  y.domain([0, 2]);
-  //y.domain([0, d3.max(genders[genders.length - 1], function(d) { return d.y0 + d.y; })]);
-  
-    // Add a group for each cause.
-  var gender = svg.selectAll("g.cause")
-      .data(genders)
-    .enter().append("svg:g")
-      .attr("class", "gender")
-      .style("fill", function(d, i) { return z(i); })
-      .style("stroke", function(d, i) { return d3.rgb(z(i)).darker(); });
-  
-    // Add a rect for each policy
-  var rect = gender.selectAll("rect")
-      .data(Object)
-      .enter().append("svg:rect")
-        .attr("x", function(d) { return x(d.x); })
-        .attr("y", function(d) { return -y(d.y0) - y(d.y); })
-        .attr("height", function(d) { return y(d.y); })
-        .attr("width", x.rangeBand());
-  
-    // Add a label per date.
-  var label = svg.selectAll("text")
-    .data(x.domain())
-    .enter().append("svg:text")
-        .attr("x", function(d) { return x(d) + x.rangeBand() / 2; })
-        .attr("y", 6)
-        .attr("text-anchor", "middle")
-        .attr("dy", ".71em")
-        .text(function(d) { return d; });
-  
-    // Add y-axis rules.
-    var rule = svg.selectAll("g.rule")
-        .data(y.ticks(5))
-      .enter().append("svg:g")
-        .attr("class", "rule")
-        .attr("transform", function(d) { return "translate(0," + -y(d) + ")"; });
-  
-    rule.append("svg:line")
-        .attr("x2", w - p[1] - p[3])
-        .style("stroke", function(d) { return d ? "#fff" : "#000"; })
-        .style("stroke-opacity", function(d) { return d ? .7 : null; });
-  
-    rule.append("svg:text")
-        .attr("x", w - p[1] - p[3] + 6)
-        .attr("dy", ".35em")
-        .text(d3.format(",2f"));
-    return svg;
-};
 </script>
 
 <style type="text/css">
@@ -343,6 +167,13 @@ svg {
   border: solid 1px #ccc;
   font: 10px sans-serif;
   shape-rendering: crispEdges;
+}
+
+rect.man {
+  fill: lightblue;
+}
+rect.woman {
+  fill: lightpink;
 }
 </style>
 
