@@ -5,6 +5,7 @@ permalink: /2010/10/if-james-bond-were-a-linguist/
 tags:
 - "conference notes"
 - "natural language processing"
+- "machine learning"
 
 ---
 
