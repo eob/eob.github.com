@@ -2,6 +2,7 @@
 layout: post
 title: Democracy has a Built in Pressure Release Valve
 permalink: /2012/03/democracy-pressure-release/
+thumbnail: governor.png
 ---
 
 I remember the first time I saw a picture of a steam engine governor. The

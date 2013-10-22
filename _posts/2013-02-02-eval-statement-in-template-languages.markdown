@@ -3,6 +3,7 @@ layout: post
 title: Eval in Template Languages Considered Harmful
 permalink: /2013/02/eval-in-template-languages
 published: true
+thumbnail: eval.png
 ---
 
 I'm of the opinion that supporting the `eval` statement in template languages

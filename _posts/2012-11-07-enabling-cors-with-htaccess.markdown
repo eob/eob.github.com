@@ -2,6 +2,7 @@
 layout: post
 title: Cross Origin Resource Sharing Gotcha&#58; Don't forget about OPTIONS requests
 permalink: /2012/07/cross-origin-resource-sharing-gotcha
+thumbnail: cors.png
 ---
 
 Anyone in the business of hacking the web past its original boundaries knows
