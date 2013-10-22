@@ -36,6 +36,6 @@ this complexity are improving at the same rate of the level of sophistication
 expected by web authors and surfers.
 
 Here are the data files:
-[YearVersusNumberFiles.csv](/experiments/wordpress-theme-complexity/YearVersusNumberFiles.csv)
+[YearVersusNumberFiles.csv](/experiments/wordpress-theme-complexity/YearVersusNumFiles.csv)
 and
-[YearVersusBytesNoImages.csv](/experiments/wordpress-theme-complexity/YearVersusBytesNoImages.csv")
+[YearVersusBytesNoImages.csv](/experiments/wordpress-theme-complexity/YearVersusBytesNoImages.csv)
