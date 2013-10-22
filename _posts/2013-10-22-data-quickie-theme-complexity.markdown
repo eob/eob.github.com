@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Data tidbit: Wordpress themes are getting more complicated over time"
+title: "Data quickie: Wordpress themes are getting more complicated over time"
 permalink: /2013/10/wordpress-themes-are-getting-more-complicated-over-time
 published: true
 thumbnail: theme-complexity-100.png
