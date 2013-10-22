@@ -7,7 +7,7 @@ thumbnail: increase-in-theme-size-150.png
 ---
 
 Here's a quickie for you. The other day I scraped all the themes from
-(WordPress.org)[http://www.wordpress.org] (615 in total, or at least what my
+[WordPress.org](http://www.wordpress.org) (615 in total, or at least what my
 script pulled down) and then plotted how complex the theme was based on when it
 was created.
 
