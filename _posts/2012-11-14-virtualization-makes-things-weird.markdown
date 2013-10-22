@@ -2,6 +2,7 @@
 layout: post
 title: Virtualization Makes Things Weird
 permalink: /2012/11/virtualization-makes-things-weird
+thumbnail: pachinko.png
 ---
 
 Ah, for the simple days, when a taxi was a taxi, and my video games weren't

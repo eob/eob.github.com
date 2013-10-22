@@ -28,6 +28,11 @@ hr{
   width: 650px;
   margin-bottom: 50px;
 }
+
+.blog-list {
+  width: 850px;
+}
+
 .related{
   margin-top: 10px;
 }
@@ -495,4 +500,32 @@ a {
 
 .post-thumb {
   vertical-align: middle;
+  border: 1px solid #733;
 }
+
+.related table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.related table tr td {
+  font-size: 14px;
+  padding: 5px 0 5px 0;
+  margin: 0;
+  color: #777;
+  border-bottom: 1px solid #eee;
+}
+
+.related table td span {
+  text-align: right;
+}
+
+.related table tr td a {
+  text-decoration: none;
+}
+
+.related table tr td a:hover{
+  text-decoration: underline;
+}
+

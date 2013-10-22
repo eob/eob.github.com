@@ -3,7 +3,7 @@ layout: post
 title: "Data tidbit: Wordpress themes are getting more complicated over time"
 permalink: /2013/10/wordpress-themes-are-getting-more-complicated-over-time
 published: true
-thumbnail: increase-in-theme-size-150.png
+thumbnail: theme-complexity-100.png
 ---
 
 Here's a quickie for you. The other day I scraped all the themes from
