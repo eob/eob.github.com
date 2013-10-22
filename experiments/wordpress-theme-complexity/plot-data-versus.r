@@ -1,3 +1,6 @@
+# Quick script to plot wordpress theme complexity over time
+# Author: Edward Benson <eob@csail.mit.edu>
+
 library(ggplot2)
 library(xts)
 
