@@ -37,6 +37,5 @@ makeChart <- function(input.file, value.column, output.file) {
   dev.off()
 }
 
-makeChart("YearVersusBytes.csv", "Bytes", "year-versus-bytes.pdf")
 makeChart("YearVersusBytesNoImages.csv", "BytesNoImages", "year-versus-bytes-no-images.pdf")
 makeChart("YearVersusNumFiles.csv", "NumFiles", "year-versus-num-files.pdf")

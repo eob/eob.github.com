@@ -32,10 +32,13 @@ quality (and thus file size) of images to increase over time.
 
 Writing a theme is getting harder over time, and I suspect that this
 could be said of web sites in general. We need to work to make sure the
-tools to manage this complexity are improving at the same rate as the
-level of sophistication expected by web authors and surfers.
+tools for web authoring improve at the same rate as the level of
+sophistication expected by web authors and surfers.
 
 Here are the data files:
 [YearVersusNumberFiles.csv](/experiments/wordpress-theme-complexity/YearVersusNumFiles.csv)
 and
-[YearVersusBytesNoImages.csv](/experiments/wordpress-theme-complexity/YearVersusBytesNoImages.csv)
+[YearVersusBytesNoImages.csv](/experiments/wordpress-theme-complexity/YearVersusBytesNoImages.csv).
+And here is the R Script I used to create the figures:
+[plot-data-versus.r](/experiments/wordpress-theme-complexity/plot-data-versus.r)
+
