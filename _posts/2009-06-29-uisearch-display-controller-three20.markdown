@@ -23,13 +23,13 @@ which I'll describe here.
 ## Step 1: Implement the search delegates in your TTTableViewController
 
 In your TTTableViewController interface, tack on the
-<tt>UISearchDisplayDelegate</tt> and <tt>UISearchBarDelegate</tt> interfaces to
+`UISearchDisplayDelegate` and `UISearchBarDelegate` interfaces to
 say you'll be implementing those. They will let the search bar and controller
 send your controller events to let it know it is taking over.
 
 ## Step 2: Add the search bar to your table header
 
-In your <tt>loadView</tt> method, create a new <tt>UISearchBar</tt> object and
+In your `loadView` method, create a new `UISearchBar` object and
 add it to your table's header, like so:
 
 ```Objective-C
@@ -45,8 +45,8 @@ self.tableView.tableHeaderView = searchBar;
 
 ## Step 3: Add a SearchDisplayController to your controller
 
-In the same <tt>loadView</tt> method, create a new
-<tt>UISearchDisplayController</tt>and add it to self:
+In the same `loadView` method, create a new
+`UISearchDisplayController`and add it to self:
 
 ```Objective-C
 // [SNIP]
@@ -59,8 +59,8 @@ UISearchDisplayController *searchDisplayController = [[UISearchDisplayController
 ```
 
 Notice above that you are pointing the SearchDisplayController at several
-different items: the UISearchBar from before, <tt>self</tt>, and also your
-<tt>TTTableViewDataSource</tt>.
+different items: the UISearchBar from before, `self`, and also your
+`TTTableViewDataSource`.
 
 ## Step 4. Implement the required delegates
 
@@ -99,18 +99,18 @@ methods to essentially pass information through to the data source.
 }
 ```
 
-<em>Important!</em> Notice the <tt>setSearchResultsDelegate</tt> call above.
-This occurs here instead of the <tt>loadView</tt> method above because the
+**Important!** Notice the `setSearchResultsDelegate` call above.
+This occurs here instead of the `loadView` method above because the
 table delegate hasn't yet been created when we're still inside of
-<tt>loadView</tt> -- if you were to set it up there then selecting search
+`loadView` -- if you were to set it up there then selecting search
 result cells wouldn't trigger a callback.
 
 ## Step 5. Modify your data source to be aware of search
 
 Finally, we need to modify our data source to be aware of this new "search
 mode." I did this with a pretty simple fix: I created a boolean property named
-<tt>searchActive</tt> that is set by the owning controller (see the above
-code). Then, in all the important methods, I put in a simple <tt>if..else</tt>
+`searchActive` that is set by the owning controller (see the above
+code). Then, in all the important methods, I put in a simple `if..else`
 statement that returned one value for search mode results and another value for
 normal usage. Here's an example:
 
@@ -124,7 +124,7 @@ normal usage. Here's an example:
 }
 ```
 
-In the above conditional, I check for <tt>searchText</tt> to see if the user
+In the above conditional, I check for `searchText` to see if the user
 has begun searching yet. If they haven't I want to display all results.
 
 Finally, I need to implement the actual search method, which is simply passed
