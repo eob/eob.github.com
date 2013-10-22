@@ -492,3 +492,7 @@ a {
 #header #sections a.selected-nav {
   background-color: #113F8C;
 }
+
+.post-thumb {
+  vertical-align: middle;
+}
