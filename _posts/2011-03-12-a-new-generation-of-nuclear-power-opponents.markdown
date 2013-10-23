@@ -2,6 +2,7 @@
 layout: post
 title: A new generation of nuclear power opponents?
 permalink: /2011/3/a-new-generation-of-nuclear-power-opponents/
+thumbnail: fukushima.png
 tags:
 - "commentary"
 

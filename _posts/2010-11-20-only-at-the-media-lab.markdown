@@ -2,6 +2,7 @@
 layout: post
 title: Only at the Media Lab
 permalink: /2010/11/only-at-the-media-lab/
+thumbnail: medialab.png
 tags:
 - "random"
 

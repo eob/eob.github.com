@@ -2,6 +2,7 @@
 layout: post
 title: NICAR, from a Programmer's Eyes
 permalink: /2012/03/thoughts-on-nicar/
+thumbnail: nicar.png
 tags:
 - "the web"
 - "data visualization"
