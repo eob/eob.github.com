@@ -1,5 +1,6 @@
 _site
 drafts
 *.swp
+*.pyc
 .DS_Store
 server
