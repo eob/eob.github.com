@@ -2,6 +2,9 @@
 layout: post
 title: Uccello&#39;s Chalice
 permalink: /2009/10/uccellos-chalice.markdown
+thumbnail: ucello.png
+tags:
+- random
 ---
 
 Amazing. This is Paolo Uccello's wireframe rendering of a chalice in the year
