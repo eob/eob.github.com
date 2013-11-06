@@ -13,8 +13,7 @@ title: "About Ted Benson"
     
     <p>I moonlight at <a href="http://www.klaviyo.com/">Klaviyo</a>. If you are learning Chinese, check out my <a href="http://www.studymonk.com">Chinese study tools</a>.</p>
     
-    <p>You should <a href="https://twitter.com/edwardbenson" class="twitter-follow-button" data-show-count="false" data-size="large">follow me on Twitter</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+    <p>You should <a href="https://twitter.com/edwardbenson" class="twitter-follow-button" data-show-count="false" data-size="large">follow me on Twitter</a></p>
 
   </div>
 </div>
@@ -32,10 +31,25 @@ $(function() {
       _gaq.push(['_trackSocial', 'twitter', 'follow', opt_pagePath]);
     }
   }
+
+  !function(d,s,id) {
+    var js, 
+        fjs=d.getElementsByTagName(s)[0]
+        ,p=/^http:/.test(d.location)?'http':'https';
+    
+    if(!d.getElementById(id)) {
+      js=d.createElement(s);
+      js.id=id;
+      js.src=p+'://platform.twitter.com/widgets.js';
+      js.onload = function() {
+        twttr.ready(function (twttr) {
+          twttr.events.bind('follow', function() { trackTwitter });
+        });
+      }
+      fjs.parentNode.insertBefore(js,fjs);
+      
+    }
+  }(document, 'script', 'twitter-wjs');
   
-  twttr.ready(function (twttr) {
-    //event bindings
-    twttr.events.bind('follow', function() { trackTwitter });
-  });
 
 </script>
