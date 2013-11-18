@@ -9,9 +9,13 @@ title: "Code"
     
     <ul class="projects thinglist">
       <li>
-        <h3><a href="http://convertutil.com" class="project">Chinese eBook Converter</a></h3>
+        <h3><a href="http://studymonk.com/chinese-ebook-converter.html" class="project">Chinese eBook Converter</a></h3>
         <p>This web app will <a href="http://convertutil.com">convert EPUB books from Simplified to Traditional Chinese</a>. I wrote it
          because I wanted to convert Jurassic Park from simplified to traditional and the only website that would perform such a service didn't seem to work.</p>
+      </li>
+      <li>
+        <h3><a href="http://studymonk.com/" class="project">Google Docs iPhone Flashcards</a></h3>
+        <p>I love using flashcards but it's annoying to make them. So I created an iPhone app that lets you use a Google Spreadsheet as the data storage for a flashcard app that lives on your phone. This way you can share the load of making the flashcards with friends by sharing the Google Doc.</p>
       </li>
       <li>
         <h3><a href="http://edwardbenson.com/tools/bookmarklet-maker/" class="project">Bookmarklet Maker</a></h3>
