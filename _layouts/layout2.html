@@ -68,19 +68,15 @@
       </section>
       <nav>
         <ul>
-          <li><a id="about-link" href="/">about</a></li>
-          <li><a id="blog-link" href="/blog">blog</a></li>
-          <li><a id="publications-link" href="/publications">publications</a></li>
-          <li style="margin-bottom: 18px"><a id="teaching-link" href="/teaching">teaching</a></li>
-          <li><a id="frameworks-link" href="/frameworks">frameworks</a></li>
-          <li><a id="tools-link" href="/tools">tools</a></li>
-          <li><a id="code-link" href="/code">code</a></li>
+          <li class="{% if page.lozenge == "about" %}selected {% endif %}" ><a id="about-link" href="/">about</a></li>
+          <li class="{% if page.lozenge == "blog" %}selected {% endif %}" ><a id="blog-link" href="/blog">blog</a></li>
+          <li class="{% if page.lozenge == "publications" %}selected {% endif %}" ><a id="publications-link" href="/publications">publications</a></li>
+          <li class="{% if page.lozenge == "teaching" %}selected {% endif %}" ><a id="teaching-link" href="/teaching">teaching</a></li>
+          <li class="{% if page.lozenge == "opensource" %}selected {% endif %}" ><a id="publications-link" href="/opensource">open source</a></li>
         </ul>
       </nav>
     </header>
-    <div class="container">
-{{ content }}
-    </div>
+    {{ content }}
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -88,13 +84,13 @@
     <script src="/javascript/bootstrap.min.js"></script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
-  _gaq.push(['_setaccount', 'ua-619489-3']);
-  _gaq.push(['_trackpageview']);
+  _gaq.push(['_setAccount', 'UA-619489-3']);
+  _gaq.push(['_trackPageview']);
 
   (function() {
-    var ga = document.createelement('script'); ga.type = 'text/javascript'; ga.async = true;
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getelementsbytagname('script')[0]; s.parentnode.insertbefore(ga, s);
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
   </body>
