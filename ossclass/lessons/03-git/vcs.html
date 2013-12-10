@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>How Git Works</title>
+    <meta name="description" content="">
+		<meta name="author" content="Ted Benson">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="/6.S194/css/slides/reveal.min.css" />
+    <link rel="stylesheet" href="/6.S194/css/slides/oscar.css" id="theme" />
+  
+    <link rel="stylesheet" href="/6.S194/css/slides/ted.css" />
+    <link rel="stylesheet" href="/6.S194/css/slides/zenburn.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+      <section id="slide-title" data-state="bluesky">
+  <h1>Become a Git Master</h1>
+  <p>
+    <div class="attribution">
+    <a href="http://www.edwardbenson.com/">Ted Benson</a><br />
+    @edwardbenson / eob@csail.mit.edu
+    </div>
+  </p>
+</section>
+
+<section>
+  <h1>Goal</h1>
+  <h2>Become a master of git-fu</h2>
+  <ul>
+    <li>Understand the "physics" of Git</li>
+    <li>How to use Git by yourself</li>
+    <li>How to use Git with a team</li>
+    <li>Get your feet wet hacking git</li>
+  </ul>
+  <aside class="notes">
+  How many have used git? Mercurial? SVN? CVS?
+  </aside>
+</section>
+
+<section>
+  <section data-state="whiteout">
+  <h2>Git Physics</h2>
+  <aside class="notes">
+  <p>Why? Because we often start using VCS in context of a project</p>
+  <p>Ruby on Rails: some people learn Ruby through Rails</p>
+  <p>This sometimes blinds us to bigger picture commonalities and differences</p>
+  </aside>
+  </section>
+
+  <section data-state="whiteout">
+    <h2>version control system</h2>
+    <h2>=</h2>
+    <table>
+      <tr>
+        <td style="vertical-align: middle">
+          <h3>industrial strength dropbox&nbsp;&nbsp;</h3>
+        </td>
+        <td><img style="float: left;" src="img/dropbox.png" /></td>
+      </tr>
+    </table>
+    <aside class="notes">
+    git is a vcs and a vcs is an industrial strength dropbox
+    </aside>
+    </section>
+
+    <section data-state="bluesky">
+    <div style="margin-left: 15%; height: 10em; width: 70%; border: 10px dashed #ccc; text-align: middle;">
+      <br /><br /><br />
+      your code project
+    </div>
+    </section>
+
+    <section data-state="bluesky">
+    <h3>How would you design this?</h3>
+    <ul>
+      <li>Entities (the nouns)</li>
+      <li>API (the verbs)</li>
+    </ul>
+    <aside class="notes">
+    <ul>
+      <li>Nouns: repository, user, workspace</li>
+      <li>Nouns: changeset, configuration file</li>
+      <li>Verbs: commit, tag, branch, merge</li>
+      <li>Verbs: impose workflow checks</li>
+    </ul>
+    </aside>
+    </section>
+
+    <section data-state="bluesky">
+    <h3>An Approximate Sketch</h3>
+    <table>
+      <tr>
+        <td>
+          <ul>
+            <li>Project</li>
+            <li>Repository
+            <ul>
+              <li>Versions, Tags, Branches</li>
+            </ul>
+            </li>
+            <li>Workspace</li>
+            <li>Files</li>
+            <li>Changeset</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>create(project)</li>
+            <li>join(project)</li>
+            <li>new_version(changeset)</li>
+            <li>get_version(n)</li>
+            <li>Reconcile differences</li>
+            <li>Import / Export with other projects</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    </section>
+
+    <section>
+    <h2>Two big questions:</h2>
+    <h3>What is the topology of a project?</h3>
+    <h3>How do you represent versions?</h3>
+    </section>
+
+    <section>
+    <h2>What is the topology?</h2>
+    <h3>Distributed v. Centralized</h3>
+    </section>
+
+
+    <section>
+    <h2>Distributed v. Centralized</h2>
+    <table>
+    <tr>
+      <th style="padding-right:60px !important;">Distributed</th><th>Centralized</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>git</li>
+          <li>Mercurial</li>
+          <li>Bazaar</li>
+        </ul>
+      </td>
+    <td>
+      <ul>
+        <li>Perforce</li>
+        <li>Subversion</li>
+        <li>ClearCase</li>
+        <li>CVS</li>
+      </ul>
+    </td>
+    </tr>
+  </table>
+  </section>
+
+  <section>
+    <h2>Centralized Version Control</h2>
+    <img src="img/centralized-version-control.png" />
+    <aside class="notes">
+    <ul>
+      <li>Why is this good / bad?</li>
+      <li>Good: We know who the authority is; control</li>
+      <li>Bad: Network overhead; permissions; downtime</li>
+      <li>Bad: Can't work on a plane.</li>
+      <li>Bad: single point of failure; no personal VC</li>
+    </ul>
+    </aside>
+  </section>
+
+  <section>
+    <h2>Distributed Version Control</h2>
+    <img src="img/distributed-version-control.png" />
+    <aside class="notes">
+      <ul>
+        <li>Almost all operations (except sync) are local</li>
+        <li>Good: local = fast (commit, diff, history, etc); personal VC</li>
+        <li>Good: local = airplane, no VPN OK; every clone is a backup</li>
+        <li>Bad(?): need to create workflow to coordinate</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section>
+    <h2>How do you represent versions?</h2>
+    <p><b>Deltas</b>: As a sequence of diffs for each file.</p>
+    <p><b>Snapshots</b>: Each version is recorded in its entirety.</p>
+  </section>
+
+  <section>
+    <h2>File Delta Version Tracking</h2>
+    <img src="img/file-deltas-1.png" />
+    <aside class="notes">
+    </aside>
+  </section>
+
+  <section>
+    <h2>File Delta Version Tracking</h2>
+    <img src="img/file-deltas-2.png" />
+    <aside class="notes">
+    </aside>
+  </section>
+
+  <section>
+    <h2>File Delta Version Tracking</h2>
+    <img src="img/file-deltas-3.png" />
+    <aside class="notes">
+    </aside>
+  </section>
+
+  <section>
+    <h2>File Delta Version Tracking</h2>
+    <img src="img/file-deltas-4.png" />
+    <aside class="notes">
+    </aside>
+  </section>
+
+  <section>
+    <h2>Snapshot Version Tracking</h2>
+    <img src="img/snapshot-1.png" />
+    <aside class="notes">
+    </aside>
+  </section>
+
+  <section>
+    <h2>Snapshot Version Tracking</h2>
+    <img src="img/snapshot-2.png" />
+    <aside class="notes">
+    <ul>
+      <li><em>add</em> means add file contents to the snapshot</li>
+      <li>The SHA hash is a pointer into a key-value store.</li>
+    </ul>
+    </aside>
+  </section>
+
+  <section>
+    <h2>Snapshot Version Tracking</h2>
+    <img src="img/snapshot-3.png" />
+    <aside class="notes">
+      <ul>
+        <li>There is no history unless you walk through the manifests.</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section>
+    <h2>Snapshot Version Tracking</h2>
+    <img src="img/snapshot-4.png" />
+    <aside class="notes">
+      <ul>
+        <li>A rename just changes the manifest pointer.
+      </ul>
+    </aside>
+    </section>
+
+    <section>
+    <h2>Deltas v. Snapshots</h2>
+    <ul>
+      <li>What are some of the tradeoffs?</li>
+      <li>Order analysis of repository size?</li>
+      <li>Order analysis of moving between versions?</li>
+      <li>How do you compare two versions?</li>
+    </ul>
+    </section>
+</section>
+
+
+
+      </div>
+    </div>
+
+<script src="/6.S194/js/slides/head.min.js"></script>
+<script src="/6.S194/js/slides/reveal.min.js"></script>
+<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+        { src: '/6.S194/js/slides/classList.js', condition: function() { return !document.body.classList; } },
+          //{ src: '/6.S194/js/slides/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          //{ src: '/6.S194/js/slides/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/6.S194/js/slides/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/6.S194/js/slides/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '/6.S194/js/slides/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: '/6.S194/js/slides/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-619489-20']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  </body>
+</html>

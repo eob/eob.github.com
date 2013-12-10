@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Git Blackbelt 101</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A lab-based class in large-scale software development">
+    <meta name="author" content="Ted Benson">
+    
+    <!-- CODE HIGHLIGHTING --> 
+    <link href="/6.S194/css/sh/default.css" rel="stylesheet">
+    <script src="/6.S194/js/sh.min.js"></script>
+    <script src="/6.S194/js/sh-python.min.js"></script>
+    <script src="/6.S194/js/sh-javascript.min.js"></script>
+    
+    <link href="/6.S194/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/6.S194/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/6.S194/css/example.css" rel="stylesheet">
+    <link href="/6.S194/css/custom.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li ><a href="/6.S194/index.html">Home</a></li>
+          <li ><a href="/6.S194/calendar.html">Calendar</a></li>
+          <li ><a href="/6.S194/teams.html">Teams</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course Information<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li >
+                <a href="/6.S194/syllabus.html">Syllabus</a>
+              </li>
+              <li >
+                <a href="/6.S194/course-announcement.html">Course Flyer</a>
+                </li>
+              <li >
+                <a href="/6.S194/design-studio.html">Design Studio</a>
+              </li>
+
+             <li ><a href="/6.S194/projects.html">Projects</a></li>
+            </ul>
+            <li ><a href="/6.S194/submit.html">Submit Materials</a></li>
+        </li>
+        </ul>
+        <h3 class="topright">MIT 6.S194 | Open Source Software Project Lab &nbsp;</h3>
+      </div>
+      <div class="content">
+        <div class="row">
+  <div class="span7 offset1 class">
+    		    <section id="slide-title">
+          <h1>Collaborating with Git</h1>
+          <p>
+            <small>
+              <a href="http://www.edwardbenson.com/">Ted Benson</a><br />
+              @edwardbenson / eob@csail.mit.edu
+            </small>
+          </p>
+        </section>
+
+		    <section>
+          <h1>Goal</h1>
+          <h2>Hands on activities to get you acquainted with git workflow.</h2>
+        </section>
+
+        <section>
+  		    <section>
+            <h1>Intro to Git</h1>
+            <p></p>
+          </section>
+
+  		    <section>
+            <p class="large">Git is an open source, distributed, version control system designed for speed and efficiency.</p>
+          </section>
+
+  		    <section>
+            <h2>Distributed v. Centralized</h2>
+            <table>
+              <tr>
+                <th style="padding-right:60px !important;">Distributed</th><th>Centralized</th>
+              </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li>git</li>
+                    <li>Mercurial</li>
+                    <li>Bazaar</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Perforce</li>
+                    <li>Subversion</li>
+                    <li>ClearCase</li>
+                    <li>CVS</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </section>
+
+          <section>
+            <h2>Centralized Version Control</h2>
+            <img src="img/centralized-version-control.png" />
+            <aside class="notes">
+              <ul>
+                <li>Why is this good / bad?</li>
+                <li>Good: We know who the authority is; control</li>
+                <li>Bad: Network overhead; permissions; downtime</li>
+                <li>Bad: single point of failure; no personal VC</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>Distributed Version Control</h2>
+            <img src="img/distributed-version-control.png" />
+            <aside class="notes">
+              <ul>
+                <li>Almost all operations (except sync) are local</li>
+                <li>Good: local = fast (commit, diff, history, etc); personal VC</li>
+                <li>Good: local = airplane, no VPN OK; every clone is a backup</li>
+                <li>Bad(?): need to create workflow to coordinate</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>How do you Track Versions?</h2>
+            <p><b>File Deltas</b>: Database stores a sequence of diffs for each file.</p>
+            <p><b>Snapshots</b>: Database stores <em>snapshots</em> of the whole repository.</p>
+            <aside class="notes">
+              <p>Talk about tradeoffs.</p>
+              <p>Deltas: slow because you have to replay edit scripts.</p>
+              <p>Deltas: nice because you can just check out a portion of repo</p>
+            </aside>
+          </section>
+
+          <section>
+            <h2>File Delta Version Tracking</h2>
+            <img src="img/file-deltas-1.png" />
+            <aside class="notes">
+            </aside>
+          </section>
+
+          <section>
+            <h2>File Delta Version Tracking</h2>
+            <img src="img/file-deltas-2.png" />
+            <aside class="notes">
+            </aside>
+          </section>
+
+         <section>
+            <h2>File Delta Version Tracking</h2>
+            <img src="img/file-deltas-3.png" />
+            <aside class="notes">
+            </aside>
+         </section>
+
+         <section>
+            <h2>File Delta Version Tracking</h2>
+            <img src="img/file-deltas-4.png" />
+            <aside class="notes">
+            </aside>
+         </section>
+
+         <section>
+            <h2>Snapshot Version Tracking</h2>
+            <img src="img/snapshot-1.png" />
+            <aside class="notes">
+            </aside>
+         </section>
+
+         <section>
+            <h2>Snapshot Version Tracking</h2>
+            <img src="img/snapshot-2.png" />
+            <aside class="notes">
+              <ul>
+                <li><em>add</em> means add file contents to the snapshot</li>
+                <li>The SHA hash is a pointer into a key-value store.</li>
+              </ul>
+            </aside>
+         </section>
+
+         <section>
+            <h2>Snapshot Version Tracking</h2>
+            <img src="img/snapshot-3.png" />
+            <aside class="notes">
+              <ul>
+                <li>There is no history unless you walk through the manifests.</li>
+              </ul>
+            </aside>
+         </section>
+
+         <section>
+            <h2>Snapshot Version Tracking</h2>
+            <img src="img/snapshot-4.png" />
+            <aside class="notes">
+              <ul>
+                <li>A rename just changes the manifest pointer.
+              </ul>
+            </aside>
+         </section>
+
+
+        </section>
+
+		    <section id="slide-title">
+
+          <section>
+            <h1>Personal Version Control</h1>
+            <h2>Exercise 1</h2>
+              <ul>
+                <li>Creating a repository</li>
+                <li>Committing changes</li>
+                <li>Navigating through history</li>
+              </ul>
+
+          </section>
+
+          <section>
+            <h2>Creating a Repository</h2>
+            <table class="lined">
+              <tr>
+                <td><span class="cmd">git init</span></td>
+                <td>Create from Scratch</td>
+              </tr>
+              <tr>
+                <td><span class="cmd">git init --bare</span></td>
+                <td>Create from Scratch <br />"Server-mode"</td>
+              </tr>
+              <tr>
+                <td><span class="cmd">git clone</span></td>
+                <td>Copy a Repo</td>
+              </tr>
+            </table>
+          </section>
+        </section>
+
+		    <section id="slide-title">
+          <h1>Branches</h1>
+          <h2>Exercise 2</h2>
+        </section>
+
+		    <section id="slide-title">
+          <h1>Multiple Repositories (SSH)</h1>
+          <h2>Exercise 3</h2>
+        </section>
+
+		    <section id="slide-title">
+          <h1>Github</h1>
+          <h2>Exercise 4</h2>
+        </section>
+
+		    <section id="slide-title">
+          <h1>Github</h1>
+          <h2>Exercise 5</h2>
+        </section>
+
+        <section>
+          <h1>Attribution</h1>
+          <p>Thanks to:
+            <ul>
+              <li>Scott Chacon's Github presentation, which provided a template for much of the git intro.</li>
+              <li>Clip Art from: </li>
+            </ul>
+          </p>
+        </section>
+
+
+      </div>
+    </div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="lib/js/reveal.min.js"></script>
+    <script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					//{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					//{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/js/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'lib/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-619489-20']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+  </body>
+</html>
+
+  </div>
+  <div class="span3">
+    <div class="row">
+      <div class="span3">
+        <br />
+  <div class="well">
+    <a href="https://docs.google.com/forms/d/1H30wscwbX9RgEcyGMcecQGykCSTIQLVHnc7_l3Dyl94/viewform">Send Anonymous Feedback</a>
+  </div>
+        <div class="well">
+          <h4>Class List</h4>
+<ol>
+  <li><a href="/6.S194/lessons/01-introduction/index.html">Introduction</a> (W 2/6)</li>
+  <li><a href="/6.S194/lessons/02-bootup/index.html">Bootup</a> (M 2/11)</li>
+  <li><a href="/6.S194/lessons/03-git/index.html">Become a Git Master</a> (W 2/13)</li>
+  <li><a href="/6.S194/lessons/04-web-requests/index.html">Everything you ever wanted to know about Web Requests</a> (T 2/19)</li>
+  <li><a href="/6.S194/lessons/05-design-studio/index.html">Design Studio</a> (W 2/20)</li>
+  <li><a href="/6.S194/lessons/06-debugging/index.html">Debugging</a> (M 2/25)</li>
+  <li><a href="/6.S194/lessons/07-design-studio/index.html">Design Studio</a> (W 2/27)</li>
+  <li><a href="/6.S194/lessons/08-open-source-business-models">Open Source Business Models</a> (M 3/3)</li>
+  <li><a href="/6.S194/lessons/09-design-studio/index.html">Design Studio</a> (W 3/6)</li>
+  <li><a href="/6.S194/lessons/10-work-day">Work Day</a> (W 3/11)</li>
+  <li><a href="/6.S194/lessons/11-design-studio/">Design Studio</a> (W 3/13)</li>
+  <li><a href="/6.S194/lessons/12-quantifying-code/">Quantifying Code</a> (M 3/18)</li>
+  <li><a href="/6.S194/lessons/13-design-studio">Design Studio</a> (W 3/20)</li>
+  <li><b>Spring Break (M 3/25 & 27)</b></li>
+  <li><a href="/6.S194/lessons/14-quantifying-users/">Quantifying Users</a> (M 4/1)</li>
+  <li>Work day (W 4/3)</li>
+  <li><a href="/6.S194/lessons/16-remote-collaboration/">Remote Collaboration</a> (M 4/8)</li>
+  <li><a href="/6.S194/lessons/17-design-studio/">Design Studio</a> (W 4/10)</li>
+  <li><b>No class - Patriot's Day</b> (M 4/15)</li>
+  <li>Design Studio (W 4/17)</li>
+  <li>Work Day (M 4/22)</li>
+  <li>Design Studio (W 4/24)</li>
+  <li><b>No class - <a href="http://chi2013.acm.org/">CHI</a></b> (M 4/29 and W 5/1)</li>
+  <li><a href="/6.S194/final-presentation.html">Final Presentations</a> (M 5/6)</li>
+  <li><a href="/6.S194/final-presentation.html">Final Presentations</a> (W 5/8)</li>
+  <li><b>No class - <a href="http://www2013.org/">WWW</a></b> (M 5/13 and W 5/15)</li>
+  <li>*Note: <a href="/6.S194/final-report.html">Report</a> due W 5/15*</li>
+</ol>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <div class="footer">
+      </div>
+
+    </div> <!-- /container -->
+
+    <script src="/6.S194/js/jquery.min.js"></script>
+    <script src="/6.S194/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-619489-20']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>

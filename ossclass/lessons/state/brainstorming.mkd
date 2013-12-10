@@ -1,0 +1,40 @@
+State
+=====
+
+State management in modern computer applications can be extrordinarily
+complicated. The days of Microsoft Word-style applications are largely gone.
+
+State management in today's applications are complicated for four primary
+reasons:
+
+*  Networked applications
+*  Complicated application stacks
+*  Multiple Users
+*  Distributed architectures
+
+Networked Applications 
+----------------------
+
+
+Complicated Application Stacks: The Web
+---------------------------------------
+
+*  
+*  task queues
+
+Multiple Users: How Google Docs Works
+-------------------------------------
+
+* 
+
+Distributed Architectures: When the Network is the Computer
+-----------------------------------------------------------
+
+This section will highlight:
+
+* git
+* Cougaar
+* Distributed hash tables
+* horizontally scaled databases
+* the traditional LAMP stack
+

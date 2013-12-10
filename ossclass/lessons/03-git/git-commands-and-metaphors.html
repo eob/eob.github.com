@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Git Commands and Metaphors</title>
+    <meta name="description" content="">
+		<meta name="author" content="Ted Benson">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="/6.S194/css/slides/reveal.min.css" />
+    <link rel="stylesheet" href="/6.S194/css/slides/oscar.css" id="theme" />
+  
+    <link rel="stylesheet" href="/6.S194/css/slides/ted.css" />
+    <link rel="stylesheet" href="/6.S194/css/slides/zenburn.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+      <section>
+  <section>
+  <h1>Intro to Git</h1>
+  </section>
+
+  <section>
+  <p class="large">Git is an open source, distributed, version control system designed for speed and efficiency.</p>
+  </section>
+
+  <section>
+  <h2>A git repository is two things</h2>
+  <ul>
+    <li>A key value store mapping checksum &rarr; file</li>
+    <li>A tree talking about how those checksums correspond to versions, branches, etc.</li>
+  </ul>
+  <aside class="notes">
+  <ul>
+    <li>If you store 1000 copies of the same file, how does it scale?</li>
+    <li>When people say git is fast, can you see why from these two bullet points?</li>
+  </ul>
+  </aside>
+  </section>
+
+  <section>
+  <h2>To the User..</h2>
+  <p class="large">A magic directory with lots of filesystem features.</p>
+  </section>
+
+  <section>
+  <h2>git init</h2>
+  <p>Creates a new git repository</p>
+  <pre><code>
+  - project/
+      + .git/
+      - README
+  </code></pre>
+  <p>The git repository lives in <code>.git</code></p>
+  </section>
+
+  <section>
+  <h2>Interact with the repository with a staging process</h2>
+  </section>
+
+  <section>
+  <img src="img/lifecycle1.png" />
+  </section>
+
+  <section>
+  <img src="img/lifecycle2.png" />
+  </section>
+
+  <section>
+  <p>When you commit it bumps up the "version" of your repository.</p>
+  </section>
+
+  <section>
+  <h3>Demo</h3>
+  <ul>
+    <li>git init</li>
+    <li>git status</li>
+    <li>git add</li>
+    <li>git commit</li>
+  </ul>
+  </section>
+
+  <section>
+  <h2>Talking to Other Repositories</h2>
+  <ul>
+    <li><code>git remote add URL</code></li>
+    <li class="fragment"><code>git clone URL</code> <ul>
+      <li>automatically adds URL as "origin"</li>
+      </ul>
+      <li class="fragment"><code>git push REMOTE BRANCH</code></li>
+      <li class="fragment"><code>git pull REMOTE BRANCH</code></li>
+  </ul>
+  </section>
+
+  <section>
+  <h3>Demo</h3>
+  <ul>
+    <li>git clone</li>
+    <li>git pull</li>
+    <li>git push</li>
+  </ul>
+  </section>
+
+  <section>
+  <h2>Exercise 1</h2>
+  </section>
+
+</section>
+
+      </div>
+    </div>
+
+<script src="/6.S194/js/slides/head.min.js"></script>
+<script src="/6.S194/js/slides/reveal.min.js"></script>
+<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+        { src: '/6.S194/js/slides/classList.js', condition: function() { return !document.body.classList; } },
+          //{ src: '/6.S194/js/slides/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          //{ src: '/6.S194/js/slides/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/6.S194/js/slides/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/6.S194/js/slides/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '/6.S194/js/slides/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: '/6.S194/js/slides/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-619489-20']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  </body>
+</html>

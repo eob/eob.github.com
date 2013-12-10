@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>How Git Works, Internally</title>
+    <meta name="description" content="">
+		<meta name="author" content="Ted Benson">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="/6.S194/css/slides/reveal.min.css" />
+    <link rel="stylesheet" href="/6.S194/css/slides/oscar.css" id="theme" />
+  
+    <link rel="stylesheet" href="/6.S194/css/slides/ted.css" />
+    <link rel="stylesheet" href="/6.S194/css/slides/zenburn.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+      <section>
+<h2>Under the Hood</h2>
+
+<p class="center">The images in this slide deck are 
+from <a href="http://git-scm.com/book">Pro Git</a> under
+a Creative Common <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">license</a> (Attribution, Noncommercial, Share alike).
+</p>
+</section>
+
+<section>
+<img src="http://git-scm.com/figures/18333fig0301-tn.png" />
+</section>
+
+<section>
+<img src="http://git-scm.com/figures/18333fig0302-tn.png" />
+</section>
+
+<section>
+<img src="http://git-scm.com/figures/18333fig0303-tn.png" />
+</section>
+
+<section>
+<h3>A Branch is a Pointer</h3>
+<pre><code>
+git branch testing
+</code></pre>
+</section>
+
+<section>
+<img src="http://git-scm.com/figures/18333fig0304-tn.png" />
+</section>
+
+<section>
+<h2>HEAD points to your current location</h2>
+<img src="http://git-scm.com/figures/18333fig0305-tn.png" />
+</section>
+
+<section>
+<h2>git checkout testing</h2>
+<img src="http://git-scm.com/figures/18333fig0306-tn.png" />
+</section>
+
+<section>
+<h2>git commit -a -m "some change"</h2>
+<img src="http://git-scm.com/figures/18333fig0307-tn.png" />
+</section>
+
+<section>
+<p class="huge">"Versions" are implicit in the graph structure</p>
+</section>
+
+<section>
+<h2>git checkout master</h2>
+<img src="http://git-scm.com/figures/18333fig0308-tn.png" />
+</section>
+
+<section>
+<h2>git commit -a -m "other changes"</h2>
+<img src="http://git-scm.com/figures/18333fig0309-tn.png" />
+</section>
+
+<section>
+<h2>Branching, Merging, Conflicts</h2>
+<p>(on board)</p>
+</section>
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+<script src="/6.S194/js/slides/head.min.js"></script>
+<script src="/6.S194/js/slides/reveal.min.js"></script>
+<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+        { src: '/6.S194/js/slides/classList.js', condition: function() { return !document.body.classList; } },
+          //{ src: '/6.S194/js/slides/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          //{ src: '/6.S194/js/slides/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/6.S194/js/slides/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/6.S194/js/slides/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '/6.S194/js/slides/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: '/6.S194/js/slides/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-619489-20']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  </body>
+</html>

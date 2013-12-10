@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Giant Repositories Smashing Into Other Giant Repositories</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A lab-based class in large-scale software development">
+    <meta name="author" content="Ted Benson">
+    
+    <!-- CODE HIGHLIGHTING --> 
+    <link href="/6.S194/css/sh/default.css" rel="stylesheet">
+    <script src="/6.S194/js/sh.min.js"></script>
+    <script src="/6.S194/js/sh-python.min.js"></script>
+    <script src="/6.S194/js/sh-javascript.min.js"></script>
+    
+    <link href="/6.S194/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/6.S194/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/6.S194/css/example.css" rel="stylesheet">
+    <link href="/6.S194/css/custom.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li ><a href="/6.S194/index.html">Home</a></li>
+          <li ><a href="/6.S194/calendar.html">Calendar</a></li>
+          <li ><a href="/6.S194/teams.html">Teams</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course Information<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li >
+                <a href="/6.S194/syllabus.html">Syllabus</a>
+              </li>
+              <li >
+                <a href="/6.S194/course-announcement.html">Course Flyer</a>
+                </li>
+              <li >
+                <a href="/6.S194/design-studio.html">Design Studio</a>
+              </li>
+
+             <li ><a href="/6.S194/projects.html">Projects</a></li>
+            </ul>
+            <li ><a href="/6.S194/submit.html">Submit Materials</a></li>
+        </li>
+        </ul>
+        <h3 class="topright">MIT 6.S194 | Open Source Software Project Lab &nbsp;</h3>
+      </div>
+      <div class="content">
+        <div class="row">
+  <div class="span7 offset1 class">
+    <h1>Giant Git Repositories Smashing Into Other Giant Git Repositories</h1>
+
+<div class="figure figure-center" style="width: 400px">
+  <img src="img/robot-fight.jpg" width="300px" />
+  <div class="legend">
+    <div class="caption">
+      <b>Figure 1.</b> Robots smashing into other robots.
+    </div>
+    <div class="credits"><a href="http://www.china.org.cn/video/2010-03/23/content_19663739.htm">source</a></div>
+  </div>
+</div>
+
+<p>This exercise shows you that, at heart, git truly is just a giant object
+graph.</p>
+
+<h2>Step 1: Clone the Patriot Act</h2>
+
+<p>Clone a <a href="https://github.com/software-development/patriot-act">repository with The Patriot Act in it.</a></p>
+
+<pre>
+git clone git://github.com/software-development/patriot-act.git 
+</pre>
+
+<p>Take a peek at the files in this directory:</p>
+
+<pre>
+  + patriot-act
+  |
+  | - README.md
+  | - all-different.txt
+  | - append.txt
+  | - hr3162.txt
+  | - same.txt
+</pre>
+
+<p>Two of these files, `README.md` and `hr3162.txt` are realted the USA Patriot
+Act. The rest of the files are simply here to help you investigate the behavior
+of git.</p>
+
+<h2>Step 2: Clone Franz Kafka's Metamorphosis</h2>
+
+<p>Next, in a new folder, clone a second <a href="https://github.com/software-development/kafka">repository with Franz Kafka's Metamorphosis</a>.</p>
+
+<pre>
+git clone git://github.com/software-development/kafka.git
+</pre>
+
+<p>Take a peek at those files, too.</p>
+
+<pre>
+  + kafka
+  |
+  | - README.txt
+  | - all-different.txt
+  | - append.txt
+  | - metamorphosis.txt
+  | - same.txt
+</pre>
+
+<h2>Step 3: Notice the Differences</h2>
+
+<p>Explore the differences in the two repositories. Some are simply different
+files, but others content differences within files of the same name.</p>
+
+<div class="alert alert-info">
+  
+  What do you think would happen, <b>file per file</b>, if you try to pull the
+  Kafka repository into Patriot Act repository?
+
+</div>
+
+<h2>Step 4: Super Smash Bros.</h2>
+
+First, create a <i>new clone</i> of the Patriot Act repository (so you'll be
+able to compare it to the old one.)
+
+<pre>
+git clone git://github.com/software-development/patriot-act.git patriot2
+</pre>
+
+Notice how we added a final argument this time arount -- <b>patriot2</b> --
+which manually provides the name we want to give this repository. Change
+directories into this new <b>patriot2</b> repository.
+
+Next, let's add a shortcut to the Kafka repository from inside <b>patriot2</b>:
+
+<pre>
+git remote add kafka git://github.com/software-development/kafka.git
+</pre>
+
+<p>Recall that a <b>remote</b> in git is just like a nick-name for some other
+repository. The configuration for remotes are stored in `.git/config`. You can
+see the configuration for the new remote you just added by typing:</p>
+
+<pre>
+cat .git/config
+</pre>
+
+<p>Now pull from the remote <b>kafka</b> repository on Github into the local
+<b>patriot2</b> repository on your disk.</p>
+
+<pre>
+git pull kafka master
+</pre>
+
+You'll see the following message:
+
+<pre>
+From git://github.com/software-development/kafka
+ * branch            master     -> FETCH_HEAD
+Auto-merging append.txt
+CONFLICT (add/add): Merge conflict in append.txt
+Auto-merging all-different.txt
+CONFLICT (add/add): Merge conflict in all-different.txt
+Auto-merging README.md
+CONFLICT (add/add): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+</pre>
+
+<h2>Step 5: Cleaning Up The Mess</h2>
+
+<p>Inspect the files in your repository again, both their names and
+contents. Come up with an explanation for why each file currently in the
+repository is in its current state:</p>
+
+<ul>
+  <li>README.md</li>
+  <li>all-different.txt</li>
+  <li>append.txt</li>
+  <li>hr3162.txt</li>
+  <li>metamorphosis.txt</li>
+  <li>same.txt</li>
+</ul>
+
+<p>Now run a <code>git status</code> command.</p>
+
+<p>What you are seeing in some of them is git's way of showing you a
+file it doesn't know how to merge:</p>
+
+<pre>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;  HEAD
+Why did the chicken cross the road?
+=======
+to get to the other side
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 18b5e56bc02acbc17e67a7849d467efc1c79a5d0
+</pre>
+
+<p>The &lt;&lt; bit and the &gt;&gt; bit enclose the region with
+differences, and the equal signs divide it into two. On the top, we see
+the <code>HEAD</code>'s version of what should be there (this is your
+local repository. On the bottom we see commit <code>18b5e5</code>'s
+version. What you pulled in.</p>
+
+<p>Fix these conflicting files, then tell git that you've solved all the problems by <code>git add</code>ing them and committing that changeset with the log message "Reconciled differences"</p>
+
+<h2>Step 6: Lookng Back</h2>
+
+<p>Now that you've reconciled, and committed, the differences, Let's
+take a visual look at what's going on in there. The <code>git
+  log</code> command will show you a simple picture of what's going on.
+Try typing that.</p>
+
+<p>We can do better than that, though. Add the following to your
+<code>~/.gitconfig</code> file:</p>
+
+<pre>
+[alias]
+lg1 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+lg2 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)— %an%C(reset)' --abbrev-commit
+lg = !"git lg2"
+</pre>
+
+<p>This will let you type <code>git lg</code> for a more visual
+depiction of what is going on (showing branches, etc).</p>
+
+<pre style="font-size: 0.7em">
+*   d9c94f8 - Wed, 13 Feb 2013 10:32:32 -0500 (7 minutes ago) (HEAD, master)
+|\            Reconciled differences — Ted Benson
+| * 8708113 - Wed, 13 Feb 2013 10:29:43 -0500 (10 minutes ago)
+|             First commit into Kafka Repository — Ted Benson
+* 9b5d3bd - Wed, 13 Feb 2013 10:30:34 -0500 (9 minutes ago) (origin/master, origin/HEAD)
+            First commit into the Patriot Repository — Ted Benson
+</pre>
+
+<p>You're at the head -- the top line -- and you now have two parents!</p>
+
+<p>Try moving between them and verifying (via <code>ls</code> and file inspection) that you truly have <b>both</b> the Patriot Act and Metamorphosis as separate parents!</p>
+<ul>
+  <li>git checkout 8708113</li>
+  <li>git checkout 9b5d3bd</li>
+  <li>git checkout master</li>
+</ul>
+
+<div class="alert alert-info">
+  <p>You just smashed two repositories into each other.</p>
+  
+  <ul>
+    <li>Why is this even possible? </li>
+    <li>What does the git object graph look like?</li>
+    <li>How do you patch up the state of these conflicting files?</li>
+  </ul>
+</div>
+
+<p>Hopefully, this exercize has shown you that a "repository" in git is
+far more flexible a data structure than you may have believed!</p>
+
+  </div>
+  <div class="span3">
+    <div class="row">
+      <div class="span3">
+        <br />
+        <div class="well">
+          <a href="https://docs.google.com/forms/d/1H30wscwbX9RgEcyGMcecQGykCSTIQLVHnc7_l3Dyl94/viewform">Send Anonymous Feedback</a>
+        </div>
+        <div class="well">
+          <p align="center" style="margin-bottom: 0">
+          <a href="index.html" class="btn btn-info">
+            <i class="icon-white icon-arrow-left"></i>
+            Back to lesson
+          </a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <div class="footer">
+      </div>
+
+    </div> <!-- /container -->
+
+    <script src="/6.S194/js/jquery.min.js"></script>
+    <script src="/6.S194/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-619489-20']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
