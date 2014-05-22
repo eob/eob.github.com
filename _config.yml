@@ -4,3 +4,6 @@ permalink: /posts/:title
 auto: true
 rdiscount:
   extensions: [smart]
+collections:
+  publications:
+    output: true

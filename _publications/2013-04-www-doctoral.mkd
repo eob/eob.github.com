@@ -1,0 +1,13 @@
+---
+title: "Mockup Driven Web Development"
+conference: WWW
+conferenceLink: http://www2013.org/
+subconference: Doctoral Consortium
+year: 2013
+city: Rio de Janeiro
+region: Brazil
+authors:
+- name: Edward Benson
+  link: http://www.edwardbenson.com
+permalink: /publications/mockup-driven-web-development/
+---

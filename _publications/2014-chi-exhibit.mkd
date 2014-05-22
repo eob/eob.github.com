@@ -1,0 +1,14 @@
+---
+title: "End-Users Publishing Structured Information on the Web: An Observational Study of What, Why, and How"
+conference: CHI
+conferenceLink: http://chi2014.acm.org/
+year: 2014
+city: Toronto
+region: Canada
+authors:
+- name: Edward Benson
+  link: http://www.edwardbenson.com
+- name: David Karger
+  link: http://people.csail.mit.edu/karger.html
+permalink: /publications/end-users-publishing-structured-information-on-the-web/
+---

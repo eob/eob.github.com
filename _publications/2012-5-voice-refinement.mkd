@@ -1,0 +1,20 @@
+---
+title: "Voice Query Refinement"
+conference: INTERSPEECH
+conferenceLink: http://www.interspeech2012.org/
+year: 2012
+pdf: http://edwardbenson.com/papers/is2012-voice-query-refinement.pdf
+city: Portland
+region: OR
+authors:
+- name: Cyril Allauzen
+  link: http://research.google.com/pubs/author130.html
+- name: Edward Benson
+  link: http://www.edwardbenson.com
+- name: Ciprian Chelba
+  link: http://research.google.com/pubs/author6342.html
+- name: Michael Riley
+  link: http://research.google.com/pubs/author125.html
+- name: Johan Schalkwyk
+permalink: /publications/voice-query-refinement/
+---

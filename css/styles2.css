@@ -97,7 +97,7 @@ header{
   width: 80px;
   font-family: Helvetica, sans-serif;
 }
-header section { 
+header section {
   margin-left: 10px;
   margin-top: 15px;
 }
@@ -303,7 +303,7 @@ header nav ul li.selected a {
   width: 75px !important;
 }
 
-/* PAPERS 
+/* PAPERS
  */
 
 
@@ -375,7 +375,7 @@ ul.publications h3 {
 
 
 /*
- 
+
  TALKS
 
  */
@@ -419,7 +419,7 @@ ul.publications h3 {
 
 
 /*
- 
+
  HACKER NEWS MAD KARMA
 
  */
@@ -429,7 +429,7 @@ ul.publications h3 {
 
 
 /*
- 
+
  BOASTFUL
 
  */
@@ -516,7 +516,7 @@ ul.projects li h3 a {
 }
 
 a {
-  
+
   color: #0066ff;
 }
 
@@ -569,4 +569,13 @@ span.tag {
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+}
+
+
+div.authors > span:after {
+  content: ', ';
+}
+
+div.authors > span:last-of-type:after {
+  content: '';
 }
