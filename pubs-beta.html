@@ -1,0 +1,22 @@
+
+{% for publication in site.publications reversed %}
+<li class="paper">
+  <h3>
+    {% if publication.pdf %}
+    <a href="{{publication.pdf}} ">{{publication.title}}</a>
+    {% else %}
+    {{publication.title}}
+    {% endif %}
+  </h3>
+  <div class="authors">
+    {% for author in publication.authors %}<span>{% if author.link %}<a href="{{author.link}}">{{author.name}}</a>{% else %}{{author.name}}{% endif %}</span>{% endfor %}
+  </div>
+  <div class="conference">
+    <strong>
+      <a href="{{publication.conferenceLink}}">{{publication.conference}}</a></strong>{%if publication.subconference %}, {{publication.subconference}}{% endif %} / {{publication.city}}, {{publication.region}}
+  </div>
+  {% if publication.special %}
+  <p><b>{{publication.special}}</b></p>
+  {% endif %}
+</li>
+{% endfor %}

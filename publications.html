@@ -30,27 +30,54 @@ paper wasn't in an archival track -- email me and I'll send you a copy.</p>
 
 <ul class="publications thinglist">
 
-{% for publication in site.publications reversed %}
+
 <li class="paper">
-  <h3>
-    {% if publication.pdf %}
-    <a href="{{publication.pdf}} ">{{publication.title}}</a>
-    {% else %}
-    {{publication.title}}
-    {% endif %}
-  </h3>
-  <div class="authors">
-    {% for author in publication.authors %}<span>{% if author.link %}<a href="{{author.link}}">{{author.name}}</a>{% else %}{{author.name}}{% endif %}</span>{% endfor %}
-  </div>
-  <div class="conference">
-    <strong>
-      <a href="{{publication.conferenceLink}}">{{publication.conference}}</a></strong>{%if publication.subconference %}, {{publication.subconference}}{% endif %} / {{publication.city}}, {{publication.region}}
-  </div>
-  {% if publication.special %}
-  <p><b>{{publication.special}}</b></p>
-  {% endif %}
+<h3><a href="http://edwardbenson.com/papers/chi2014-exhibit-study.pdf">End-Users Publishing Structured Information on the Web: An Observational Study of What, Why, and How</a></h3>
+<div class="authors">
+    <a href="http://people.csail.mit.edu/eob/">Edward Benson</a> and
+    <a href="http://people.csail.mit.edu/karger">David Karger</a>
+</div>
+<div class="conference"><strong><a href="http://www2013.org/">CHI 2014</a></strong> / Toronto, Canada</div>
+<p><i>To Appear</i></p>
 </li>
-{% endfor %}
+
+<li class="paper">
+<h3><a href="http://edwardbenson.com/papers/www2013-cascading-tree-sheets.pdf">Cascading Tree Sheets and Recombinant HTML: Better Encapsulation and Retargeting of Web Content</a></h3>
+<div class="authors">
+    <a href="http://people.csail.mit.edu/eob/">Edward Benson</a> and
+    <a href="http://people.csail.mit.edu/karger">David Karger</a>
+</div>
+<div class="conference"><strong><a href="http://www2013.org/">WWW 2013</a></strong> / Rio de Janeiro, Brazil</div>
+<p><b>Best Student Paper Award -- Second Place</b></p>
+</li>
+
+<li class="paper">
+<h3>Mockup Driven Web Development</h3>
+<div class="authors">
+  <a href="http://people.csail.mit.edu/eob/">Edward Benson</a>
+</div>
+<div class="conference"><strong><a href="http://www2013.org/">WWW 2013</a></strong>, Doctoral Consortium / Rio de Janeiro, Brazil</div>
+</li>
+
+<li class="paper">
+<h3><a href="http://edwardbenson.com/papers/2013-chi-src-reducing-cost-of-web-edits.pdf">Quantifying and Reducing the Cost of Web Edits</a></h3>
+<div class="authors">
+  <a href="http://people.csail.mit.edu/eob/">Edward Benson</a>
+</div>
+<div class="conference"><strong><a href="http://chi2013.acm.org/">CHI 2013</a></strong>, Student Research Competition / Paris, France</div>
+</li>
+
+<li class="paper">
+<h3><a href="http://edwardbenson.com/papers/is2012-voice-query-refinement.pdf">Voice Query Refinement</a></h3>
+<div class="authors">
+    <a href="http://research.google.com/pubs/author130.html"> Cyril Allauzen</a>,
+    <a href="http://people.csail.mit.edu/eob/">Edward Benson</a>,
+    <a href="http://research.google.com/pubs/author6342.html">Ciprian Chelba</a>,
+    <a href="http://research.google.com/pubs/author125.html">Michael Riley</a>, and
+    Johan Schalkwyk.
+</div>
+<div class="conference"><strong><a href="http://www.interspeech2012.org/">Interspeech 2012</a></strong> / Portland, OR</div>
+</li>
 
 <li class="paper">
 <h3><a href="http://edwardbenson.com/papers/acl2011-twitter.pdf">Event Discovery in Social Media Feeds</a></h3>
