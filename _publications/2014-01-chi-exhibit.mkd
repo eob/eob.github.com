@@ -3,6 +3,7 @@ title: "End-Users Publishing Structured Information on the Web: An Observational
 conference: CHI
 conferenceLink: http://chi2014.acm.org/
 year: 2014
+pdf: http://edwardbenson.com/papers/chi2014-exhibit-study.pdf
 city: Toronto
 region: Canada
 authors:
