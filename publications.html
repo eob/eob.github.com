@@ -44,7 +44,7 @@ paper wasn't in an archival track -- email me and I'll send you a copy.</p>
   </div>
   <div class="conference">
     <strong>
-      <a href="{{publication.conferenceLink}}">{{publication.conference}}</a></strong>{%if publication.subconference %}, {{publication.subconference}}{% endif %} / {{publication.city}}, {{publication.region}}
+      <a href="{{publication.conferenceLink}}">{{publication.conference}}</a></strong>{%if publication.subconference %}, {{publication.subconference}}{% endif %} {% if publication.journal %}{% else %} / {{publication.city}}, {{publication.region}} {% endif %}
   </div>
   {% if publication.special %}
   <p><b>{{publication.special}}</b></p>
