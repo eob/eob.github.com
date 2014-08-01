@@ -1,0 +1,15 @@
+---
+title: "The Schema-Independent Database UI: A Proposed Holy Grail and Some Suggestions"
+conference: CIDR
+conferenceLink: http://www.cidrdb.org/cidr2011/
+year: 2011
+pdf: http://edwardbenson.com/papers/cidr2011-schema-independent-ui.pdf
+city: Asilomar
+region: CA
+authors:
+- name: Eirik Bakke
+  link: http://www.mit.edu/~ebakke
+- name: Edward Benson
+  link: http://www.edwardbenson.com
+permalink: /publications/schema-independent-database-ui/
+---

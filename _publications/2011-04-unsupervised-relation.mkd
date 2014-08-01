@@ -1,0 +1,19 @@
+---
+title: "In-domain Relation Discovery with Meta-constraints via Posterior Regularization"
+conference: ACL
+conferenceLink: http://www.acl2011.org/
+year: 2011
+pdf: http://edwardbenson.com/papers/acl2011-relation-discovery.pdf
+city: Portland
+region: OR
+authors:
+- name: Harr Chen
+  link: http://people.csail.mit.edu/harr
+- name: Edward Benson
+  link: http://www.edwardbenson.com
+- name: Tahira Naseem
+  link: http://people.csail.mit.edu/tahira
+- name: Regina Barzilay
+  link: http://people.csail.mit.edu/regina/
+permalink: /publications/unsupervised-relation-discovery/
+---

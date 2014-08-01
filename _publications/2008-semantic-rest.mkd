@@ -1,0 +1,11 @@
+---
+title: "Bridging the Semantic Web and Web 2.0 with Representational State Transfer"
+conference: Journal of Web Semantics
+conferenceLink: http://www.elsevier.com/wps/find/journaldescription.cws_home/671322/description
+year: 2008
+authors:
+- name: Robert Battle
+- name: Edward Benson
+  link: http://www.edwardbenson.com
+permalink: /publications/semantic-rest/
+---
