@@ -10,6 +10,20 @@ tags:
 
 This is perhaps the coolest command line trick I have learned in recent memory. 
 
+Any time I need to syntax highlight a snippet of HTML to insert on a presentation slide, I simply copy it to the clipboard, run `highlight-html` on the command line, and voila! The clipboard now contains properly syntax highlighted code ready for pasting.
 
+Here's how to set your computer up so you can do it too.
 
-I have used this trick so many times making my defense presentation slides that I can not help publishing a short post to 
+First, install the `highlight` package for brew
+
+    brew install highlight
+
+Then create executable shell scripts located in `$PATH` of the following form:
+
+    pbpaste | highlight --syntax=html -O rtf | pbcopy
+
+This one is named `highlight-html`. I've got others for other languages (CSS, Javascript, Python, etc).
+
+That's it.
+
+I suspect this is the beginning of a beautiful relationship between `pbpaste` and `pbcopy` and my shell scripting. 
