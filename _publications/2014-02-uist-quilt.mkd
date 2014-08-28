@@ -3,6 +3,7 @@ title: "Spreadsheet Driven Web Applications"
 conference: UIST
 conferenceLink: http://www.acm.org/uist/uist2014/
 year: 2014
+pdf: http://edwardbenson.com/papers/uist2014-spreadsheet-driven-web-apps.pdf
 city: Honolulu
 region: Hawaii
 authors:
