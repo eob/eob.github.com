@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Facebook&#39;s Product is You
+title: "Facebook&#39;s Product is You"
 permalink: /2010/05/facebooks-product-is-you/
 ---
 
@@ -9,7 +9,7 @@ issue. So far, the focus has been on privacy: essentially how to draw the messy
 line between public and private in the socially networked age. Just as
 important as where that line falls, however, is who owns the rights to use and
 redistribute the information artifacts left behind by your digital presence.
- 
+
 Here's an example from the offline world: I wrote a book for a publisher who
 likes to put author photos on the front cover, and so I was required to grant
 them the rights to my image. Two years later, I was walking through a book
