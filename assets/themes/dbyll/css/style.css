@@ -320,3 +320,14 @@ article.home h3 {
   background-color: #eee;
   color: #2c3e50;
 }
+
+a.tweetme {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  background-image: url('/images/twitter-white.png');
+  background-size: 20px 16px;
+  background-repeat: no-repeat;
+  height: 25px;
+  padding-left: 25px;
+}

@@ -70,9 +70,12 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="{% if BASE_PATH %}{{ BASE_PATH }}{% else %}/{% endif %}">Home</a></li>
-        <li><a href="{{ BASE_PATH}}{{ site.JB.categories_path }}">Categories</a></li>
-        <li><a href="{{ BASE_PATH}}{{ site.JB.tags_path }}">Tags</a></li>
+     <li><a href="{% if BASE_PATH %}{{ BASE_PATH }}{% else %}/{% endif %}"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="{{ BASE_PATH}}/publications.html"><i class="fa fa-newspaper-o"></i> Publications</a></li>
+     <li><a href="{{ BASE_PATH}}/teaching.html"><i class="fa fa-graduation-cap"></i> Teaching</a></li>
+      <li><a href="{{ BASE_PATH}}/code.html"><i class="fa fa-code"></i> Code</a></li>
+     <li><a href="{{ BASE_PATH}}/blog"><i class="fa fa-pencil"></i> Blog</a></li>
+     <li><a href="{{ BASE_PATH}}{{ site.JB.tags_path }}"><i class="fa fa-pencil"></i> Blog Posts by Tag</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </nav>
@@ -84,11 +87,11 @@
    </button>
    <ul class="dropdown-menu" role="menu">
      <li><a href="{% if BASE_PATH %}{{ BASE_PATH }}{% else %}/{% endif %}"><i class="fa fa-home"></i> Home</a></li>
-      <li><a href="{{ BASE_PATH}}/publications.html"><i class="fa fa-tags"></i>Publications</a></li>
-     <li><a href="{{ BASE_PATH}}/teaching.html"><i class="fa fa-tags"></i>Teaching</a></li>
-      <li><a href="{{ BASE_PATH}}/code.html"><i class="fa fa-tags"></i>Code</a></li>
-     <li><a href="{{ BASE_PATH}}/blog"><i class="fa fa-tags"></i>Blog</a></li>
-     <li><a href="{{ BASE_PATH}}{{ site.JB.tags_path }}"><i class="fa fa-tags"></i>Blog Posts by Tag</a></li>
+      <li><a href="{{ BASE_PATH}}/publications.html"><i class="fa fa-newspaper-o"></i> Publications</a></li>
+     <li><a href="{{ BASE_PATH}}/teaching.html"><i class="fa fa-graduation-cap"></i> Teaching</a></li>
+      <li><a href="{{ BASE_PATH}}/code.html"><i class="fa fa-code"></i> Code</a></li>
+     <li><a href="{{ BASE_PATH}}/blog"><i class="fa fa-pencil"></i> Blog</a></li>
+     <li><a href="{{ BASE_PATH}}{{ site.JB.tags_path }}"><i class="fa fa-pencil"></i> Blog Posts by Tag</a></li>
      <li class="divider"></li>
      <li><a href="#"><i class="fa fa-arrow-up"></i> Top of Page</a></li>
    </ul>
