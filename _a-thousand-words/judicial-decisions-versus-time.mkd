@@ -1,5 +1,0 @@
-title: "Just after judges eat, they approve three times more parole requests"
-sourceurl: http://www.pnas.org/content/108/17/6889.full
-otherurl: http://www.randalolson.com/2014/08/24/the-best-and-worst-times-to-have-your-case-reviewed-by-a-judge/
-imgurl: http://www.edwardbenson.com/images/beautiful-data/judicial-decisions-versus-time.jpg
-published: false
