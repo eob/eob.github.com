@@ -2,21 +2,4 @@
 layout: default
 ---
 {% include JB/setup %}
-
-<div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
-</div>
-
-<p align="center">
-  <img src="{{page.imgurl}}" />
-</p>
-
-<br />
-
-{% if page.sourceurl %}
-<a href="{{page.sourceurl}}">Source 1</a>&nbsp;
-{% endif %}
-
-{% if page.otherurl %}
-<a href="{{page.otherurl}}">Source 2</a>&nbsp;
-{% endif %}
+{% include themes/dbyll/athousand.html %}

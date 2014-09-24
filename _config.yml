@@ -7,8 +7,8 @@ rdiscount:
 collections:
   publications:
     output: true
-  athousandwords:
-    permalink: /a-thousand-words/:path
+  ten-thousand-words:
+    permalink: /ten-thousand-words/:path
     output: true
 title : Ted Benson
 author :
