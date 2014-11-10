@@ -1,53 +1,15 @@
 ---
-layout: page
-title: "Ted Benson"
-lozenge: about
 ---
-{% include JB/setup %}
 
-<h2>Hello</h2>
-
-<p>I'm a recent Ph.D. graduate from <a href="http://csail.mit.edu">MIT CSAIL</a>, where I was advised by <a href="http://people.csail.mit.edu/karger">David Karger</a>. My thesis work is on <a href="http://treesheets.org">Cascading Tree
-  Sheets</a>, which does for web structure what CSS did for style. I've
-also done a bit of natural language processing work at MIT and Google, which you're using whenever you talk to your Android phone. Prior to coming to MIT, I did R&amp;D at <a href="http://www.bbn.com">BBN Technologies</a>.</p>
-
-<p>Recent Updates:
-  <ul>
-    <li>Check out the video preview for my <a href="http://www.acm.org/uist/uist2014/">UIST 2014</a> talk:
-      <br /><iframe width="560" height="315" src="//www.youtube.com/embed/9KudDZWu2uk" frameborder="0" allowfullscreen></iframe>
-    </li>
-  </ul>
-  
-</p>
-    
-<br />
-<script>
-  function trackTwitter(intent_event) {
-    if (intent_event) {
-      var opt_pagePath;
-      if (intent_event.target && intent_event.target.nodeName == 'IFRAME') {
-            opt_target = extractParamFromUri(intent_event.target.src, 'url');
-      }
-      _gaq.push(['_trackSocial', 'twitter', 'follow', opt_pagePath]);
-    }
-  }
-
-  !function(d,s,id) {
-    var js, 
-        fjs=d.getElementsByTagName(s)[0]
-        ,p=/^http:/.test(d.location)?'http':'https';
-    
-    if(!d.getElementById(id)) {
-      js=d.createElement(s);
-      js.id=id;
-      js.src=p+'://platform.twitter.com/widgets.js';
-      js.onload = function() {
-        twttr.ready(function (twttr) {
-          twttr.events.bind('follow', function() { trackTwitter });
-        });
-      }
-      fjs.parentNode.insertBefore(js,fjs);
-      
-    }
-  }(document, 'script', 'twitter-wjs');
-</script>
+{% for post in site.posts limit:site.data.theme.num_home_posts %}
+<div class="post-header-home">
+  <h1 class="post-title-home">
+    <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
+  </h1>
+  {% include post-header-home.html %}
+</div>
+<div class="post-excerpt-home">
+  {{ post.excerpt }}
+  <p class="text-right"><a href="{{ post.url | prepend:site.baseurl }}">Continue Reading &rarr;</a></p>
+</div>
+{% endfor %}

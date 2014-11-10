@@ -1,0 +1,141 @@
+---
+layout: page
+title: "Research"
+lozenge: publications
+permalink: /research/
+---
+<a name="toc"></a> 
+
+<p>I earned my Ph.D. from MIT CSAIL in 2014. I was advised by <a href="http://people.csail.mit.edu/karger">David Karger</a> and had the pleasure of working with <a href="http://people.csail.mit.edu/rcm">Rob Miller</a> and <a href="http://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a>. My thesis was about a language I created called <a href="http://treesheets.org">Cascading Tree Sheets</a> which does for web structure what CSS did for style. It's now at the heart of my startup, <a href="http://cloudstitch.io">Cloudstitch</a>. For a time, I was a member of MIT's Natural Language Processing group. You're using my work <a href="http://bits.blogs.nytimes.com/2013/05/15/google-introduces-new-search-tools-to-try-to-read-our-minds/?_r=0">whenever you talk to your Android phone</a>. Prior to coming to MIT, I did R&amp;D at BBN Technologies.</p>
+
+<p>Here's a bit of the paper trail left behind from all that fun: 
+<ul>
+  <li><a href="#papers">Papers</a></li>
+  <li><a href="#books">Books</a></li>
+  <li><a href="#teaching">Teaching</a></li>
+  <li><a href="#other">Other</a></li>
+</ul>
+</p>
+
+<div id="papers" style="clear:both">
+<h2>Papers &nbsp;<a href="#toc">&#8617;</a></h2>
+<a name="papers"></a> 
+<p>Click on the title to download PDF. If the title isn't a link, it means the
+paper wasn't in an archival track -- email me and I'll send you a copy.</p>
+
+<ul class="publications thinglist">
+
+{% for publication in site.publications reversed %}
+<li class="paper">
+  <h3>
+    {% if publication.pdf %}
+    <a href="{{publication.pdf}} ">{{publication.title}}</a>
+    {% else %}
+    {{publication.title}}
+    {% endif %}
+  </h3>
+  <div class="authors">
+    {% for author in publication.authors %}<span>{% if author.link %}<a href="{{author.link}}">{{author.name}}</a>{% else %}{{author.name}}{% endif %}</span>{% endfor %}
+  </div>
+  <div class="conference">
+    <strong>
+      <a href="{{publication.conferenceLink}}">{{publication.conference}}</a></strong>{%if publication.subconference %}, {{publication.subconference}}{% endif %} {% if publication.journal %}{% else %} / {{publication.city}}, {{publication.region}} {% endif %}
+  </div>
+  {% if publication.special %}
+  <p><b>{{publication.special}}</b></p>
+  {% endif %}
+</li>
+{% endfor %}
+</div>
+
+<div id="books">
+    <h2>Books &nbsp;<a href="#toc">&#8617;</a></h2>
+<a name="books"></a> 
+
+    <ul class="publications thinglist">
+
+<li class="book">
+<a href="http://www.amazon.com/gp/product/0470189487?ie=UTF8&tag=httpwwwedward-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0470189487"><img src="/images/pubs/aor.png" /></a>
+<h3><a href="http://www.amazon.com/gp/product/0470189487?ie=UTF8&tag=httpwwwedward-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0470189487">The Art of Rails</a></h3>
+<p>Described by an Amazon reviewier as a <em>"phenomenal follow-on book for anyone who has completed a beginner Ruby on Rails book and is looking for moving on to the next step."</em> Rails has undergone a lot of changes lately, but the underlying design patterns that this book addresses remain the same.</p>
+</li>
+<li class="book">
+<a href="http://www.amazon.com/gp/product/0470082801/ref=as_li_qf_sp_asin_tl?ie=UTF8&tag=httpwwwedward-20&linkCode=as2&camp=217145&creative=399369&creativeASIN=0470082801"><img src="/images/pubs/ria.png" /></a>
+<h3><a href="http://www.amazon.com/gp/product/0470082801/ref=as_li_qf_sp_asin_tl?ie=UTF8&tag=httpwwwedward-20&linkCode=as2&camp=217145&creative=399369&creativeASIN=0470082801">Professional Rich Internet Applications</a></h3>
+<p>A developer's suvery of Web 2.0 techniques, back from the days when "ajax" was a new term and jQuery didn't even exist!</p>
+</li>
+</ul>
+</div>
+<br />
+
+<div id="teaching">
+  <h1>Teaching &nbsp;<a href="#toc">&#8617;</a></h1>
+  <a name="teaching"></a> 
+
+
+  <div id="classes">
+    <h3>As Primary Instructor</h3>
+   <ul class="thinglist">
+    <li>
+      <h4>Open Source Software Project Lab</h4>
+      <p style="margin-top: -5px">An experimental, co-op style course in Software Development practice. <a href="http://courses.csail.mit.edu/6.S194">MIT 6.S194</a>, Spring 2013.</p>
+    </li>
+   <li>
+      <h4>iPhone Development</h4>
+      <p style="margin-top: -5px">I created, planned, and taught MIT's <a href="http://iphonedev.csail.mit.edu/">Intro to iPhone Development</a> course that took place during IAP 2009 and 2010.</p>
+    </li>
+  </ul>
+  <h3>As Teaching Assistant</h3>
+ <ul class="thinglist">
+    <li>
+      <h4>User Interface Design</h4>
+      <p style="margin-top: -5px"><a href="http://stellar.mit.edu/S/course/6/sp12/6.813/">MIT 6.813/6.831</a>, Spring 2012.</p>
+    </li>
+    <li>
+      <h4>Artificial Intelligence</h4>
+      <p style="margin-top: -5px"><a href="http://courses.csail.mit.edu/6.034s/">MIT 6.034s</a>, Spring 2011.</p>
+    </li>
+    <li>
+      <h4>Advanced Programming Methods</h4>
+      <p style="margin-top: -5px">University of Virginia, CS 201</p>
+    </li>
+    <li>
+      <h4>Program Design and Representation</h4>
+      <p style="margin-top: -5px">University of Virginia, CS 213</p>
+    </li>
+
+  </ul>
+  <h3>As Guest Lecturer</h3>
+  <ul>
+    <li>Computer Science Summer Institute, at Google (2012)</li>
+    <li>6.MITx, at MIT (2013)</li>
+  </ul>
+  <h3>Students Mentored</h3>
+  <p><i>.. as part of MIT's <a href="http://web.mit.edu/urop/">Undergraduate Research Opportunities Program</a> (UROP)</i></p>
+  <ul>
+    <li>Jessica Andersen (2013)</li>
+    <li>John Wang (2013)</li>
+    <li>Oliver Song (2013)</li>
+    <li>Tochukwu Okoro (2013)</li>
+    <li>Connie Huang (2013)</li>
+    <li>Sarah Scodel (2012-2013)</li>
+    <li>Jason Yonglin Wu (2013)</li>
+    <li>Daniel Ronde (2012)</li>
+    <li>Zach Wener-Fligner (2011-2012)</li>
+    <li>Aizana Turmukhametova (2011)</li>
+  </ul>
+</div>
+
+</div>
+
+<div id="other">
+  <h1>Other &nbsp;<a href="#toc">&#8617;</a></h1>
+  <a name="other"></a> 
+
+  <ul class="publications thinglist">
+    <li class="magazine">
+    <h3><a href="http://chronicle.com/blogs/conversation/2013/06/04/unintentional-hipster-faculty/">Unintentional Hipster Faculty</a></h3>
+    in <a href="http://chronicle.com/blogs/conversation/">The Conversation</a> at the <a href="http://chronicle.com">The Chronicle of Higher Education</a>. The Conversation. 4 June 2013.
+    </li>
+  </ul>
+</div>
