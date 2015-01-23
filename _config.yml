@@ -10,8 +10,6 @@ collections:
   ten-thousand-words:
     permalink: /ten-thousand-words/:path
     output: true
-gems:
-  - jemoji
 exclude:
   - "README.md"
   - "CHANGELOG.md"
