@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Test Title
+title: "PhD Defense: Creating Rich Designs and Read-Write-Compute Pages with a Relational Layer for Web Content"
 permalink: /2014/08/phd-defense
 published: true
 tags:
@@ -8,6 +8,7 @@ tags:
   - MIT
   - personal
 ---
+
 
 
 Proud to finally have this flyer going out to the MIT email lists. If you are in Cambridge, please do attend!
