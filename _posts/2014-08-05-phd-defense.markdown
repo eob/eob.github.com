@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "PhD Defense: Creating Rich Designs and Read-Write-Compute Pages with a Relational Layer for Web Content"
+title: "Whaaat!"
 permalink: /2014/08/phd-defense
 published: true
 tags:
@@ -8,6 +8,7 @@ tags:
   - MIT
   - personal
 ---
+
 
 
 
