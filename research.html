@@ -23,30 +23,8 @@ permalink: /research/
 <p>Click on the title to download PDF. If the title isn't a link, it means the
 paper wasn't in an archival track -- email me and I'll send you a copy.</p>
 
-<ul class="publications thinglist">
-
-{% for publication in site.publications reversed %}
-<li class="paper">
-  <h3>
-    {% if publication.pdf %}
-    <a href="{{publication.pdf}} ">{{publication.title}}</a>
-    {% else %}
-    {{publication.title}}
-    {% endif %}
-  </h3>
-  <div class="authors">
-    {% for author in publication.authors %}<span>{% if author.link %}<a href="{{author.link}}">{{author.name}}</a>{% else %}{{author.name}}{% endif %}</span>{% endfor %}
-  </div>
-  <div class="conference">
-    <strong>
-      <a href="{{publication.conferenceLink}}">{{publication.conference}}</a></strong>{%if publication.subconference %}, {{publication.subconference}}{% endif %} {% if publication.journal %}{% else %} / {{publication.city}}, {{publication.region}} {% endif %}
-  </div>
-  {% if publication.special %}
-  <p><b>{{publication.special}}</b></p>
-  {% endif %}
-</li>
-{% endfor %}
-</div>
+<script src="//static.cloudstitch.io/cloudstitch.js"></script>
+<div widget="academic/publications"></div>
 
 <div id="books">
     <h2>Books &nbsp;<a href="#toc">&#8617;</a></h2>
