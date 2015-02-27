@@ -11,6 +11,10 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend:site.baseurl }}">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <script>
+      window.nocirrusbutton = true;
+    </script>
+
 
     <link type="cloudstitch/jekyll-site" href="http://cloudstitch.io/ted/blog/interfaces/default" />
     <link type="cloudstitch/jekyll-file" href="http://cloudstitch.io/ted/blog/interfaces/default/{{page.path}}" />
