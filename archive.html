@@ -2,10 +2,19 @@
 title: Archive
 permalink: "archive/index.html"
 ---
+
+
+<ul>
+  <li><a href="#papers">Papers</a></li>
+  <li><a href="#books">Books</a></li>
+  <li><a href="#teaching">Teaching</a></li>
+  <li><a href="#other">Other</a></li>
+</ul>
+
 <div class="page-archive">
 {% for post in site.posts %}
-  {% assign post_month_year = post.date | date: "%B %Y" %}
-  {% assign newer_post_month_year = post.next.date | date: "%B %Y" %}
+  {% assign post_month_year = post.date | date: "%Y" %}
+  {% assign newer_post_month_year = post.next.date | date: "%Y" %}
   {% if post_month_year != newer_post_month_year %}
     <h3 class="section-header-archive">
       {{ post_month_year }}
