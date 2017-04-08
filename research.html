@@ -23,8 +23,29 @@ permalink: /research/
 <p>Click on the title to download PDF. If the title isn't a link, it means the
 paper wasn't in an archival track -- email me and I'll send you a copy.</p>
 
-<script src="//static.cloudstitch.io/cloudstitch.js"></script>
-<div widget="academic/publications"></div>
+<ol connect="Pubs|rows">
+{% for pub in site.sheet.Publications %}
+    <li class="paper">              
+      <a class="title" href="{{pub.PaperLink}}" style="display:none;">
+        <div class="title" style="display:none;">{{pub.Title}}</div>
+      </a>
+
+      <div class="authors">{{pub.Authors}}</div>
+
+      <div class="conference-details">
+        <a class="conference" href="{{pub.ConferenceLink}}">
+          <span class="conference">{{pub.Conference}}</span>      
+        </a>
+        <span class="year">{{Year}}</span>
+        <span>{{ConferenceLocation}}</span>
+      </div>
+      
+      {% if pub.AwardComment %}
+        <div class="award-comment">{{pub.AwardComment}}</div>              
+      {% endif %}
+  </li>
+{% endfor %}
+</ol>
 
 <div id="books">
     <h2>Books &nbsp;<a href="#toc">&#8617;</a></h2>
