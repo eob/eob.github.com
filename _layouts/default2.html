@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend:site.baseurl }}">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  </head>
+  <body>
+    <style>
+      body, html {
+        padding: 0;
+        margin: 0;
+      }
+      
+      .sans-serif {
+          font-family: -apple-system,
+                      BlinkMacSystemFont,
+                      'avenir next',
+                      avenir,
+                      'helvetica neue',
+                      helvetica,
+                      ubuntu,
+                      roboto,
+                      noto,
+                      'segoe ui',
+                      arial,
+                      sans-serif;
+      }
+
+      .georgia {
+          font-family: georgia, serif;
+      }
+
+
+    .db {
+        display: block;
+    }
+
+    .dib {
+        display: inline-block;
+    }
+
+    .link {
+        text-decoration: none;
+        transition: color .15s ease-in;
+    }
+
+    .link:link, .link:visited {
+        transition: color .15s ease-in;
+    }
+
+    .link:hover {
+        transition: color .15s ease-in;
+    }
+
+    .link:active {
+        transition: color .15s ease-in;
+    }
+
+    .link:focus {
+        transition: color .15s ease-in;
+        outline: 1px dotted currentColor;
+    }
+
+    .mid-gray {
+        color: #555;
+    }
+
+    .pv4 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .ph2 {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .ph3 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .mt3 {
+        margin-top: 1rem;
+    }
+
+    .tc {
+        text-align: center;
+    }
+
+
+    .f6 {
+        font-size: .875rem;
+    }
+
+    .dim {
+        opacity: 1;
+        transition: opacity .15s ease-in;
+    }
+
+    .dim:hover, .dim:focus {
+        opacity: .5;
+        transition: opacity .15s ease-in;
+    }
+
+    .dim:active {
+        opacity: .8;
+        transition: opacity .15s ease-out;
+    }
+
+    @media screen and (min-width: 30em) and (max-width: 60em) {
+        .ph5-m {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
+
+    @media screen and (min-width: 60em) {
+        .ph6-l {
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
+    }
+    </style>
+
+    {{ content }}
+    <footer class="pv4 ph3 ph5-m ph6-l mid-gray georgia">
+      <small class="f6 db tc">© 2017 <b>Edward Benson</b>, All Rights Reserved</small>
+      <div class="tc mt3">
+        <a href="/" title="Home" class="f6 dib ph2 link mid-gray dim">Home</a>
+        <a href="/research"    title="Research" class="f6 dib ph2 link mid-gray dim">Research</a>
+        <a href="/blog"  title="Blog" class="f6 dib ph2 link mid-gray dim">Blog</a>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
