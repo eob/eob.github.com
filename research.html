@@ -24,26 +24,26 @@ permalink: /research/
 paper wasn't in an archival track -- email me and I'll send you a copy.</p>
 
 <ol connect="Pubs|rows">
-{% for pub in site.sheet.Publications %}
-    <li class="paper">              
-      <a class="title" href="{{pub.PaperLink}}" style="display:none;">
-        <div class="title" style="display:none;">{{pub.Title}}</div>
-      </a>
-
-      <div class="authors">{{pub.Authors}}</div>
-
-      <div class="conference-details">
-        <a class="conference" href="{{pub.ConferenceLink}}">
-          <span class="conference">{{pub.Conference}}</span>      
-        </a>
-        <span class="year">{{Year}}</span>
-        <span>{{ConferenceLocation}}</span>
-      </div>
-      
-      {% if pub.AwardComment %}
-        <div class="award-comment">{{pub.AwardComment}}</div>              
-      {% endif %}
-  </li>
+{% for publication in site.publications reversed %}
+<li class="paper">
+  <h3>
+    {% if publication.pdf %}
+    <a href="{{publication.pdf}} ">{{publication.title}}</a>
+    {% else %}
+    {{publication.title}}
+    {% endif %}
+  </h3>
+  <div class="authors">
+    {% for author in publication.authors %}<span>{% if author.link %}<a href="{{author.link}}">{{author.name}}</a>{% else %}{{author.name}}{% endif %}</span>{% endfor %}
+  </div>
+  <div class="conference">
+    <strong>
+      <a href="{{publication.conferenceLink}}">{{publication.conference}}</a></strong>{%if publication.subconference %}, {{publication.subconference}}{% endif %} {% if publication.journal %}{% else %} / {{publication.city}}, {{publication.region}} {% endif %}
+  </div>
+  {% if publication.special %}
+  <p><b>{{publication.special}}</b></p>
+  {% endif %}
+</li>
 {% endfor %}
 </ol>
 
