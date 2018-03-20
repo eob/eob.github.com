@@ -1,4 +1,0 @@
-title: "For every twelve new science and engineering PhDs, there is only one new faculty position."
-sourceurl: http://www.nature.com/nbt/journal/v31/n10/fig_tab/nbt.2706_F1.html
-imgurl: http://www.edwardbenson.com/images/beautiful-data/phds-versus-openings.jpg
-published: false

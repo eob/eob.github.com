@@ -1,3 +1,0 @@
-title: "When People Are Born"
-imgurl: http://www.edwardbenson.com/images/beautiful-data/birthdays.png
-published: false
