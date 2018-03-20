@@ -1,0 +1,13 @@
+[
+  {"kind": "nice", "text": "You will find that which you have been looking for"},
+  {"kind": "nice", "text": "Your ability for accomplishment will be followed by success!"},
+  {"kind": "nice", "text": "A big fortune will descend upon you this year"},
+  {"kind": "nice", "text": "True love will knock on your door this month"},
+  {"kind": "nice", "text": "Don't worry, everything will be fine."},
+  {"kind": "nice", "text": "An unexpected vacation will introduce you to new horizons"},
+  {"kind": "mean", "text": "You will stub your toe. On your other toe."},
+  {"kind": "mean", "text": "After failing school, you will trip on a banana peel"},
+  {"kind": "mean", "text": "Your whole live has been a computer simulation, and it's time to reboot to install a Windows Update."},
+  {"kind": "mean", "text": "A very angry skunk will spray you after class."},
+  {"kind": "mean", "text": "You will divide by zero, and the universe will explode"}
+]

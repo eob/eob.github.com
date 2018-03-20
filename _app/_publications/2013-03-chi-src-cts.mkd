@@ -1,0 +1,14 @@
+---
+title: "Quantifying and Reducing the Cost of Web Edits"
+conference: CHI
+conferenceLink: http://chi2013.acm.org/
+subconference: Student Research Competition
+year: 2013
+pdf: http://edwardbenson.com/papers/2013-chi-src-reducing-cost-of-web-edits.pdf
+city: Paris
+region: France
+authors:
+- name: Edward Benson
+  link: http://www.edwardbenson.com
+permalink: /publications/quantifying-and-reducing-the-cost-of-web-edits/
+---

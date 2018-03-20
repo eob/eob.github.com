@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://0.0.0.0:4321/</loc>
+    <lastmod>2018-03-20</lastmod>
+  </url>
+
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/about/</loc>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/404.html</loc>
+        
+      </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/</loc>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/viz/</loc>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/news/</loc>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/research/</loc>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/talks/</loc>
+        
+      </url>
+    
+  
+
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2018/02/cloudstitch-acquired-by-instabase</loc>
+        
+          <lastmod>2018-02-14</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2018/02/text-alignment-inspired-by-soap-operas</loc>
+        
+          <lastmod>2018-02-12</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2018/01/outperform-perfectionism-with-ensembles</loc>
+        
+          <lastmod>2018-01-29</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2018/01/structured-extraction-from-images</loc>
+        
+          <lastmod>2018-01-17</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2017/02/i-turned-my-dash-button-hack-into-a-toddler-pager</loc>
+        
+          <lastmod>2017-02-16</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2017/02/fill-sketch-designs-with-spreadsheet-data</loc>
+        
+          <lastmod>2017-02-10</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2017/02/letter-to-an-immigrant-child</loc>
+        
+          <lastmod>2017-02-07</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2017/02/use-spreadsheet-data-in-framer-projects</loc>
+        
+          <lastmod>2017-02-01</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2017/01/america-without-immigration-isnt-america</loc>
+        
+          <lastmod>2017-01-28</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2017/01/the-math-of-how-protests-snowball</loc>
+        
+          <lastmod>2017-01-12</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2016/12/autoincrementing-id-colums-in-google-sheets</loc>
+        
+          <lastmod>2016-12-05</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2016/08/hacking-joins-into-spreadsheets-rails-style</loc>
+        
+          <lastmod>2016-08-09</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2016/04/on-disposable-software</loc>
+        
+          <lastmod>2016-04-12</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2016/03/eating-startup-dogfood-in-public</loc>
+        
+          <lastmod>2016-03-22</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2016/03/how-to-upload-files-to-a-google-spreadsheet</loc>
+        
+          <lastmod>2016-03-15</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2015/11/launching-is-an-accountability-hack</loc>
+        
+          <lastmod>2015-11-16</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2015/10/d3-in-a-box-is-docker-for-visualizations</loc>
+        
+          <lastmod>2015-10-30</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2015/09/four-months-on-lambda-good-bad-intriguing</loc>
+        
+          <lastmod>2015-09-10</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2015/08/how-i-hacked-amazons-dash-button-to-track-baby-data</loc>
+        
+          <lastmod>2015-08-09</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2015/07/founders-at-hackathons</loc>
+        
+          <lastmod>2015-07-28</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2015/07/managing-state-across-lambda</loc>
+        
+          <lastmod>2015-07-13</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2015/02/adam-marcus-on-remote-labor</loc>
+        
+          <lastmod>2015-02-10</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2014/08/phd-defense</loc>
+        
+          <lastmod>2014-08-05</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2014/08/magical-source-code-highlighting</loc>
+        
+          <lastmod>2014-08-02</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2013/10/wordpress-themes-are-getting-more-complicated-over-time</loc>
+        
+          <lastmod>2013-10-22</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2013/07/flexible-data-formats-are-used-more-flexibly</loc>
+        
+          <lastmod>2013-07-07</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2013/02/eval-in-template-languages</loc>
+        
+          <lastmod>2013-02-02</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2013/12/celebrity-as-parable</loc>
+        
+          <lastmod>2013-01-22</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2012/11/virtualization-makes-things-weird</loc>
+        
+          <lastmod>2012-11-14</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2012/07/cross-origin-resource-sharing-gotcha</loc>
+        
+          <lastmod>2012-11-07</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2012/07/a-useful-little-pattern-for-web-scraping</loc>
+        
+          <lastmod>2012-07-17</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2012/03/democracy-pressure-release/</loc>
+        
+          <lastmod>2012-03-27</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2012/03/who-occipies/</loc>
+        
+          <lastmod>2012-03-14</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2012/03/thoughts-on-nicar/</loc>
+        
+          <lastmod>2012-03-06</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2011/11/roasted-cocoa-ice-cream</loc>
+        
+          <lastmod>2011-11-12</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2011/3/a-new-generation-of-nuclear-power-opponents/</loc>
+        
+          <lastmod>2011-03-12</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2011/1/crowdsourcing-community-hackathon/</loc>
+        
+          <lastmod>2011-01-08</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/12/scala-can-be-scary/</loc>
+        
+          <lastmod>2010-12-07</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/11/only-at-the-media-lab/</loc>
+        
+          <lastmod>2010-11-20</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/11/the-semantic-web-needs-a-mysql/</loc>
+        
+          <lastmod>2010-11-16</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/11/choosing-the-right-data-to-publish/</loc>
+        
+          <lastmod>2010-11-09</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/10/if-james-bond-were-a-linguist/</loc>
+        
+          <lastmod>2010-10-09</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/10/bit-by-flexibility/</loc>
+        
+          <lastmod>2010-10-06</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/09/the-right-to-advertise-adult-services</loc>
+        
+          <lastmod>2010-09-08</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/09/islamophobia/</loc>
+        
+          <lastmod>2010-09-07</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/08/it-takes-six-clicks/</loc>
+        
+          <lastmod>2010-08-20</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/08/solving-problems-versus-selling-products/</loc>
+        
+          <lastmod>2010-08-10</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/06/should-the-president-have-an-internet-kill-switch/</loc>
+        
+          <lastmod>2010-06-13</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/06/browser-plugins-considered-dangerous/</loc>
+        
+          <lastmod>2010-06-12</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/06/att-cever-trick.markdown</loc>
+        
+          <lastmod>2010-06-04</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/05/facebooks-product-is-you/</loc>
+        
+          <lastmod>2010-05-22</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/04/ten-rules-for-radicals</loc>
+        
+          <lastmod>2010-04-30</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/04/time-travel-on-the-world-wide-web/</loc>
+        
+          <lastmod>2010-04-27</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/04/the-scale-of-things/</loc>
+        
+          <lastmod>2010-04-26</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/04/inflection-point-of-the-social-web/</loc>
+        
+          <lastmod>2010-04-22</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/04/newspapers-are-dead-long-live-news/</loc>
+        
+          <lastmod>2010-04-09</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/03/close-your-laptop-and-pull-out-a-notepad/</loc>
+        
+          <lastmod>2010-03-25</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/03/the-irony-of-wikileaks/</loc>
+        
+          <lastmod>2010-03-24</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2010/03/data-driven-computer-science/</loc>
+        
+          <lastmod>2010-03-22</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2009/10/uccellos-chalice.markdown</loc>
+        
+          <lastmod>2009-10-01</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2009/09/how-safari-and-firefox-handle-html5-manifest-files</loc>
+        
+          <lastmod>2009-09-26</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2009/09/will-namespace-traffic-jam-kill-rdfa</loc>
+        
+          <lastmod>2009-09-21</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2009/09/subtle-wordpress-security-hole</loc>
+        
+          <lastmod>2009-09-08</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2009/09/more-six-degrees</loc>
+        
+          <lastmod>2009-09-08</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2009/09/controller-specific-ttnavigation-urls</loc>
+        
+          <lastmod>2009-09-04</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2009/09/formal-model-for-milgrams-letter-experiments</loc>
+        
+          <lastmod>2009-09-03</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2009/08/htmls-three-competing-data-formats</loc>
+        
+          <lastmod>2009-08-28</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2009/08/nasty-bug-in-rack</loc>
+        
+          <lastmod>2009-08-12</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2009/08/palm-pre-secretly-tracks-you-by-gps</loc>
+        
+          <lastmod>2009-08-12</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2009/06/using-uisearchdisplaycontroller-with-three20</loc>
+        
+          <lastmod>2009-06-29</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2009/06/what-is-machine-learning</loc>
+        
+          <lastmod>2009-06-25</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2009/06/marvin-minsky-on-the-ai-winter</loc>
+        
+          <lastmod>2009-06-11</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2008/05/alone-in-tokyo.markdown</loc>
+        
+          <lastmod>2008-05-15</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2008/05/dont-become-a-buddhist.markdown</loc>
+        
+          <lastmod>2008-05-12</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2008/05/as-you-dream-it.markdown</loc>
+        
+          <lastmod>2008-05-11</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2008/05/book-to-print.markdown</loc>
+        
+          <lastmod>2008-05-09</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2008/02/declaring-something-doesnt-make-it-true</loc>
+        
+          <lastmod>2008-02-09</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2008/02/introduction-to-the-art-of-rails</loc>
+        
+          <lastmod>2008-02-08</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2008/02/ouch</loc>
+        
+          <lastmod>2008-02-07</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2008/02/book-edits-are-killing-me</loc>
+        
+          <lastmod>2008-02-03</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2008/01/programming-book-sales-and-contracts</loc>
+        
+          <lastmod>2008-01-21</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2008/01/the-internet-is-a-strange-place</loc>
+        
+          <lastmod>2008-01-19</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2008/01/running-rspec-from-textmate</loc>
+        
+          <lastmod>2008-01-13</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2008/01/peep-code-love/</loc>
+        
+          <lastmod>2008-01-01</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/12/code-in-text/</loc>
+        
+          <lastmod>2007-12-16</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/12/chapter-8/</loc>
+        
+          <lastmod>2007-12-07</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/12/ejs-moving-to-google-code/</loc>
+        
+          <lastmod>2007-12-05</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/12/code-can-be-funny/</loc>
+        
+          <lastmod>2007-12-03</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/11/whats-new-is-whats-old</loc>
+        
+          <lastmod>2007-11-29</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/10/iphone-native-apps-prediction/</loc>
+        
+          <lastmod>2007-10-24</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/10/democracy-new-words-needed-apply-within/</loc>
+        
+          <lastmod>2007-10-21</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/10/chapter-7/</loc>
+        
+          <lastmod>2007-10-15</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/09/chapter-5/</loc>
+        
+          <lastmod>2007-09-18</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2011/09/this-binary-universe</loc>
+        
+          <lastmod>2007-09-05</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2011/08/iwork-and-svn-dont-play-well-together</loc>
+        
+          <lastmod>2007-08-28</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/08/chapter-4/</loc>
+        
+          <lastmod>2007-08-27</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/08/chapter-3/</loc>
+        
+          <lastmod>2007-08-10</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/08/i-will-not-write-about-coding/</loc>
+        
+          <lastmod>2007-08-06</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/07/chapter-2/</loc>
+        
+          <lastmod>2007-07-22</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/07/chapter-1/</loc>
+        
+          <lastmod>2007-07-20</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/07/april-fools-constitution-just-a-suggestion/</loc>
+        
+          <lastmod>2007-07-20</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/07/broken-r-key/</loc>
+        
+          <lastmod>2007-07-17</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/07/the-thing-about-chapters-one-through-three/</loc>
+        
+          <lastmod>2007-07-14</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/06/cap-city/</loc>
+        
+          <lastmod>2007-06-27</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/06/my-office-is-on-fire/</loc>
+        
+          <lastmod>2007-06-11</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/06/traffic/</loc>
+        
+          <lastmod>2007-06-06</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/06/three-fifths-the-time-is-five-thirds-the-fun/</loc>
+        
+          <lastmod>2007-06-04</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/05/abusing-javascript-for-multiline-strings/</loc>
+        
+          <lastmod>2007-05-05</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/05/abstraction-is-everything/</loc>
+        
+          <lastmod>2007-05-05</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/04/waltham-ma/</loc>
+        
+          <lastmod>2007-04-30</lastmod>
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>http://0.0.0.0:4321/2007/04/melodic-impact/</loc>
+        
+          <lastmod>2007-04-24</lastmod>
+        
+      </url>
+    
+  
+
+</urlset>

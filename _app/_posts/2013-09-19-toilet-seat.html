@@ -1,0 +1,202 @@
+---
+layout: post
+title: A probabilistic analysis of leaving the toilet seat down
+permalink: /2013/09/probabilistic-toilet-seat-analysis/
+published: false
+jqui: true
+latex: true
+d3: true
+js: toilet.js
+---
+
+<h2>Variables</h2>
+
+<p>I will assign a constant penalty for touching the toilet seat during your
+bathroom session.</p>
+
+<table>
+  <tr>
+    <td>\( Penalty \)</td>
+    <td>The penalty for touching the toilet seat.</td>
+  </tr>
+  <tr>
+    <td>\( P_{Him} \)</td>
+    <td>The probability that on any random bathroom visit, it is the male in
+      the bathroom. For example, \( P_{Him} = 0.5 \) would be the case in which the man and
+      woman go to the bathroom with equal frequency, and \( P_{Him} = 1.0 \) is the case where the woman never goes to the bathroom.</td>
+  </tr>
+  <tr>
+    <td>\( P_{Pee} \)</td>
+    <td>The probability that, when the <b>man</b> goes to the bathroom, he pees. If \( P_{Pee} = 0.75 \), for example, it means the man pees three times for every time he poops.</td>
+  </tr>
+</table>     
+
+<p>That's it. It turns out that the woman's bathroom habits cancel out in the
+math so these are the only two variables we need.</p>
+
+<h2>Policy 1: Everyone leaves the toilet seat down</h2>
+
+<p>This case is easy. Both parties can assume the seat will be down when they
+arrive, so the man only needs be concerned with lifting the seat to pee. He
+incurs the penalty twice: once for putting the seat up, and once for putting it
+back down.</p>
+
+<table>
+ <tr>
+   <td>\(Cost_{Her, 1}\)</td>
+   <td>\(= 0\)</td>
+ </tr>
+ <tr>
+   <td>\(Cost_{Him, 1}\)</td>
+   <td>\(= 2 * P_{Pee} * Penalty \)</td>
+ </tr>
+</table>
+
+<p>You might argue that the man should only incur the penalty once: after all,
+he is washing his hands afterwar, so what's wrong with a second toilet seat
+manipulation if you've already done a first.  We'll call this special case
+Policy 1-Prime:
+
+<table>
+ <tr>
+   <td>\(Cost_{Him, 1}' \)</td>
+   <td>\(= P_{Pee} * Penalty \)</td>
+ </tr>
+</table>
+
+
+<h2>Policy 2: Everyone leaves the toilet seat as is</h2>
+
+<table>
+ <tr>
+   <td colspan="2">
+   <p>Since the woman always leaves the toilet seat down, she only needs to
+   touch the seat when the man went before her and he peed.</p>
+   </td>
+ <tr>
+   <td>\(Cost_{Her, 2} =\)</td>
+   <td>\( P_{Him} * P_{Pee} * Penalty  \)</td>
+ </tr>
+ <tr>
+   <td colspan="2">
+
+     <p>The man's case is more complicated.</p>
+     
+     <p>If he is peeing, he touches the seat if the woman went before him, or
+     if he went last time and pooped. If he is pooping, he touches the seat if
+     he went last time and peed.</p>
+     
+   </td>
+ </tr>
+ <tr>
+   <td>\(Cost_{Him, 2} =\)</td>
+   <td>
+    <table>
+      <tr>
+        <td>\( Penalty  \biggr ( \)</td>
+        <td>
+
+     <table>
+      <tr>
+        <td></td>
+        <td>\( P_{Pee} \)</td>
+        <td>\( \big ( P_{Him} (1 - P_{Pee}) + (1 - P_{Him}) \big ) \)</td>
+     </tr>
+      <tr>
+        <td>\( +\)</td>
+        <td>\( (1 - P_{Pee}) \)</td>
+        <td>\( \big ( P_{Him} P_{Pee} \big ) \)</td>
+      </tr>
+
+    </table>
+        
+        </td>
+        <td>\( \biggr ) \)</td>
+      </tr>
+    </table>
+  </td>
+ </tr></table>
+
+<h2>Simulation</h2>
+
+<p>I've left the solution so generalized because I can't presume how much you
+poop, or how much your SO pees, or how often either of you go to the bathroom.
+Instead, play around with the simulation below to see what policy you should
+choose.</p>
+
+<table>
+  <tr>
+    <th colspan=3><i>Who goes more?</i></th>
+    <td></td>
+    <th colspan=3><i>When the man goes, what does he do?</i></th>
+  </tr>
+  <tr>
+    <td><td>Her</td><td><div style="margin: 10px; width: 200px" id="whoGoesMore"></div></td><td>Him</td>
+    <td>&nbsp</td>
+    <td>Poop</td><td><div style="margin: 10px; width: 200px" id="whatHeDoes"></div></td><td>Pee</td>
+  </tr>
+</table>
+
+<script>
+$(function() {
+    $("#whoGoesMore").slider({
+    min: 0.0,
+    max: 1.0,
+    step: 0.01,
+    value: 0.5
+    });
+    $("#whatHeDoes").slider({
+    min: 0.0,
+    max: 1.0,
+    step: 0.01,
+    value: 0.75
+    });
+
+  window.viz = drawChart();
+  $( "#whoGoesMore" ).on("slidechange", onDataUpdated);
+  $( "#whatHeDoes" ).on("slidechange", onDataUpdated);
+  onDataUpdated();
+
+});
+</script>
+
+<style type="text/css">
+svg {
+  width: 300;
+  height: 300;
+  border: solid 1px #ccc;
+  font: 10px sans-serif;
+  shape-rendering: crispEdges;
+}
+
+rect.man {
+  fill: lightblue;
+}
+rect.woman {
+  fill: lightpink;
+}
+</style>
+
+<table>
+  <tr>
+    <td width="50%">
+      <div id="chart"></div>
+    </td>
+    <td>
+      <table>
+        <tr>
+          <td>Policy</td><td>\(C_{Him}\)</td><td>\(C_{Her}\)</td><td>\(C_{Joint}\)</td>
+        </tr>
+        <tr>
+          <td>1</td><td id="cm1"></td><td id="cw1"></td><td id="cj1"></td>
+        </tr>
+        <tr>
+          <td>1-Prime</td><td id="cm1p"></td><td id="cw1p"></td><td id="cj1p"></td>
+        </tr>
+        <tr>
+          <td>2</td><td id="cm2"></td><td id="cw2"></td><td id="cj2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

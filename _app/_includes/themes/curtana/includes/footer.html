@@ -1,0 +1,42 @@
+<!-- Footer section -->
+{% unless page.permalink == '/' and site.data.curtana.clean_homepage %}
+  <footer class="footer">
+    <ul>
+      <li><a href="{{ '/' | relative_url }}">{{ site.name }}</a></li>
+      <li><a href="http://www.twitter.com/edwardbenson" title="@edwardbenson">@edwardbenson</a></li>
+
+      {% if site.data.curtana.subscription %}
+        <li><a href="{{ '/email-signup' | relative_url }}/">Email</a></li>
+      {% endif %}
+
+      <li><a href="{{ amsf_feed_url | strip }}" title="Feed - Atom (The Atom Syndication Format)">Atom</a></li>
+    </ul>
+  </footer>
+{% endunless %}
+
+<!-- Theme scripts -->
+<script src="{{ '/js/app.js?assets-inline' | prepend: amsf_theme_assets }}"></script>
+
+<!-- User scripts -->
+<script src="{{ '/js/user.js?assets-inline' | prepend: amsf_user_assets }}"></script>
+
+<!-- Lightense Images -->
+{% if page.plugin == 'lightense' %}
+  <script src="{{ '/js/lightense.min.js?assets-inline' | prepend: amsf_theme_assets }}"></script>
+  <script>
+    window.addEventListener('load', function () {
+      Lightense('p > img:not(.no-lightense),.lightense');
+    }, false);
+  </script>
+{% endif %}
+
+<!-- Service Worker  -->
+{{ amsf_service_worker }}
+
+<!-- Google Analytics -->
+{{ amsf_google_analytics }}
+
+<!-- Foot hooks -->
+{% if page.foot %}
+  {{ page.foot }}
+{% endif %}

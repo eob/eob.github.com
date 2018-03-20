@@ -1,0 +1,16 @@
+---
+title: "Cascading Tree Sheets and Recombinant HTML: Better Encapsulation and Retargeting of Web Content"
+conference: WWW
+conferenceLink: http://www2013.org/
+year: 2013
+pdf: http://edwardbenson.com/papers/www2013-cascading-tree-sheets.pdf
+city: Rio de Janeiro
+region: Brazil
+special: "Best Student Paper Award -- Second Place"
+authors:
+- name: Edward Benson
+  link: http://www.edwardbenson.com
+- name: David Karger
+  link: http://people.csail.mit.edu/karger.html
+permalink: /publications/cascading-tree-sheets-and-recombinant-html/
+---

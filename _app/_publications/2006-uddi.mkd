@@ -1,0 +1,17 @@
+---
+title: "Evaluation of UDDI as a Provider of Resource Discovery Services for OGSA-based Grids"
+conference: IPDPS
+conferenceLink: http://www.ipdps.org
+year: 2006
+pdf: http://www.people.csail.mit.edu/eob/ipdps2006_uddi.pdf
+city: Rhodes Island
+region: Greece
+authors:
+- name: Edward Benson
+  link: http://www.edwardbenson.com
+- name: Glenn Wasson
+  link: http://www.cs.virginia.edu/~gsw2c/
+- name: Marty Humphrey
+  link: http://www.cs.virginia.edu/~humphrey/
+permalink: /publications/uddi-resource-discovery/
+---

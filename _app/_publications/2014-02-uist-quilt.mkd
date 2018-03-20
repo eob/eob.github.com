@@ -1,0 +1,17 @@
+---
+title: "Spreadsheet Driven Web Applications"
+conference: UIST
+conferenceLink: http://www.acm.org/uist/uist2014/
+year: 2014
+pdf: http://edwardbenson.com/papers/uist2014-spreadsheet-driven-web-apps.pdf
+city: Honolulu
+region: Hawaii
+authors:
+- name: Edward Benson
+  link: http://www.edwardbenson.com
+- name: Amy Zhang
+  link: http://amyxzhang.wordpress.com
+- name: David Karger
+  link: http://people.csail.mit.edu/karger.html
+permalink: /publications/spreadsheet-driven-web-applications
+---

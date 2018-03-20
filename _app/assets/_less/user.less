@@ -1,0 +1,113 @@
+//
+// User styles
+// --------------------------------------------------
+// All other vaiables in `variables.less` can be overwritten below
+// NOTE: the following user styles are designed for default theme Curtana
+
+//
+// EXAMPLE: alternative title size
+//
+// By default all heading levels have the same font size, but many people may
+// not like this, so here's an alternative font size stack:
+//
+// .content {
+//   h2 { font-size: 108%; opacity: .8; }
+//   h3 { font-size: 96%;  opacity: .7; }
+//   h4 { font-size: 84%;  opacity: .6; }
+//   h5 { font-size: 72%;  opacity: .5; }
+//   h6 { font-size: 60%;  opacity: .4; }
+// }
+
+//
+// EXAMPLE: alternative post title color
+// This is useful when you're using the custom color scheme.
+//
+// .content { .list h2 a, header h1, header h1 a { color: @link-color; } }
+// .external span { background: @link-color; }
+
+//
+// EXAMPLE: custom header with background image
+//
+// .content header {
+//   color: @background-color;
+//   background: @link-color url('/assets/img/title-background-example.jpg') center center / cover;
+// }
+
+//
+// EXAMPLE: Custom typography for Chinese Traditional
+//
+// @fontstack-sans-serif: "Helvetica Neue", "Hiragino Sans GB", Arial, sans-serif;
+// @fontstack-serif: Georgia, "Hiragino Mincho ProN", serif;
+
+//
+// EXAMPLE: amsf.github.io custom appearance
+//
+@link-color: #ff00b4;
+
+.content .sub-title {
+  font-size: 108%;
+  opacity: .8;
+}
+
+.horizontal-list {
+  list-style-type: none !important;  
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.horizontal-list li, .horizontal-list span {
+  display: inline;
+  padding: 10px 15px 10px 15px;
+}
+
+.page-images li {
+  padding: 16px;  
+}
+
+.page-links li {
+  padding: 14px;
+}
+
+h2.subheader {
+  font-size: 1.3em
+}
+
+li.paper {
+  font-size: 0.8em;
+  margin-bottom: 15px;
+}
+
+.subsubheader {
+  font-style: italic;
+  margin-top: 10px !important;
+}
+
+.authors span::after {
+  content: ", ";
+}
+
+.paper img {
+  margin:10px;
+  display: block;
+  float: left
+}
+
+.figcaption_hack {
+  font-style: italic;
+  font-size: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.content article ul {
+  margin-left: 30px;
+}
+
+.content article ul li {
+  margin-bottom: 15px;
+}
+  

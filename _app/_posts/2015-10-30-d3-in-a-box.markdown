@@ -1,0 +1,88 @@
+---
+layout: post
+title: D3 in a Box is Docker for Visualizations
+permalink: /2015/10/d3-in-a-box-is-docker-for-visualizations
+published: true
+tags:
+  - Hacks
+  - Cloudstitch
+---
+
+Cloudstitch launched a new product called [D3 in a
+Box](http://www.cloudstitch.com/d3-in-a-box) this week, and I wanted to write a
+few notes about the motivation behind it. It’s one of those “what we found is
+not what we expected” stories.
+
+D3 in a Box is like a [docker container](https://www.docker.com/what-docker) for
+a [D3 visualization](http://d3js.org/): it bundles up everything you need to
+make and manage a production-quality graphic. Just keep your data in a Google
+Spreadsheet and manage your code Cloudstitch’s cloud-based editor, and we take
+care of all the magic to deploy it, scale it, and clone it as many times as you
+like.
+
+In fact, the best way to get started is to [clone an existing
+visualization](http://www.cloudstitch.com/d3-in-a-box) and modify it. Here are
+some examples from our starter-project gallery:
+
+<span class="figcaption_hack">Just click clone and you get your own container filled with everything you need
+for a production-scale visualization.</span>
+
+When we started building D3 in a Box, we didn’t realize project management and
+deployment was a useful feature for visualizations. Our original idea was to
+adapt D3 visualizations so that non-coders could customize everything about them
+with a spreadsheet.
+
+We won a [Prototype
+Grant](http://knightfoundation.org/funding-initiatives/knight-prototype-fund/)
+from the [Knight Foundation](http://knightfoundation.org/) to work on
+spreadsheet-powered news apps. We built a number of evergreen visualizations,
+like electoral maps and sports brackets. And we enabled all sorts of elaborate
+spreadsheet-based control panels to modify their look and feel. Here’s just one
+worksheet of settings from a map widget:
+
+<span class="figcaption_hack">D3 in a Box was initially aimed at making D3 widgets hyper-customizable with
+spreadsheets.</span>
+
+But the more we visited newsrooms and chatted with developers, the more we
+realized this was missing the mark. All the visualizations we encountered fell
+into roughly one of two categories. Standard go-tos like maps and scatterplots
+all had slick custom products built up around them, like
+[MapBox](http://www.mapbox.com/) or [Tableau](http://www.tableau.com/), so why
+use a spreadsheet? The other half were so custom and story-specific that
+programming, not pre-set spreadsheet options, was the better level of
+abstraction.
+
+But while we were getting schooled in newsroom programming, we noticed something
+that was in dire need of improvement: visualization workflow involves a lot of
+overhead. You’ve got to manage data gathering, archive code, support reuse,
+train non-coders, host the darn thing, and often wrestle with an uncooperative
+CMS. One newsroom developer showed me all the custom apps he had built just to
+crowdsource data collection across the newsroom. Another showed me a computer
+under the desk with a post-it note that said “DO NOT TURN OFF.” It hosted all
+the paper’s visualizations separately from machine running the CMS. And all this
+is time that’s not being spent on the actual story.
+
+So that’s what D3 in a Box fixes: all the overhead work you’d rather ignore so
+you can get back to telling your visual story.
+
+Just like the Docker folks realized that there’s great value in packaging and
+encapsulating server configurations, we think that makes a lot of sense for
+visualizations. D3 in a Box visualizations are self-contained, full-stack
+bundles that just work. If you’ve been spending time writing data collection
+app, just mail out a link your D3 Box’s Google Sheet instead. If you’re hosting
+visualizations on a dusty machine under your desk, we’ll take the baton for you.
+If your CMS is a grump, we integrate with it anyway.
+
+Here’s a short video tour of cloning and editing a Box:
+
+<span class="figcaption_hack">Video tour of cloning and editing a D3 in a Box visualization.</span>
+
+Let us know what** **you think about this model — we’d really like to be of
+service to the all the newsrooms out there. Feel free to leave a comment on this
+post or shoot me a note at ted@cloudstitch.com.
+
+* [Data Visualization](https://medium.com/tag/data-visualization?source=post)
+* [D3](https://medium.com/tag/d3?source=post)
+* [Cloudstitch](https://medium.com/tag/cloudstitch?source=post)
+
+By clapping more or less, you can signal to us which stories really stand out.

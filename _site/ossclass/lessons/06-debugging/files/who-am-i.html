@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+    <script src="fortune-teller.js"></script>
+
+  </head>
+  <body>
+    <h1>The Mysterious Machine!</h1>
+    <p><b>Your fortune:</b> <span id="theFortune"></span></p>
+
+    <script>
+      $(function() {
+        window.fortuneTeller = new FortuneTeller("fortunes.json");
+      });
+    </script>
+  </body>
+</html>

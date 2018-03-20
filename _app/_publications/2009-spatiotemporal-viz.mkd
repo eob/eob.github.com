@@ -1,0 +1,12 @@
+---
+title: "Visualizing Temporal Data for Diagnostic Feedback in Adaptive Logistics Systems"
+conference: CHI
+conferenceLink: http://www.chi2009.org/
+year: 2009
+city: Boston
+region: MA
+authors:
+- name: Edward Benson
+  link: http://www.edwardbenson.com
+permalink: /publications/visualizing-temporal-data-for-diagnostic-feedback/
+---

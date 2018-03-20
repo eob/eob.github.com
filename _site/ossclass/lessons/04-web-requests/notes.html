@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ajax Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A lab-based class in large-scale software development">
+    <meta name="author" content="Ted Benson">
+    
+    <!-- CODE HIGHLIGHTING --> 
+    <link href="/ossclass/css/sh/default.css" rel="stylesheet">
+    <script src="/ossclass/js/sh.min.js"></script>
+    <script src="/ossclass/js/sh-python.min.js"></script>
+    <script src="/ossclass/js/sh-javascript.min.js"></script>
+    
+    <link href="/ossclass/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/ossclass/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/ossclass/css/example.css" rel="stylesheet">
+    <link href="/ossclass/css/custom.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li ><a href="/ossclass/index.html">Home</a></li>
+          <li ><a href="/ossclass/calendar.html">Calendar</a></li>
+          <li ><a href="/ossclass/teams.html">Teams</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course Information<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li >
+                <a href="/ossclass/syllabus.html">Syllabus</a>
+              </li>
+              <li >
+                <a href="/ossclass/course-announcement.html">Course Flyer</a>
+                </li>
+              <li >
+                <a href="/ossclass/design-studio.html">Design Studio</a>
+              </li>
+
+             <li ><a href="/ossclass/projects.html">Projects</a></li>
+            </ul>
+            <li ><a href="/ossclass/submit.html">Submit Materials</a></li>
+        </li>
+        </ul>
+        <h3 class="topright">MIT 6.S194 | Open Source Software Project Lab &nbsp;</h3>
+      </div>
+      <div class="content">
+        <div class="row">
+  <div class="span7 offset1 class">
+    <h1 id='the_story_of_a_web_connection'>The Story of a Web Connection</h1>
+
+<h2 id='abstract'>Abstract</h2>
+
+<p>The web presents a strange programming model because it forces you into writing an application that runs on two computers at once. This presents a number of challenges in application design and state management. All of these design issues, however, are ultimately influenced and built on top of the fundamental relationship that the browser has with the server.</p>
+
+<p>The goal of this lesson is to fully describe that browser-server relationship. If you understand the details about how the browser makes requests to the server, you will be able to make better decisions when faced with higher-level design choices.</p>
+
+<p>We will target:</p>
+
+<ul>
+<li>What&#8217;s a web request</li>
+
+<li>Life cycle of a web request</li>
+
+<li>Ajax and Ajax Styles</li>
+
+<li>The web security model</li>
+</ul>
+
+<h2 id='introduction'>Introduction</h2>
+
+<p><em>Our perspective</em> in this lesson, for the most part, is going to be the browser. There is a whole rich set of separate concerns for the server, but those begin to eek into server-side application territory.</p>
+
+<p>For this lesson, we&#8217;re interested in the code that initiates web connections: be it a browser, a Javascript call, or an API request.</p>
+
+<ul>
+<li><em>Nihonbashi aside</em>.</li>
+</ul>
+
+<h2 id='what_semantically_is_a_web_request'>What, Semantically, is a Web Request</h2>
+
+<p>At the very basic level, an HTTP request made from the browser to the server. The reason for this request has changed over the years, and understanding that helps understand why things are the way they are today.</p>
+
+<p>This isn&#8217;t a timeline, per say, as all these models are still used productively today, but they were developed this order:</p>
+
+<ol>
+<li><strong>The original web</strong>, which operated like browsable set of hypertext FTP servers. Interestingly today&#8217;s Wikipedia is, in some ways, a microcosm of what the original web was: a linked, editable, text based collection of documents.</li>
+
+<li><strong>The CGI model</strong>, where some pages were programs, and the web request was program input</li>
+
+<li><strong>The REST model</strong>, where web applications were organized as a set of resources, and each resource had a URL that pointed to it</li>
+
+<li><strong>The application model</strong>, where web requests are really API calls into a back-end server application</li>
+</ol>
+
+<h2 id='what_are_the_parts_of_a_web_request'>What are the parts of a web request</h2>
+
+<h3 id='url_part'>URL Part</h3>
+
+<pre><code>PROTO://DOMAIN:PORT/PATH#FRAGMENT?PARAMS</code></pre>
+
+<ul>
+<li>Domain</li>
+
+<li>Path</li>
+
+<li>Port</li>
+
+<li>Fragment</li>
+
+<li>Parameters</li>
+
+<li>Protocol</li>
+</ul>
+
+<h3 id='payload_part'>Payload Part</h3>
+
+<ul>
+<li>HTTP Verb (<code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>OPTIONS</code>, etc)</li>
+
+<li><code>POST</code> data (depending&#8230;)</li>
+
+<li>Cookies</li>
+
+<li>Headers * What response types you accept back, etc</li>
+</ul>
+
+<h3 id='these_take_on_differet_meaning_depending_on_how_youre_using_the_web'>These take on differet meaning depending on how you&#8217;re using the web</h3>
+
+<ul>
+<li><strong>If a web site is a collection of documents</strong> Then <code>PROTO://DOMAIN:PORT/PATH</code> references a document. The HTTP verb specifies an action on that document. The rest is largely irrelevant.</li>
+
+<li><strong>If a web site is docuents + CGI scripts</strong> Then URL params, cookies, and post data represent input to those scripts. Those script, in turn, return <em>customized</em> documents.</li>
+
+<li><strong>If you&#8217;re building a REST site</strong> then the <strong>path</strong> and <strong>verb</strong> are particularly important</li>
+
+<li><strong>If a web site is an application</strong> then each request is just an API call and payload design is important.</li>
+</ul>
+
+<p>In the document (<code>.html</code>) or CGI (<code>.php</code>) case, the <strong>path</strong> literally references a file. In the REST and application context, the <strong>path</strong> is a semantic address into your application.</p>
+<div class='demo'>
+  <h4>What are three different ways to:</h4>
+  <ul>
+    <li>Get a list of photos with the tag <code>beach</code></li>
+    <li>Delete a photo. (confirmation?)</li>
+    <li>Add a photo</li>
+    <li>Edit a photo</li>
+  </ul>
+
+  <p>Do for each style. Last two styles is less of a difference, perhaps request/response type</p>
+</div>
+<h2 id='the_life_of_a_web_request'>The Life of a Web Request</h2>
+
+<p><a href='http://www.w3.org/TR/navigation-timing/'>W3C Navigation Timing Recommendation</a></p>
+
+<p>An image of the process:</p>
+
+<p><img alt='Timing Overview' src='http://www.w3.org/TR/navigation-timing/timing-overview.png' /></p>
+
+<ol>
+<li>
+<p>Before you hit the network</p>
+
+<ol>
+<li>Redirect</li>
+
+<li>App Cache</li>
+</ol>
+</li>
+
+<li>
+<p>The Network</p>
+
+<ol>
+<li>DNS Lookup</li>
+
+<li>TCP Connect</li>
+
+<li>Request (<code>requestStart</code>)</li>
+
+<li>Response (<code>responseStart</code>, <code>responseEnd</code>)</li>
+</ol>
+</li>
+
+<li>
+<p>Processing the Response</p>
+
+<ol>
+<li><code>domLoading</code></li>
+
+<li><code>domInteractive</code></li>
+
+<li><code>domContentLoaded</code></li>
+
+<li><code>domComplete</code></li>
+
+<li>onLoad (<code>loadEventStart</code>, <code>loadEventEnd</code>)</li>
+</ol>
+</li>
+</ol>
+
+<p>So if you&#8217;re used to the common <code>onLoad</code> callback of jQuery, you&#8217;re hooking in to the very end of this process.</p>
+
+<h3 id='before_you_hit_the_network'>Before you Hit the Network</h3>
+
+<p>The pre-network part of this lifecycle is interesting for caching and offline reasons. The browser gives you a number of mecahanisms to cache content locally, such that the network portion of this pipeline is completely skipped. With HTML5 you even have access to the cache controls from within Javascript.</p>
+
+<h3 id='once_you_hit_the_browser'>Once you hit the browser</h3>
+
+<p>The document is scanned in linear order. Linked Javascript, scripts in the head are implemented in blocking fashion (unless in closure?) The in the body in linear fashion.</p>
+<div class='alert alert-info'>
+  <h4>Script Ordering Demo</h4>
+  <p>What order do you think the statements will output in?</p>
+  <p>In which script elements can you modify the dom?</p>
+</div>
+<h3 id='scripts'>Scripts</h3>
+
+<h2 id='life_of_an_ajax_requset'>Life of an Ajax Requset</h2>
+
+<h3 id='ajax_styles'>Ajax Styles</h3>
+
+<ul>
+<li>UI Replacement (basically, like IFRAMEs)</li>
+
+<li>UI Updates</li>
+
+<li>Data requests</li>
+</ul>
+
+<h3 id='callbacks'>Callbacks</h3>
+
+<ul>
+<li>Why are they used?</li>
+
+<li>How to stash state?</li>
+
+<li>Wide versus deep design</li>
+
+<li>Anonymous v. Named</li>
+</ul>
+
+<h3 id='security'>Security</h3>
+
+<h4 id='jsonp'>JSONP</h4>
+
+<p>First define a function that takes a JSON object</p>
+
+<pre><code> var showPictures = function(data) {
+   // do stuff
+ }</code></pre>
+
+<p>Then make jsonp call</p>
+
+<pre><code> http://api.flickr.com/pictures?callback=showPictures</code></pre>
+
+<p>It returns you a script</p>
+
+<pre><code> showPictures( data );</code></pre>
+<div class='demo'>
+  <h4>Exercise</h4>
+  <p>cross-origin-json.html</p>
+  <p>Have change pushed over Github</p>
+</div>
+<h4 id='cross_origin_resource_sharing_cors'>Cross Origin Resource Sharing (CORS)</h4>
+
+<p>HTML5 Rocks has a <a href='http://www.html5rocks.com/en/tutorials/cors/'>good tutorial</a></p>
+
+<p>Headers</p>
+
+<pre><code> Access-Control-Allow-Origin: *</code></pre>
+
+<p>To enable cookies over CORS, you need to set</p>
+
+<pre><code>xhr.withCredentials = true;</code></pre>
+
+<p>on the client, and</p>
+
+<pre><code>Access-Control-Allow-Credentials: true</code></pre>
+
+<p>in the server headers.</p>
+
+<pre><code>JS           BROWSER            SERVER
+xhr.send() --&gt;
+                preflight --------&gt;
+                (if necessary)
+
+                &lt;-------- preflight
+                (if necessary)
+
+                actual request ---&gt;
+
+                &lt;--- actual response
+
+&lt;------------ 
+fire onload() or onerror()</code></pre>
+
+<p>A preflight looks like</p>
+
+<p>OPTIONS /cors HTTP/1.1 Origin: http://api.bob.com Access-Control-Request-Method: PUT Access-Control-Request-Headers: X-Custom-Header Host: api.alice.com Accept-Language: en-US Connection: keep-alive User-Agent: Mozilla/5.0&#8230;</p>
+
+<p>A preflight response looks like:</p>
+
+<p>Access-Control-Allow-Origin: http://api.bob.com Access-Control-Allow-Methods: GET, POST, PUT Access-Control-Allow-Headers: X-Custom-Header Content-Type: text/html; charset=utf-8</p>
+<div class='alert alert-info'>
+  <h4>Enabling CORS Headers</h4>
+  <p>CORS demo on website</p>
+  <p>Do it on my computer. Have to rebase</p>
+</div>
+<h4 id='cross_site_request_forgery'>Cross Site Request Forgery</h4>
+
+<ul>
+<li>Rely on auto-login with cookies</li>
+
+<li>Construct a request to a third-party domain that amounts to a mutating API call</li>
+</ul>
+
+<p>Defenses:</p>
+
+<ul>
+<li>Check the referrer header at the server-side</li>
+
+<li>Generate a token to be added on all form requests</li>
+
+<li>Short sessions</li>
+
+<li>Require the client to re-log in (or provide auth data with request) for any high-stakes state mutation</li>
+</ul>
+
+<p>If you just adhered to good REST practice (i.e., GET request don&#8217;t have side effects), which class of clients would you fix the problem for? (passive attacks against javascript-disabled clients, e.g., you couldn&#8217;t stash a bad url in an <code>img src</code>. but you could still use javascript to make a <code>post</code> or trick the user into submitting a form.</p>
+
+<p><strong>Talk about importance of filtering for http verb on the server</strong>. Especially since a lot of server-side frameworks hide the difference between GET and POST data.</p>
+<div class='alert alert-info'>
+<h4>CSRF Demo</h4>
+<p>Step 1: modify code to prevent passive GET attack</p>
+<p>Step 2: modify code to use tokens</p>
+</div>
+  </div>
+  <div class="span3">
+    <div class="row">
+      <div class="span3">
+        <br />
+        <div class="well">
+          <a href="https://docs.google.com/forms/d/1H30wscwbX9RgEcyGMcecQGykCSTIQLVHnc7_l3Dyl94/viewform">Send Anonymous Feedback</a>
+        </div>
+        <div class="well">
+          <p align="center" style="margin-bottom: 0">
+          <a href="index.html" class="btn btn-info">
+            <i class="icon-white icon-arrow-left"></i>
+            Back to lesson
+          </a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <div class="footer">
+      </div>
+
+    </div> <!-- /container -->
+
+    <script src="/ossclass/js/jquery.min.js"></script>
+    <script src="/ossclass/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-619489-20']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>

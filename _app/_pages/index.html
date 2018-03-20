@@ -1,0 +1,35 @@
+---
+layout: default
+title: Ted Benson
+permalink: /
+thumb_force_logo: true
+---
+
+{% include amsf/core %}
+
+<!-- Article wrapper, limit width -->
+<article>
+
+  <!-- Post title -->
+  <header>
+    <h1>
+      Ted Benson
+    </h1>
+    <h2 class="sub-title">Machine Learning @ <a href="https://www.instabase.com">Instabase</a>. Founder @ <a href="https://www.cloudstitch.com">Cloudstitch</a>. Addicted to hot sauce.</h2>
+  </header>
+
+  <div class="page-content">
+    {% for post in site.posts %}
+
+    {% assign currentdate = post.date | date: "%Y" %}
+    {% if currentdate != date %}
+      {% unless forloop.first %}</ul>{% endunless %}
+      <h2 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
+      {% assign date = currentdate %}
+    {% endif %}
+      {% include themes/{{ site.amsf_theme }}/includes/page-item.html %}  
+    {% if forloop.last %}{% endif %}
+      
+    {% endfor %}
+  </div>
+</article>

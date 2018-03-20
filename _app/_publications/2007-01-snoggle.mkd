@@ -1,0 +1,18 @@
+---
+title: "Application of Ontology Translation"
+conference: ISWC
+conferenceLink: http://iswc2007.semanticweb.org/
+year: 2007
+pdf: http://people.csail.mit.edu/eob/papers/iswc2007_snoggle.pdf
+city: Busan
+region: Korea
+authors:
+- name: Jim Ressler
+- name: Mike Dean
+  link: http://www.daml.org/people/mdean/
+- name: Edward Benson
+  link: http://www.edwardbenson.com
+- name: Eric Dorner
+- name: Chris Morris
+permalink: /publications/semantic-rest/
+---
