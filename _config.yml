@@ -136,7 +136,7 @@ url:            https://edwardbenson.com
 # grabs the first image of your post as post featured image.
 #
 # Default:      https://d349cztnlupsuf.cloudfront.net
-file:           https://d349cztnlupsuf.cloudfront.net
+file:           https://www.edwardbenson.com
 
 # Download files URL
 #
@@ -147,7 +147,7 @@ file:           https://d349cztnlupsuf.cloudfront.net
 # download files. That's it. Remove or ignore this if you don't need it.
 #
 # Default:      https://d1bmx7s6749k4k.cloudfront.net
-download:       https://d1bmx7s6749k4k.cloudfront.net
+download:       https://www.edwardbenson.com
 
 # Colors
 #
@@ -166,8 +166,8 @@ service_worker:
 
 # Google Analytics tracking code
 google_analytics:
-  enabled:      false
-  id:           UA-xxxxxxx
+  enabled:      true
+  id:           UA-619489-3
   url:          https://www.googletagmanager.com/gtag/js
 
 # Site Twitter account handle
