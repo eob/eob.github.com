@@ -224,3 +224,4 @@ robots:         "User-agent: *"
 collections:
 - publications
 - books
+- talks

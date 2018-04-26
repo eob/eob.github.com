@@ -5,7 +5,7 @@ permalink: /talks/
 desc: on machine learning, dark data, fintech, and the research-product transition
 ---
 
-I love to speak and connect with audiences. If your gathering is looking for someone to speak about machine learning, (dark data)[https://en.wikipedia.org/wiki/Dark_data], FinTech, or the research-to-product transition, feel free to reach out.
+I'm a teacher at heart. If your gathering is looking for someone to speak about machine learning, [dark data](https://en.wikipedia.org/wiki/Dark_data), FinTech, or the research-to-product transition, feel free to reach out.
 
 <br />
 
