@@ -1,0 +1,10 @@
+---
+title: "How to turn Research into Product"
+type: Talk
+venue: "University of Texas at Dallas"
+year: 2018
+date: 2018-04-25
+permalink: /talks/how-to-turn-research-into-product-ut-dallas/
+city: Dallas
+region: Texas
+---

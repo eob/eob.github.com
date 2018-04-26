@@ -1,0 +1,10 @@
+---
+title: "How to turn Research into Product"
+type: Talk
+venue: "Clemson University"
+year: 2018
+date: 2018-04-24
+permalink: /talks/how-to-turn-research-into-product-clemson/
+city: Clemson
+region: South Carolina
+---

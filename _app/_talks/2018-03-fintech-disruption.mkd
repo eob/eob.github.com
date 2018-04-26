@@ -1,0 +1,10 @@
+---
+title: "Coming Disruptions in Fintech"
+type: Panel
+venue: "S&P Global Leadership Forum"
+year: 2018
+date: 2018-03-20
+permalink: /talks/coming-disruptions-in-fintech
+city: Miami
+region: Florida
+---

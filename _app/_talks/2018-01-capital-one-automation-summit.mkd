@@ -1,0 +1,10 @@
+---
+title: "Automation takes more than technology"
+type: Conference
+venue: Capital One Automation Summit
+year: 2018
+date: 2018-01-23
+permalink: /talks/automation-takes-more-than-technology
+city: San Francisco
+region: California
+---

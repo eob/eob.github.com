@@ -1,0 +1,11 @@
+---
+title: "How to turn Research into Product"
+type: Lecture
+venue: Columbia
+subvenue: Database Topics in Research and Practice
+year: 2018
+date: 2018-02-28
+permalink: /talks/how-to-turn-research-into-product-columbia/
+city: New York
+region: New York
+---
