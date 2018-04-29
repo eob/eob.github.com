@@ -116,7 +116,7 @@ paper wasn't in an archival track -- email me and I'll send you a copy.</p>
 
   <li>
   <b><a href="http://chronicle.com/blogs/conversation/2013/06/04/unintentional-hipster-faculty/">Unintentional Hipster Faculty</a></b><br />
-  in <a href="http://chronicle.com/blogs/conversation/">The Conversation</a> at the <a href="http://chronicle.com">The Chronicle of Higher Education</a>. The Conversation. 4 June 2013.
+  in <a href="http://chronicle.com/blogs/conversation/">The Conversation</a> at the <a href="http://chronicle.com">The Chronicle of Higher Education</a>. 4 June 2013.
   </li>
 </ul>
   
