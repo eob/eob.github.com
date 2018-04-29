@@ -110,6 +110,8 @@ paper wasn't in an archival track -- email me and I'll send you a copy.</p>
  
 <ul class="">
   <li>
+  <b><a href="https://store.2600.com/collections/2010-2015/products/spring-2018">The Case of the Murderous AI</a></b><br />
+  in <a href="https://www.2600.com/">2600 Magazine</a>. Spring 2018 Issue.
   <b><a href="http://chronicle.com/blogs/conversation/2013/06/04/unintentional-hipster-faculty/">Unintentional Hipster Faculty</a></b><br />
   in <a href="http://chronicle.com/blogs/conversation/">The Conversation</a> at the <a href="http://chronicle.com">The Chronicle of Higher Education</a>. The Conversation. 4 June 2013.
   </li>
