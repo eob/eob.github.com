@@ -5,7 +5,7 @@ permalink: /talks/
 desc: on machine learning, dark data, fintech, and the research-product transition
 ---
 
-I'm a teacher at heart. If your gathering is looking for someone to speak about machine learning, [dark data](https://en.wikipedia.org/wiki/Dark_data), FinTech, or the research-to-product transition, feel free to reach out.
+I'm a teacher at heart. If your gathering is looking for someone to speak about machine learning, [dark data](https://en.wikipedia.org/wiki/Dark_data), FinTech, or the research-to-product transition, feel free to [reach out](mailto:eob@csail.mit.edu).
 
 <br />
 
@@ -16,12 +16,11 @@ I'm a teacher at heart. If your gathering is looking for someone to speak about 
 
 <li class="paper">
   <b>{{talk.title}}</b>
-  </b>
 
   <div class="conference">
-    <strong><a href="{{publication.venueLink}}">{{talk.venue}}</a></strong>
-      {% if talk.subvenue %}, {{talk.subvenue}}{% endif %} 
-      {% if talk.date %} / {{talk.city}}, {{talk.region}} {% endif %}, {{talk.year}}    
+    {{talk.venue}}
+    {% if talk.subvenue %}, {{talk.subvenue}}{% endif %} 
+    {% if talk.date %} / {{talk.city}}, {{talk.region}} {% endif %} {{talk.year}}    
   </div>
 
   {% if talk.special %}

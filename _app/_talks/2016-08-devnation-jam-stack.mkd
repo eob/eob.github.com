@@ -2,9 +2,9 @@
 title: "The JAM Stack - Javascript, APIs, and Markup"
 type: Conference
 venue: DevNation Federal
-year: 2017
-date: 2017-08-23
+year: 2016
+date: 2016-08-23
 permalink: /talks/devnation-federal-the-jam-stack
-city: Washington, D.C.
-region: USA
+city: Washington
+region: D.C.
 ---
