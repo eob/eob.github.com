@@ -1,0 +1,13 @@
+---
+title: "The FinTech Investor Podcast"
+type: Podcast
+venue: "Green Visor Capital"
+year: 2018
+date: 2018-05-17
+permalink: /talks/the-fintech-investor-podcast
+city: San Francisco
+region: California
+serieslink: https://itunes.apple.com/us/podcast/the-fintech-investor-podcast-series/id1286956576?mt=2
+soundcloudlink: https://soundcloud.com/user-516140913/the-fintech-investor-podcast-series-interview-with-ted-benson
+audiolink: 
+---

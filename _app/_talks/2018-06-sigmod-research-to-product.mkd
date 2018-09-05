@@ -1,0 +1,11 @@
+---
+title: "Turning Research into Product at Instabase"
+type: Talk
+venue: SIGMOD New Researcher Symposium
+venuelink: "https://sigmod2018.org/sigmod_new_research_symposium.shtml"
+year: 2018
+date: 2018-06-12
+permalink: /talks/how-to-turn-research-into-product-sigmod/
+city: Houston
+region: Texas
+---
