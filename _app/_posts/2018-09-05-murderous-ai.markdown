@@ -8,8 +8,6 @@ tags:
   - AI
 ---
 
----
-
 I once shared an office with a man named Branavan. We were PhD students working on natural language processing - the applied branch of machine learning that produces things like Siri and Google Translate.
 
 AI labs aren't the most dramatic setting for a murder mystery. None of the mysterious machines a physics department would have. Just desks and computers and whiteboards filled with math.
@@ -30,8 +28,7 @@ The thing actually worked! You'd give it a help desk page from HP's web site and
 
 There was just one problem.. the AI would regularly commit murder-suicide against all the other copies of itself.
 
-
----
+--
 
 The murders would happen in the middle of night, when nobody was there.
 
@@ -54,8 +51,7 @@ On one monitor, the one not inside a VM, the mouse veered to the corner of the s
 Zap! zap! zap! One by one, all the monitors blinked off. The AI bots dead in their tracks.
 VMs murdered. No suicide note on the host machine.
 
-
----
+--
 
 Plenty of ink has been spilled over Skynet-style AI doomsdays, but not much has been written about the AI child accidentally shooting his father's gun.
 
@@ -73,7 +69,7 @@ Always a question mark. The blind spot remained.
 
 Because every time the computer took a chance on that option, there was no one left to record how well it worked out.
 
----
+--
 
 Branavan, of course, found a straightforward solution to this blind spot.
 From above, he dictated THOU SHALT NOT KILL. (He just added a line of code that forbade the computer from confirming a shutdown.)
